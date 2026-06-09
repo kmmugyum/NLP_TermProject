@@ -89,11 +89,11 @@ echo "[server] 서버 시작 (배치 모드)..."
 python -m uvicorn server:app --host 0.0.0.0 --port 8000 &
 SERVER_PID=$!
 
-# 서버 준비 대기
-echo "[server] 서버 준비 대기 중..."
-for i in $(seq 1 120); do
-    if curl -s http://localhost:8000/health >/dev/null 2>&1; then
-        echo "[server] 서버 준비 완료 (${i}초)"
+# 서버 준비 대기 — /health 의 ready:true(모델 로딩 완료)까지 대기.
+echo "[server] 모델 로딩 대기 중... (최대 수 분)"
+for i in $(seq 1 600); do
+    if curl -s http://localhost:8000/health 2>/dev/null | grep -q '"ready": *true'; then
+        echo "[server] 서버 준비 완료 (${i}초) — 모델 로딩 완료"
         break
     fi
     sleep 1

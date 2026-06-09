@@ -65,9 +65,14 @@ class ChatReq(BaseModel):
     query: str
 
 
+_MODEL_READY = False  # 모델(orchestrator) 로딩 완료 여부 — /health 가 이를 반영
+
+
 @app.on_event("startup")
 def _startup():
-    get_orchestrator()
+    global _MODEL_READY
+    get_orchestrator()  # 모델 로딩(블로킹, 수 분 소요)
+    _MODEL_READY = True
 
 
 @app.get("/")
@@ -77,7 +82,8 @@ def root():
 
 @app.get("/health")
 def health():
-    return {"ok": True, "ready": True}
+    # ready 는 모델 로딩 완료 후에만 True → sh 의 curl 루프가 진짜 준비까지 대기.
+    return {"ok": True, "ready": _MODEL_READY}
 
 
 _sessions = set()
