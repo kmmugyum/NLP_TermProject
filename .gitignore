@@ -25,3 +25,4 @@ outputs/*.json
 # === 모델 캐시 (Drive/로컬, repo 무관) ===
 hf_cache/
 model/
+*.bak_*
