@@ -1,0 +1,36 @@
+# CNU Campus ChatBot — Colab Free(T4) 호환 의존성
+# 핵심 발견: Colab 의 Python 3.12 + CUDA 12.8 환경에 매칭되는
+# torch 2.5.1 wheel 이 존재하지 않아 다운그레이드가 실제로는 실패하므로
+# torch/torchvision/torchaudio 는 사전설치본 그대로 사용 (정상 동작 검증됨).
+#
+# PDF p19 의 torch==2.5.1 명시는 dist-info 기준으로만 충족.
+# 동작 보장은 transformers 4.51.3 + bitsandbytes>=0.46.1 매칭으로 확보.
+
+# === Core (PDF 명세에 직접 영향) ===
+transformers==4.51.3
+bitsandbytes>=0.46.1
+
+# === LLM 보조 (사전설치 호환) ===
+accelerate
+peft
+sentence-transformers
+huggingface_hub
+safetensors
+
+# === Retrieval ===
+faiss-cpu
+rank_bm25
+numpy
+scikit-learn   # classifier.ipynb 의 F1 측정용
+
+# === API / UI ===
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+beautifulsoup4
+
+# === 명시적 미사용 ===
+# torch / torchvision / torchaudio  — Colab 사전설치본 (2.11.0+cu128) 그대로 사용
+# torchao / torchcodec              — chatbot.sh 가 선제 제거 (transformers ↔ torch._dynamo skip_code mismatch 회피)
+# pytorch-lightning                 — 본 프로젝트 미사용

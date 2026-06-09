@@ -1,0 +1,397 @@
+[
+ {
+  "host": "abio.cnu.ac.kr",
+  "name": "응용생물학과",
+  "board": "https://abio.cnu.ac.kr/abio/community/board01.do"
+ },
+ {
+  "host": "abis.cnu.ac.kr",
+  "name": "아시아비즈니스국제학과",
+  "board": "https://abis.cnu.ac.kr/asia/notice/notice.do"
+ },
+ {
+  "host": "aero.cnu.ac.kr",
+  "name": "항공우주공학과",
+  "board": "https://aero.cnu.ac.kr/aero/community/notice.do"
+ },
+ {
+  "host": "agrieco.cnu.ac.kr",
+  "name": "농업경제학과",
+  "board": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do"
+ },
+ {
+  "host": "animal.cnu.ac.kr",
+  "name": "동물자원과학부",
+  "board": "https://animal.cnu.ac.kr/animal/board/board01.do"
+ },
+ {
+  "host": "archi-eng.cnu.ac.kr",
+  "name": "건축공학과",
+  "board": "https://archi-eng.cnu.ac.kr/archi/competition/notice.do"
+ },
+ {
+  "host": "are.cnu.ac.kr",
+  "name": "지역환경토목학과",
+  "board": "https://are.cnu.ac.kr/are/community/notice.do"
+ },
+ {
+  "host": "art.cnu.ac.kr",
+  "name": "예술대학",
+  "board": "https://art.cnu.ac.kr/art/board/notice.do"
+ },
+ {
+  "host": "asbt.cnu.ac.kr",
+  "name": "동물자원생명과학과",
+  "board": "https://asbt.cnu.ac.kr/asb/board/notice3.do"
+ },
+ {
+  "host": "astro1.cnu.ac.kr",
+  "name": "천문우주과학과",
+  "board": "https://astro1.cnu.ac.kr/astro/notice/notice.do"
+ },
+ {
+  "host": "avse.cnu.ac.kr",
+  "name": "자율운항시스템공학과",
+  "board": "https://avse.cnu.ac.kr/avse1/notice/notice.do"
+ },
+ {
+  "host": "bec.cnu.ac.kr",
+  "name": "생물환경화학과",
+  "board": "https://bec.cnu.ac.kr/bec/notice/notice01.do"
+ },
+ {
+  "host": "biochemistry.cnu.ac.kr",
+  "name": "생화학과",
+  "board": "https://biochemistry.cnu.ac.kr/biochemistry/community/undergrad-notice.do"
+ },
+ {
+  "host": "biz.cnu.ac.kr",
+  "name": "경영학부",
+  "board": "https://biz.cnu.ac.kr/biz/community/notice.do"
+ },
+ {
+  "host": "bme.cnu.ac.kr",
+  "name": "스마트농업시스템기계공학과",
+  "board": null
+ },
+ {
+  "host": "cals.cnu.ac.kr",
+  "name": "농업생명과학대학",
+  "board": "https://cals.cnu.ac.kr/cals/community/1_notice.do"
+ },
+ {
+  "host": "cbb.cnu.ac.kr",
+  "name": "생명시스템과학대학",
+  "board": null
+ },
+ {
+  "host": "ceac.cnu.ac.kr",
+  "name": "응용화학공학과",
+  "board": "https://ceac.cnu.ac.kr/ceac/under/notice.do"
+ },
+ {
+  "host": "cem.cnu.ac.kr",
+  "name": "경상대학",
+  "board": "https://cem.cnu.ac.kr/cem/community/notice.do"
+ },
+ {
+  "host": "chem.cnu.ac.kr",
+  "name": "화학과",
+  "board": "https://chem.cnu.ac.kr/chem/undergrad/notice.do"
+ },
+ {
+  "host": "civileng.cnu.ac.kr",
+  "name": "토목공학과",
+  "board": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do"
+ },
+ {
+  "host": "cli.cnu.ac.kr",
+  "name": "소비자학과",
+  "board": "https://cli.cnu.ac.kr/cli/notice/notice.do"
+ },
+ {
+  "host": "cloth.cnu.ac.kr",
+  "name": "의류학과",
+  "board": "https://cloth.cnu.ac.kr/cloth/notice/undergrad.do"
+ },
+ {
+  "host": "cns.cnu.ac.kr",
+  "name": "자연과학대학",
+  "board": "https://cns.cnu.ac.kr/cns/community/notice.do"
+ },
+ {
+  "host": "cnucee.cnu.ac.kr",
+  "name": "사범대학 화학공학교육과",
+  "board": "https://cnucee.cnu.ac.kr/cnucee/notice/notice.do"
+ },
+ {
+  "host": "cnusis.cnu.ac.kr",
+  "name": "School of International Studie",
+  "board": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do"
+ },
+ {
+  "host": "computer.cnu.ac.kr",
+  "name": "컴퓨터인공지능학부",
+  "board": "https://computer.cnu.ac.kr/computer/notice/bachelor.do"
+ },
+ {
+  "host": "conedu.cnu.ac.kr",
+  "name": "건설공학교육과",
+  "board": "https://conedu.cnu.ac.kr/conedu/cummunity/notice.do"
+ },
+ {
+  "host": "creative.cnu.ac.kr",
+  "name": "창의융합대학",
+  "board": "https://creative.cnu.ac.kr/creative/community/notice.do"
+ },
+ {
+  "host": "crop.cnu.ac.kr",
+  "name": "식물자원학과",
+  "board": "https://crop.cnu.ac.kr/crop/board/notice.do"
+ },
+ {
+  "host": "dance.cnu.ac.kr",
+  "name": "무용학과",
+  "board": "https://dance.cnu.ac.kr/dance/community/notice.do"
+ },
+ {
+  "host": "dcbi.cnu.ac.kr",
+  "name": "생명정보융합학과",
+  "board": "https://dcbi.cnu.ac.kr/cbi/community/notice.do"
+ },
+ {
+  "host": "design.cnu.ac.kr",
+  "name": "디자인창의학과",
+  "board": null
+ },
+ {
+  "host": "economics.cnu.ac.kr",
+  "name": "경제학과",
+  "board": "https://economics.cnu.ac.kr/economic/notice/notice.do"
+ },
+ {
+  "host": "edu.cnu.ac.kr",
+  "name": "사범대학",
+  "board": "https://edu.cnu.ac.kr/edu/board/notice.do"
+ },
+ {
+  "host": "education.cnu.ac.kr",
+  "name": "사범대학 교육학과",
+  "board": "https://education.cnu.ac.kr/education/notice/notice.do"
+ },
+ {
+  "host": "ee.cnu.ac.kr",
+  "name": "전자공학과",
+  "board": "https://ee.cnu.ac.kr/ee/community/notice.do"
+ },
+ {
+  "host": "eedu.cnu.ac.kr",
+  "name": "사범대학 전기",
+  "board": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do"
+ },
+ {
+  "host": "elec.cnu.ac.kr",
+  "name": "전기공학과",
+  "board": "https://elec.cnu.ac.kr/elec/notice/notice-under.do"
+ },
+ {
+  "host": "enedu.cnu.ac.kr",
+  "name": "영어교육과",
+  "board": "https://enedu.cnu.ac.kr/enedu/community/notice.do"
+ },
+ {
+  "host": "energy.cnu.ac.kr",
+  "name": "에너지공학과",
+  "board": "https://energy.cnu.ac.kr/energy/notice/notice.do"
+ },
+ {
+  "host": "eng.cnu.ac.kr",
+  "name": "공과대학",
+  "board": "https://eng.cnu.ac.kr/eng/information/notice.do"
+ },
+ {
+  "host": "envi.cnu.ac.kr",
+  "name": "공과대학 환경공학과",
+  "board": "https://envi.cnu.ac.kr/envi/board/notice.do"
+ },
+ {
+  "host": "fdnutri.cnu.ac.kr",
+  "name": "식품영양학과",
+  "board": "https://fdnutri.cnu.ac.kr/fdnutri/board/notice.do"
+ },
+ {
+  "host": "fineart.cnu.ac.kr",
+  "name": "예술대학 회화과",
+  "board": "https://fineart.cnu.ac.kr/fineart/notice/notice.do"
+ },
+ {
+  "host": "forestry.cnu.ac.kr",
+  "name": "농업생명과학대학 산림환경자원학과",
+  "board": "https://forestry.cnu.ac.kr/forestry/community/notice.do"
+ },
+ {
+  "host": "fst.cnu.ac.kr",
+  "name": "식품공학과",
+  "board": "https://fst.cnu.ac.kr/fst/board/notice01.do"
+ },
+ {
+  "host": "geo.cnu.ac.kr",
+  "name": "Home",
+  "board": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1108"
+ },
+ {
+  "host": "homeco.cnu.ac.kr",
+  "name": "생활과학대학",
+  "board": "https://homeco.cnu.ac.kr/homeco/community/notice.do"
+ },
+ {
+  "host": "horti.cnu.ac.kr",
+  "name": "원예학과",
+  "board": "https://horti.cnu.ac.kr/horti/community/notice.do"
+ },
+ {
+  "host": "human.cnu.ac.kr",
+  "name": "인문대학",
+  "board": "https://human.cnu.ac.kr/human/community/notice.do"
+ },
+ {
+  "host": "koreanedu.cnu.ac.kr",
+  "name": "국어교육과",
+  "board": "https://koreanedu.cnu.ac.kr/koreanedu/notice/notice.do"
+ },
+ {
+  "host": "liberalarts.cnu.ac.kr",
+  "name": "지식융합학부",
+  "board": "https://liberalarts.cnu.ac.kr/free/board/notice.do"
+ },
+ {
+  "host": "math.cnu.ac.kr",
+  "name": "수학과",
+  "board": "https://math.cnu.ac.kr/math/community/notice.do"
+ },
+ {
+  "host": "mathedu.cnu.ac.kr",
+  "name": "사범대학 수학교육과",
+  "board": "https://mathedu.cnu.ac.kr/mathedu/notice/notice.do"
+ },
+ {
+  "host": "me.cnu.ac.kr",
+  "name": "기계공학부",
+  "board": "https://me.cnu.ac.kr/me/news/notice01.do"
+ },
+ {
+  "host": "mec.cnu.ac.kr",
+  "name": "메카트로닉스공학과",
+  "board": "https://mec.cnu.ac.kr/medc/notice/data.do"
+ },
+ {
+  "host": "medicine.cnu.ac.kr",
+  "name": "의과대학",
+  "board": "https://medicine.cnu.ac.kr/medicine/info/notice.do"
+ },
+ {
+  "host": "mmee.cnu.ac.kr",
+  "name": "사범대학 기계공학교육과",
+  "board": "https://mmee.cnu.ac.kr/mmee/notice/notice.do"
+ },
+ {
+  "host": "mse.cnu.ac.kr",
+  "name": "신소재공학과",
+  "board": "https://mse.cnu.ac.kr/mse/square/notice01.do"
+ },
+ {
+  "host": "music.cnu.ac.kr",
+  "name": "음악과",
+  "board": "https://music.cnu.ac.kr/music/board/notice.do"
+ },
+ {
+  "host": "nursing.cnu.ac.kr",
+  "name": "간호대학",
+  "board": "https://nursing.cnu.ac.kr/nursing1/announce/notice.do"
+ },
+ {
+  "host": "ocean.cnu.ac.kr",
+  "name": "해양환경과학과",
+  "board": "https://ocean.cnu.ac.kr/ocean/community/notice.do"
+ },
+ {
+  "host": "omeng.cnu.ac.kr",
+  "name": "유기재료공학과",
+  "board": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1"
+ },
+ {
+  "host": "orch.cnu.ac.kr",
+  "name": "예술학과 관현악과",
+  "board": null
+ },
+ {
+  "host": "pharm.cnu.ac.kr",
+  "name": "약학대학",
+  "board": "https://pharm.cnu.ac.kr/pharm/community/notice.do"
+ },
+ {
+  "host": "physics.cnu.ac.kr",
+  "name": "물리학과",
+  "board": "https://physics.cnu.ac.kr/physics/notice/news1.do"
+ },
+ {
+  "host": "rice.cnu.ac.kr",
+  "name": "정보통신융합학부 ( 전파정보통신공학과 )",
+  "board": "https://rice.cnu.ac.kr/rice/community/notice01.do"
+ },
+ {
+  "host": "sculpture.cnu.ac.kr",
+  "name": "예술대학 조소과",
+  "board": "https://sculpture.cnu.ac.kr/sculpture/notice/notice.do"
+ },
+ {
+  "host": "ship.cnu.ac.kr",
+  "name": "선박해양공학과",
+  "board": "https://ship.cnu.ac.kr/ship/community/notice.do"
+ },
+ {
+  "host": "socialscience.cnu.ac.kr",
+  "name": "사회과학대학",
+  "board": "https://socialscience.cnu.ac.kr/socsci/board/notice.do"
+ },
+ {
+  "host": "soins.cnu.ac.kr",
+  "name": "국가안보융합학부",
+  "board": "https://soins.cnu.ac.kr/soins/admissions/admissions-notice.do"
+ },
+ {
+  "host": "sports.cnu.ac.kr",
+  "name": "스포츠과학과",
+  "board": "https://sports.cnu.ac.kr/sports/community/notice.do"
+ },
+ {
+  "host": "sportsedu.cnu.ac.kr",
+  "name": "체육교육과",
+  "board": "https://sportsedu.cnu.ac.kr/sportsedu/board/notice-sports.do"
+ },
+ {
+  "host": "stat.cnu.ac.kr",
+  "name": "정보통계학과",
+  "board": "https://stat.cnu.ac.kr/stat/open/ds-notice.do"
+ },
+ {
+  "host": "techedu.cnu.ac.kr",
+  "name": "사범대학 기술교육과",
+  "board": "https://techedu.cnu.ac.kr/techedu/notice/notice.do"
+ },
+ {
+  "host": "trade.cnu.ac.kr",
+  "name": "무역학과",
+  "board": "https://trade.cnu.ac.kr/trade/community/notice.do"
+ },
+ {
+  "host": "vetmed.cnu.ac.kr",
+  "name": "수의과대학",
+  "board": "https://vetmed.cnu.ac.kr/vetmed/community/notice.do"
+ },
+ {
+  "host": "wood.cnu.ac.kr",
+  "name": "환경소재공학과",
+  "board": "https://wood.cnu.ac.kr/wood/board/board01.do"
+ }
+]

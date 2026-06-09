@@ -1,0 +1,34 @@
+[
+  {
+    "doc_id": "mock_acad_001",
+    "title": "졸업 이수학점 안내",
+    "content": "충남대학교 공과대학 학사과정 졸업을 위한 최소 이수학점은 130학점이며, 이 중 전공 60학점 이상과 교양 30학점 이상을 반드시 포함해야 합니다.",
+    "source_url": "https://example.invalid/mock/acad_001",
+    "file_type": "html",
+    "metadata": {"category": "academic", "section": "graduation"}
+  },
+  {
+    "doc_id": "mock_acad_002",
+    "title": "수강신청 및 정정 기간",
+    "content": "2026학년도 1학기 수강신청은 2월 둘째 주에 진행되며, 개강 후 첫째 주에 수강정정(추가/취소) 기간이 별도로 운영됩니다. 정정 기간 이후에는 수강 취소만 가능합니다.",
+    "source_url": "https://example.invalid/mock/acad_002",
+    "file_type": "html",
+    "metadata": {"category": "academic", "section": "enrollment"}
+  },
+  {
+    "doc_id": "mock_acad_003",
+    "title": "계절학기 운영 안내",
+    "content": "계절학기는 하계와 동계로 운영되며 학기당 최대 6학점까지 수강할 수 있습니다. 수강료는 학점당 별도로 부과되고, 폐강 기준 미달 시 강좌가 취소될 수 있습니다.",
+    "source_url": "https://example.invalid/mock/acad_003",
+    "file_type": "html",
+    "metadata": {"category": "academic", "section": "season_term"}
+  },
+  {
+    "doc_id": "mock_acad_004",
+    "title": "학사경고 및 제적 규정",
+    "content": "직전 학기 평점평균이 1.75 미만인 경우 학사경고를 받으며, 학사경고가 연속 또는 누적 3회에 이르면 제적 대상이 됩니다.",
+    "source_url": "https://example.invalid/mock/acad_004",
+    "file_type": "pdf",
+    "metadata": {"category": "academic", "section": "academic_warning"}
+  }
+]

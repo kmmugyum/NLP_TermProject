@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>충남대 QA 봇</title>
+<style>
+@keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes dotBounce {
+  0%,80%,100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+@keyframes slideIn { from { opacity:0; transform:translateX(-8px); } to { opacity:1; transform:translateX(0); } }
+
+:root {
+  --bg: #f0f2f5;
+  --surface: #ffffff;
+  --primary: #1a3a5c;
+  --primary-light: #2a5a8c;
+  --primary-subtle: #e8f0f8;
+  --accent: #3d7cbf;
+  --accent-glow: rgba(61,124,191,.15);
+  --user-bg: linear-gradient(135deg, #1a3a5c 0%, #2a5a8c 100%);
+  --bot-bg: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #5a6070;
+  --text-muted: #8a8fa0;
+  --border: #e2e6ec;
+  --border-light: #eef1f5;
+  --success: #1b8a4a;
+  --warning: #c07800;
+  --error: #c23030;
+  --intent-academic: #1b7a3a;
+  --intent-cafeteria: #c07800;
+  --intent-notice: #5b3db8;
+  --intent-oos: #7a7f8a;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Pretendard Variable", "Apple SD Gothic Neo", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Header ---- */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  z-index: 10;
+}
+.header-logo {
+  width: 32px; height: 32px;
+  background: var(--user-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.header-title {
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--primary);
+  letter-spacing: -0.3px;
+}
+.header-status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.status-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  flex-shrink: 0;
+  transition: background .3s;
+}
+.status-dot.ok { background: var(--success); }
+.status-dot.loading { background: var(--warning); animation: pulse 1.2s infinite; }
+.status-dot.fail { background: var(--error); }
+
+/* ---- Chat area ---- */
+.chat-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 16px 100px;
+  scroll-behavior: smooth;
+}
+.chat-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---- Welcome ---- */
+.welcome {
+  text-align: center;
+  padding: 48px 20px 32px;
+  animation: fadeUp .5s ease;
+}
+.welcome-icon {
+  width: 56px; height: 56px;
+  background: var(--primary-subtle);
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.welcome h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+.welcome p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.quick-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.quick-chips .chip {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all .15s;
+  background: var(--surface);
+}
+.quick-chips .chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ---- Batch Banner ---- */
+.batch-banner {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border: 1px solid #ffcc80;
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 8px 16px;
+  animation: fadeUp .4s ease;
+}
+.batch-banner-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e65100;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.batch-banner-sub {
+  font-size: 12px;
+  color: #bf360c;
+  line-height: 1.5;
+}
+.batch-toggle {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+.batch-toggle:hover { text-decoration: underline; }
+.batch-progress-panel {
+  margin-top: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #ffe0b2;
+  display: none;
+}
+.batch-progress-panel.open { display: block; }
+.bp-item {
+  padding: 4px 0;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.bp-item:last-child { border-bottom: none; }
+.bp-idx { color: var(--text-muted); font-weight: 600; min-width: 28px; }
+.bp-q { color: var(--text); flex: 1; }
+.bp-a { color: var(--accent); flex: 1; }
+.bp-bar {
+  height: 4px;
+  background: #ffe0b2;
+  border-radius: 2px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.bp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9800, #e65100);
+  border-radius: 2px;
+  transition: width .3s;
+}
+.batch-done-banner {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border: 1px solid #a5d6a7;
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 8px 16px;
+  animation: fadeUp .4s ease;
+  font-size: 13px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* ---- Composer disabled state ---- */
+.composer.locked #q { background: #f5f5f5; pointer-events: none; }
+.composer.locked #send { display: none; }
+.composer-lock-msg {
+  font-size: 12px;
+  color: var(--warning);
+  text-align: center;
+  padding: 4px 0;
+  display: none;
+}
+.composer.locked .composer-lock-msg { display: block; }
+
+/* ---- Messages ---- */
+.msg-row {
+  display: flex;
+  animation: fadeUp .3s ease;
+}
+.msg-row.user { justify-content: flex-end; }
+.msg-row.bot { justify-content: flex-start; }
+
+.msg-row.bot .avatar {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--primary-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.bubble {
+  max-width: 85%;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.msg-row.user .bubble {
+  background: var(--user-bg);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+  box-shadow: var(--shadow-sm);
+}
+.msg-row.bot .bubble {
+  background: var(--bot-bg);
+  color: var(--text);
+  border: 1px solid var(--border-light);
+  border-bottom-left-radius: 4px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---- Intent badge ---- */
+.intent-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+.intent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+.b-academic       { background: var(--intent-academic); }
+.b-cafeteria      { background: var(--intent-cafeteria); }
+.b-temporal_notice { background: var(--intent-notice); }
+.b-out_of_scope   { background: var(--intent-oos); }
+.fallback-label   { color: var(--error); font-weight: 500; }
+
+/* ---- Status steps ---- */
+.status-area {
+  margin-bottom: 4px;
+}
+.status-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--accent);
+  padding: 4px 0;
+  animation: slideIn .25s ease;
+}
+.status-line::before {
+  content: "";
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1s infinite;
+  flex-shrink: 0;
+}
+
+/* ---- Thinking dots ---- */
+.thinking-dots {
+  display: flex;
+  gap: 4px;
+  padding: 6px 0;
+}
+.thinking-dots span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  display: inline-block;
+  animation: dotBounce 1.4s infinite ease-in-out both;
+}
+.thinking-dots span:nth-child(1) { animation-delay: 0s; }
+.thinking-dots span:nth-child(2) { animation-delay: 0.16s; }
+.thinking-dots span:nth-child(3) { animation-delay: 0.32s; }
+
+/* ---- References ---- */
+.refs-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+.refs-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.ref-link {
+  display: block;
+  font-size: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 3px 0;
+  word-break: break-all;
+  transition: color .15s;
+}
+.ref-link:hover { color: var(--primary); text-decoration: underline; }
+
+/* ---- Composer ---- */
+.composer {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -2px 16px rgba(0,0,0,.04);
+  z-index: 10;
+}
+.composer-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 12px 16px;
+}
+.input-wrap {
+  flex: 1;
+  position: relative;
+}
+#q {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  resize: none;
+  height: 44px;
+  max-height: 120px;
+  overflow-y: auto;
+  transition: border-color .15s;
+  background: var(--surface);
+  color: var(--text);
+}
+#q:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+#q::placeholder { color: var(--text-muted); }
+#send {
+  width: 44px; height: 44px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background .15s, transform .1s;
+}
+#send:hover { background: var(--primary-light); }
+#send:active { transform: scale(.95); }
+#send:disabled { background: var(--border); cursor: default; transform: none; }
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  .header { padding: 0 14px; }
+  .chat-area { padding: 14px 10px 100px; }
+  .bubble { max-width: 92%; }
+  .welcome { padding: 32px 12px 24px; }
+  .quick-chips { gap: 6px; }
+  .quick-chips .chip { padding: 6px 12px; font-size: 12px; }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">C</div>
+  <span class="header-title">충남대 QA 봇</span>
+  <div class="header-status">
+    <span class="status-dot" id="statusDot"></span>
+    <span id="statusLabel">대기</span>
+  </div>
+</div>
+
+
+
+
+<div class="chat-area" id="chatArea">
+  <div class="chat-inner" id="chatInner">
+    <div class="welcome" id="welcome">
+      <div class="welcome-icon">🎓</div>
+      <h2>충남대 학사 · 학식 · 공지</h2>
+      <p>학사 정보, 오늘/내일 학식 메뉴, 학과 공지사항을<br>실시간으로 검색하고 답변합니다.</p>
+      <div class="quick-chips">
+        <span class="chip" onclick="askQuick(this)">내일 학식 메뉴</span>
+        <span class="chip" onclick="askQuick(this)">졸업 요건</span>
+        <span class="chip" onclick="askQuick(this)">최근 학과 공지</span>
+        <span class="chip" onclick="askQuick(this)">DevDay 일정</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="composer" id="composer">
+  <div class="composer-lock-msg" id="composerLockMsg">⏳ 배치 추론 진행 중 — 완료 후 채팅이 가능합니다</div>
+  <div class="composer-inner">
+    <div class="input-wrap">
+      <textarea id="q" rows="1" placeholder="질문을 입력하세요…" oninput="autoGrow(this)"></textarea>
+    </div>
+    <button id="send" onclick="send()" aria-label="전송">↑</button>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   Config (hardcoded — no visible inputs)
+   ============================================================ */
+const API_BASE = "";  // same-origin (server.py 가 정적 + API 동시 호스팅)
+const API_TOKEN = "";  // 로컬 평가 환경에서는 토큰 검증 비활성
+
+const $ = s => document.querySelector(s);
+const chatInner = $("#chatInner");
+
+const INTENT_KR = { academic:"학사", cafeteria:"학식", temporal_notice:"공지", out_of_scope:"범위 밖" };
+const SESSION_ID = crypto.randomUUID ? crypto.randomUUID() : "s-" + Math.random().toString(36).slice(2);
+let sending = false;
+
+function authHeaders() { return { "Content-Type": "application/json", "X-API-Token": API_TOKEN }; }
+
+/* ============================================================
+   Status bar
+   ============================================================ */
+function setConn(state, label) {
+  const dot = $("#statusDot"), lbl = $("#statusLabel");
+  dot.className = "status-dot " + state;
+  lbl.textContent = label;
+}
+
+/* ============================================================
+   Session connect / disconnect
+   ============================================================ */
+async function connect() {
+  setConn("loading", "모델 로딩 중…");
+  try {
+    const r = await fetch(API_BASE + "/api/v1/session/connect", {
+      method: "POST", headers: authHeaders(),
+      body: JSON.stringify({ session_id: SESSION_ID }),
+      signal: AbortSignal.timeout(60000),
+    });
+    setConn(r.ok ? "ok" : "fail", r.ok ? "연결됨" : "오류 " + r.status);
+  } catch { setConn("fail", "연결 실패"); }
+}
+
+function disconnect() {
+  const u = API_BASE + "/api/v1/session/disconnect?token=" + encodeURIComponent(API_TOKEN);
+  try { navigator.sendBeacon(u, new Blob([JSON.stringify({ session_id: SESSION_ID })], { type: "application/json" })); } catch {}
+}
+window.addEventListener("pagehide", disconnect);
+window.addEventListener("beforeunload", disconnect);
+
+/* ============================================================
+   Helpers
+   ============================================================ */
+function esc(s) { return (s || "").replace(/[&<>]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;" })[c]); }
+
+function scrollDown() {
+  const area = $("#chatArea");
+  area.scrollTop = area.scrollHeight;
+}
+
+function autoGrow(el) {
+  el.style.height = "auto";
+  el.style.height = Math.min(el.scrollHeight, 120) + "px";
+}
+
+function hideWelcome() {
+  const w = $("#welcome");
+  if (w) w.remove();
+}
+
+/* ============================================================
+   Postprocessing (Korean-only)
+   ============================================================ */
+const DROP_CJK_RE = /[\u3040-\u30FF\u31F0-\u31FF\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\uFF65-\uFF9F]+/g;
+const GLUED_LATIN_RE = /(?<=[가-힣])[A-Za-z]+(?=[가-힣])/g;
+const GLOSSARY = [
+  ["연구실", /(?<![A-Za-z])research\s+lab(?:oratory|s)?(?![A-Za-z])/gi, "연구실"],
+  ["연구실", /(?<![A-Za-z])lab(?:oratory|s)?(?![A-Za-z])/gi, "연구실"],
+  ["연구실", /(?<![A-Za-z])research(?![A-Za-z])/gi, "연구"],
+  ["홈페이지", /(?<![A-Za-z])home\s*page(?![A-Za-z])/gi, "홈페이지"],
+  ["구성원", /(?<![A-Za-z])members?(?![A-Za-z])/gi, "구성원"],
+  ["이메일", /(?<![A-Za-z])e-?mails?(?![A-Za-z])/gi, "이메일"],
+  ["연락처", /(?<![A-Za-z])(?:contacts?|phone)(?![A-Za-z])/gi, "연락처"],
+];
+const SPACE_BEFORE_KOR = /([가-힣])(?=연구실|홈페이지|구성원|이메일|연락처)/g;
+function postprocess(text, query) {
+  if (!text) return text;
+  for (const [kor, re, repl] of GLOSSARY) if (query.includes(kor)) text = text.replace(re, repl);
+  text = text.replace(DROP_CJK_RE, "");
+  text = text.replace(GLUED_LATIN_RE, "");
+  text = text.replace(SPACE_BEFORE_KOR, "$1 ");
+  return text;
+}
+
+/* ============================================================
+   Render final bubble
+   ============================================================ */
+function renderFinal(el, query, intent, fallback, body, refs) {
+  const i = intent || "out_of_scope";
+  let h = `<div class="intent-bar"><span class="intent-badge b-${i}">${INTENT_KR[i]||i}</span>`
+         + (fallback ? '<span class="fallback-label">정보 없음/거부</span>' : '') + `</div>`
+         + '<span class="body-text">' + esc(postprocess(body, query)) + '</span>';
+  if (refs && refs.length) {
+    h += '<div class="refs-section"><div class="refs-label">출처</div>'
+       + refs.map(r => `<a class="ref-link" href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.title||r.source_url)}</a>`).join("")
+       + '</div>';
+  }
+  el.innerHTML = h;
+}
+
+/* ============================================================
+   Quick chip click
+   ============================================================ */
+function askQuick(el) {
+  $("#q").value = el.textContent;
+  send();
+}
+
+/* ============================================================
+   Send & SSE Stream
+   ============================================================ */
+async function send() {
+  if (sending) return;
+  if (batchMode) return; // 배치 중에는 채팅 차단
+  const q = $("#q").value.trim();
+  if (!q) return;
+  sending = true;
+  $("#q").value = "";
+  $("#q").style.height = "44px";
+  $("#send").disabled = true;
+  hideWelcome();
+
+  // User bubble
+  const uRow = document.createElement("div");
+  uRow.className = "msg-row user";
+  uRow.innerHTML = `<div class="bubble">${esc(q)}</div>`;
+  chatInner.appendChild(uRow);
+  scrollDown();
+
+  // Bot bubble
+  const bRow = document.createElement("div");
+  bRow.className = "msg-row bot";
+  const avatar = document.createElement("div");
+  avatar.className = "avatar";
+  avatar.textContent = "C";
+  const bub = document.createElement("div");
+  bub.className = "bubble";
+  bub.innerHTML = '<div class="thinking-dots"><span></span><span></span><span></span></div>';
+  bRow.appendChild(avatar);
+  bRow.appendChild(bub);
+  chatInner.appendChild(bRow);
+  scrollDown();
+
+  let intent = "out_of_scope", fallback = false, body = "", refs = [];
+  let statusLineEl = null;
+  let bodyEl = null;
+  let gotFirstDelta = false;
+
+  // ── 클라이언트 측 타이핑 큐 ──────────────────────────────
+  // Colab proxyPort 가 SSE 를 버퍼링해 delta 가 통째로 도착해도,
+  // 받은 텍스트를 큐에 쌓고 타이머로 글자 단위로 렌더링하여 타이핑 효과를 보장한다.
+  let typedLen = 0;            // 현재까지 화면에 그린 글자 수
+  let typingTimer = null;      // setInterval 핸들
+  const TYPE_SPEED_MS = 18;    // 글자 간 간격(ms) — 자연스러운 속도
+  const TYPE_BATCH = 2;        // 한 틱당 글자 수(긴 답변 가속)
+
+  function startTyping() {
+    if (typingTimer !== null) return;
+    typingTimer = setInterval(() => {
+      if (!bodyEl) return;
+      if (typedLen < body.length) {
+        typedLen = Math.min(body.length, typedLen + TYPE_BATCH);
+        bodyEl.textContent = body.slice(0, typedLen);
+        scrollDown();
+      }
+      // body 가 아직 더 올 수 있으므로(스트리밍 중) 타이머는 유지.
+      // 완전 종료는 done 이벤트에서 flushTyping() 으로 처리.
+    }, TYPE_SPEED_MS);
+  }
+  function flushTyping() {
+    if (typingTimer !== null) { clearInterval(typingTimer); typingTimer = null; }
+    if (bodyEl) { typedLen = body.length; bodyEl.textContent = body; }
+  }
+  // 타이핑이 body 끝까지 따라잡을 때까지 대기(최대 4초 안전 상한).
+  function waitTypingDone() {
+    return new Promise(resolve => {
+      const deadline = Date.now() + 4000;
+      const check = () => {
+        if (!bodyEl || typedLen >= body.length || Date.now() > deadline) {
+          flushTyping();
+          resolve();
+        } else {
+          setTimeout(check, TYPE_SPEED_MS);
+        }
+      };
+      check();
+    });
+  }
+
+  try {
+    const r = await fetch(API_BASE + "/api/v1/cnu-bot/chat/stream", {
+      method: "POST", headers: authHeaders(),
+      body: JSON.stringify({ session_id: SESSION_ID, query: q }),
+    });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+
+    const reader = r.body.getReader();
+    const dec = new TextDecoder("utf-8");
+    let buffer = "";
+
+    // Initial 구조 할당
+    bub.innerHTML = '<div class="intent-bar"><span class="intent-badge b-out_of_scope">…</span></div>'
+                  + '<div class="status-area"></div>'
+                  + '<span class="body-text"></span>';
+    const statusArea = bub.querySelector(".status-area");
+    bodyEl = bub.querySelector(".body-text");
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      
+      buffer += dec.decode(value, { stream: true });
+      
+      // SSE 표준 개행 파싱 규격 (\n\n 기반) 정밀화
+      let p;
+      while ((p = buffer.indexOf("\n\n")) >= 0) {
+        const packet = buffer.slice(0, p).trim();
+        buffer = buffer.slice(p + 2);
+        
+        if (!packet) continue;
+        
+        // "data:" 헤더 라인 분리 및 데이터 정제
+        const lines = packet.split("\n");
+        for (let line of lines) {
+            line = line.trim();
+            if (!line.startsWith("data:")) continue;
+            
+            let ev;
+            try { 
+                ev = JSON.parse(line.slice(5).trim()); 
+            } catch(e) { 
+                continue; 
+            }
+
+            if (ev.type === "status") {
+                if (!statusLineEl) {
+                    statusLineEl = document.createElement("div");
+                    statusLineEl.className = "status-line";
+                    statusArea.appendChild(statusLineEl);
+                }
+                statusLineEl.textContent = ev.text || "";
+                scrollDown();
+
+            } else if (ev.type === "meta") {
+                intent = ev.intent || intent;
+                fallback = !!ev.is_fallback;
+                const badge = bub.querySelector(".intent-badge");
+                if (badge) {
+                    badge.className = "intent-badge b-" + intent;
+                    badge.textContent = (INTENT_KR[intent] || intent) + (fallback ? " · 정보 없음" : "");
+                }
+
+            } else if (ev.type === "delta") {
+                if (!gotFirstDelta) {
+                    gotFirstDelta = true;
+                    statusArea.innerHTML = ""; // status-area 하위 요소 제거 (틀 유지)
+                    startTyping();             // 첫 delta 도착 시 타이핑 타이머 가동
+                }
+                body += ev.text || "";
+                // bodyEl 직접 갱신 대신 타이핑 타이머가 body 를 글자 단위로 그린다.
+                // (Colab 버퍼링으로 delta 가 통째로 와도 화면엔 한 글자씩 흐름)
+
+            } else if (ev.type === "refs") {
+                // [교정]: 백엔드의 'refs' 키 명세와 완벽히 동기화
+                refs = ev.refs || [];
+
+            } else if (ev.type === "error") {
+                throw new Error(ev.message || "stream error");
+
+            } else if (ev.type === "done") {
+                // 남은 글자를 타이핑으로 마저 흘린 뒤 최종 렌더링.
+                await waitTypingDone();
+                renderFinal(bub, q, intent, fallback, body, refs);
+                scrollDown();
+            }
+        }
+      }
+    }
+
+    // 스트리밍 루프 강제 종료 시 예외 렌더링 방지용 최종 안전장치
+    await waitTypingDone();
+    if (body && !bub.querySelector(".refs-section")) {
+        renderFinal(bub, q, intent, fallback, body, refs);
+    }
+
+  } catch (e) {
+    flushTyping();
+    bub.innerHTML = `<div style="color:var(--error);font-size:13px;">요청 실패: ${esc(e.message)}<br>서버 연결을 확인하세요.</div>`;
+  } finally {
+    flushTyping();
+    sending = false;
+    $("#send").disabled = false;
+    $("#q").focus();
+  }
+  scrollDown();
+}
+
+/* ============================================================
+   Input handlers
+   ============================================================ */
+$("#q").addEventListener("keydown", e => {
+  if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); }
+});
+
+/* ============================================================
+   Batch mode UI
+   ============================================================ */
+let batchMode = false;
+let batchPanelOpen = false;
+
+function lockComposer() {
+  $("#composer").classList.add("locked");
+}
+function unlockComposer() {
+  $("#composer").classList.remove("locked");
+  $("#q").placeholder = "질문을 입력하세요…";
+}
+
+function createBatchBanner() {
+  const banner = document.createElement("div");
+  banner.className = "batch-banner";
+  banner.id = "batchBanner";
+  banner.innerHTML = `
+    <div class="batch-banner-title">⏳ 배치 추론 진행 중</div>
+    <div class="batch-banner-sub">test_chat.json 에 대한 배치 추론이 진행 중입니다.<br>완료 후 실시간 채팅이 가능합니다.</div>
+    <div class="bp-bar"><div class="bp-bar-fill" id="bpBarFill" style="width:0%"></div></div>
+    <div id="bpCount" style="font-size:11px;color:#bf360c;margin-top:4px;">0 / 0</div>
+    <div class="batch-toggle" id="batchToggle" onclick="toggleBatchPanel()">▶ 진행 상황 보기</div>
+    <div class="batch-progress-panel" id="batchPanel"></div>
+  `;
+  chatInner.insertBefore(banner, chatInner.firstChild);
+}
+
+function toggleBatchPanel() {
+  batchPanelOpen = !batchPanelOpen;
+  const panel = $("#batchPanel");
+  const toggle = $("#batchToggle");
+  if (batchPanelOpen) {
+    panel.classList.add("open");
+    toggle.textContent = "▼ 진행 상황 접기";
+  } else {
+    panel.classList.remove("open");
+    toggle.textContent = "▶ 진행 상황 보기";
+  }
+}
+
+function showBatchDone() {
+  const banner = $("#batchBanner");
+  if (banner) banner.remove();
+  const done = document.createElement("div");
+  done.className = "batch-done-banner";
+  done.textContent = "✅ 배치 추론 완료! 이제 실시간 채팅이 가능합니다.";
+  chatInner.insertBefore(done, chatInner.firstChild);
+  setTimeout(() => { done.style.opacity = "0.5"; }, 5000);
+}
+
+async function startBatchMonitor() {
+  lockComposer();
+  createBatchBanner();
+
+  // SSE로 배치 진행 상황 구독
+  try {
+    const evtSource = new EventSource(API_BASE + "/api/v1/batch/stream");
+    evtSource.onmessage = function(e) {
+      let ev;
+      try { ev = JSON.parse(e.data); } catch { return; }
+
+      if (ev.type === "snapshot" || ev.type === "start") {
+        const fill = $("#bpBarFill");
+        const count = $("#bpCount");
+        if (fill && ev.total > 0) fill.style.width = ((ev.done_count||0)/ev.total*100)+"%";
+        if (count) count.textContent = `${ev.done_count||0} / ${ev.total||0}`;
+        // 스냅샷의 기존 결과 표시
+        if (ev.results) {
+          const panel = $("#batchPanel");
+          if (panel) {
+            ev.results.forEach(r => {
+              const item = document.createElement("div");
+              item.className = "bp-item";
+              item.innerHTML = `<span class="bp-idx">#${(r.idx||0)+1}</span><span class="bp-q">${esc(r.user||"")}</span><span class="bp-a">${esc((r.model||"").slice(0,60))}…</span>`;
+              panel.appendChild(item);
+            });
+          }
+        }
+      }
+
+      if (ev.type === "progress_end") {
+        const fill = $("#bpBarFill");
+        const count = $("#bpCount");
+        if (fill && ev.total > 0) fill.style.width = ((ev.idx+1)/ev.total*100)+"%";
+        if (count) count.textContent = `${ev.idx+1} / ${ev.total}`;
+        const panel = $("#batchPanel");
+        if (panel) {
+          const item = document.createElement("div");
+          item.className = "bp-item";
+          item.innerHTML = `<span class="bp-idx">#${ev.idx+1}</span><span class="bp-q">${esc(ev.user||"")}</span><span class="bp-a">${esc((ev.model||"").slice(0,60))}…</span>`;
+          panel.appendChild(item);
+          if (batchPanelOpen) panel.scrollTop = panel.scrollHeight;
+        }
+      }
+
+      if (ev.type === "done" || ev.type === "error") {
+        evtSource.close();
+        batchMode = false;
+        showBatchDone();
+        unlockComposer();
+      }
+    };
+    evtSource.onerror = function() {
+      // 연결 끊기면 상태 폴링으로 폴백
+      evtSource.close();
+      pollBatchStatus();
+    };
+  } catch {
+    pollBatchStatus();
+  }
+}
+
+async function pollBatchStatus() {
+  const check = async () => {
+    try {
+      const r = await fetch(API_BASE + "/api/v1/batch/status");
+      const d = await r.json();
+      if (d.status === "done" || d.status === "error") {
+        batchMode = false;
+        showBatchDone();
+        unlockComposer();
+        return true;
+      }
+      const fill = $("#bpBarFill");
+      const count = $("#bpCount");
+      if (fill && d.total > 0) fill.style.width = (d.done_count/d.total*100)+"%";
+      if (count) count.textContent = `${d.done_count} / ${d.total}`;
+    } catch {}
+    return false;
+  };
+  const interval = setInterval(async () => {
+    if (await check()) clearInterval(interval);
+  }, 3000);
+}
+
+/* ============================================================
+   Init — 모드 확인 후 분기
+   ============================================================ */
+async function init() {
+  await connect();
+  // 서버에 모드 확인
+  try {
+    const r = await fetch(API_BASE + "/api/v1/mode");
+    const d = await r.json();
+    if (d.batch_mode && d.batch_status !== "done") {
+      batchMode = true;
+      startBatchMonitor();
+    }
+  } catch {}
+}
+init();
+
+
+
+</script>
+</body>
+</html>

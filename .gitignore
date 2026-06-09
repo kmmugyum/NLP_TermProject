@@ -1,0 +1,27 @@
+# === 대용량 벡터/청크 (zip 별도 배포, GitHub에 넣지 않음) ===
+src/cnubot/storage/*.bin
+src/cnubot/storage/*.bin.meta.json
+src/cnubot/storage/_academic_chunks.json
+src/cnubot/storage/_academic_clean.json
+src/cnubot/storage/_academic_refined.json
+src/cnubot/storage/_attachments_extracted.json
+
+# === 빌드/배포 아티팩트 ===
+*.zip
+*.mp4
+*.pptx
+
+# === 파이썬 ===
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# === 런타임 산출물 ===
+crawl.log
+outputs/*.json
+.omc/state/
+
+# === 모델 캐시 (Drive/로컬, repo 무관) ===
+hf_cache/
+model/
