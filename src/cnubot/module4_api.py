@@ -1094,12 +1094,21 @@ class Orchestrator:
                          references=pn[1], refined=refined)
             return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=REFUSAL_MSG, refined=refined)
         if ir.intent == Intent.TEMPORAL_NOTICE and not _is_reg:
-            pn = self._plan_notice(q, require_match=False)
-            if pn:
-                return P(Intent.TEMPORAL_NOTICE, prompt=pn[0], max_tokens=400,
-                         references=pn[1], refined=refined)
-            return P(Intent.TEMPORAL_NOTICE, is_fallback=True,
-                     static=NOTICE_MSG, refined=refined)
+            # LLM이 '인공지능학부 미적분학 몇 학년' 같은 학사 질의를 공지로 오판해도,
+            # 명시적 학사 신호(교과목/학년/학점/졸업/교과과정 등)가 있으면 학사로 교정.
+            # '공지/게시글/최근/공고' 같은 실시간 공지 신호가 함께면 교정 안 함(진짜 공지 보존).
+            if (_re.search(r"몇\s*학년|학년\s*과목|교과목|교과과정|커리큘럼|이수학점|"
+                           r"졸업\s*요건|졸업\s*학점|선수과목|학점\s*인정", query)
+                    # '공지'는 '인공지능'의 '공지' 오매칭 방지(negative lookbehind).
+                    and not _re.search(r"(?<!인)공지|게시|최근|새\s*글|소식|공고|알림", query)):
+                pass  # 학사 경로로 흘려보냄(아래 academic 처리)
+            else:
+                pn = self._plan_notice(q, require_match=False)
+                if pn:
+                    return P(Intent.TEMPORAL_NOTICE, prompt=pn[0], max_tokens=400,
+                             references=pn[1], refined=refined)
+                return P(Intent.TEMPORAL_NOTICE, is_fallback=True,
+                         static=NOTICE_MSG, refined=refined)
         if ir.intent == Intent.CAFETERIA:
             is_1hall = ("1학" in query or "제1" in query)
             has_time = bool(_re.search(
