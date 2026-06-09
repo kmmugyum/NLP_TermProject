@@ -55,6 +55,19 @@ else
 fi
 
 # ============================================================
+# GitHub 데이터 모드 (Colab 전용) — CNU 라이브 fetch 차단(504 회피)
+#   Colab(미국 IP)은 *.cnu.ac.kr 접속 시 504 → 한국 연구서버가 크롤해 GitHub 에
+#   올린 학식·공지 JSON 을 raw 로 읽는다. 라이브 크롤 0, 데이터 없으면 '정보 없음'.
+#   Colab 감지 = Drive 마운트. 연구서버/로컬에선 미설정 → 기존 라이브 크롤 유지.
+# ============================================================
+if [ -d "/content/drive/MyDrive" ]; then
+    export CNU_DATA_REPO="https://raw.githubusercontent.com/kmmugyum/NLP_TermProject/main"
+    echo "[github-data] GitHub 데이터 모드 ON: $CNU_DATA_REPO (CNU 라이브 fetch 차단)"
+else
+    echo "[github-data] GitHub 모드 OFF (Colab 아님) — 라이브 크롤 사용"
+fi
+
+# ============================================================
 # 서버 실행 (배치 모드 ON)
 # ============================================================
 export CNU_BATCH_MODE=1
