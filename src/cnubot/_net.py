@@ -154,9 +154,17 @@ _orig_get = httpx.get
 _orig_head = httpx.head
 
 
+# GitHub 데이터 모드(Colab): CNU 라이브 fetch 전면 차단(504 회피).
+# CNU_DATA_REPO 설정 시 *.cnu.ac.kr 요청은 즉시 실패 처리 → 라이브 크롤 0.
+_GITHUB_MODE = bool(os.environ.get("CNU_DATA_REPO"))
+
+
 def get(url, *, params=None, headers=None, timeout=None,
         verify=None, follow_redirects=None, **kw):
     """httpx.get drop-in. 캐시 hit 시 즉시 반환, miss 시 3-stage retry."""
+    if _GITHUB_MODE and isinstance(url, str) and ".cnu.ac.kr" in url:
+        # 라이브 크롤 금지: GitHub raw 로 받은 데이터만 사용. 즉시 실패 → 호출자가 fallback.
+        raise httpx.ConnectError("CNU live fetch disabled (GitHub data mode)")
     if _DISABLED:
         return _orig_get(
             url, params=params, headers=headers,

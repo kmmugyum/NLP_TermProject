@@ -366,28 +366,55 @@ class CafeteriaRetriever:
                 self._cached = WeeklyMealCache(**raw)
         except Exception:
             self._cached = None
-        # 시작 시 캐시가 없거나 stale이면 즉시 라이브 크롤
+        # 시작 시 캐시가 없거나 stale이면 갱신 시도
         c = self._cached
         now = datetime.now()
         needs_refresh = (
             c is None or not c.days
             or (now - c.timestamp) > timedelta(days=self.stale_after_days)
         )
-        if needs_refresh:
-            try:
-                from .meal_crawler import MEAL_URL, crawl_week
-                print("[meal] 시작 시 식단 라이브 크롤 중...")
-                wc = crawl_week(MEAL_URL)
-                if wc.days:
-                    self.update_cache_directly(wc)
-                    try:
-                        Path(self.cache_path).write_text(
-                            wc.model_dump_json(), encoding="utf-8")
-                    except Exception:
-                        pass
-                    print(f"[meal] 라이브 크롤 완료: {len(wc.days)}일치 수집")
-            except Exception as e:
-                print(f"[meal] 시작 시 라이브 크롤 실패: {e}")
+        if not needs_refresh:
+            return
+        # GitHub 모드(Colab): raw 만 사용. 성공/실패 무관 라이브 크롤 금지.
+        from . import github_data
+        if github_data.is_enabled():
+            self._load_meal_from_github()  # 실패해도 라이브로 안 감 → 없으면 fallback
+            return
+        # 한국 IP 환경: 라이브 크롤
+        try:
+            from .meal_crawler import MEAL_URL, crawl_week
+            print("[meal] 시작 시 식단 라이브 크롤 중...")
+            wc = crawl_week(MEAL_URL)
+            if wc.days:
+                self.update_cache_directly(wc)
+                try:
+                    Path(self.cache_path).write_text(
+                        wc.model_dump_json(), encoding="utf-8")
+                except Exception:
+                    pass
+                print(f"[meal] 라이브 크롤 완료: {len(wc.days)}일치 수집")
+        except Exception as e:
+            print(f"[meal] 시작 시 라이브 크롤 실패: {e}")
+
+    def _load_meal_from_github(self) -> bool:
+        """GitHub raw 에서 학식 캐시 로드. 성공 시 True(라이브 크롤 생략).
+        CNU_DATA_REPO 미설정이면 즉시 False(하위호환)."""
+        try:
+            from . import github_data
+            if not github_data.is_enabled():
+                return False
+            data = github_data.fetch_json("meal_cache.json")
+            if not data:
+                return False
+            wc = WeeklyMealCache(**data)
+            if not wc.days:
+                return False
+            self.update_cache_directly(wc)
+            print(f"[meal] GitHub 데이터 로드: {len(wc.days)}일치")
+            return True
+        except Exception as e:
+            print(f"[meal] GitHub 로드 실패 → {type(e).__name__}: {e}")
+            return False
 
     def _auto_refresh_if_needed(self, now: datetime, target_iso: str) -> None:
         """캐시가 비었거나 stale이거나 target 날짜 미보유 시 자동 크롤·핫스왑.
@@ -410,6 +437,12 @@ class CafeteriaRetriever:
                     (now - self._last_refresh_attempt) < timedelta(minutes=3):
                 return
             self._last_refresh_attempt = now
+
+        # GitHub 모드(Colab): raw 만 사용, 라이브 크롤 금지. 없으면 그대로 fallback.
+        from . import github_data
+        if github_data.is_enabled():
+            self._load_meal_from_github()
+            return
 
         got_target = False
         try:

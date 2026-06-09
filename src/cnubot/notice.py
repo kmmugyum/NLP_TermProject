@@ -50,6 +50,10 @@ def fetch_page_text(url: str, max_chars: int = 2000, timeout: float = 6.0) -> st
     가드: 비HTML·에러상태·로그인/홈 리다이렉트·빈셸·초대형·캐시(P1~P10)."""
     if not url or not url.startswith("http"):
         return None
+    # GitHub 모드(Colab): CNU 페이지 라이브 보강 fetch 금지(504 회피). 정적 코퍼스만 사용.
+    from . import github_data
+    if github_data.is_enabled() and ".cnu.ac.kr" in url:
+        return None
     if url.lower().rsplit("?", 1)[0].endswith(_NONHTML_EXT):  # P4: 비HTML 링크
         return None
     import time as _t
@@ -168,7 +172,11 @@ class NoticeService:
         return items
 
     def fetch_body(self, url: str, max_chars: int = 1400) -> str | None:
-        """게시글 본문 추출(CNU CMS는 div.fr-view = Froala 본문). 실패 시 None."""
+        """게시글 본문 추출(CNU CMS는 div.fr-view = Froala 본문). 실패 시 None.
+        GitHub 모드(Colab): 본문 라이브 fetch 금지 → None(제목만으로 답변)."""
+        from . import github_data
+        if github_data.is_enabled():
+            return None
         try:
             r = httpx.get(url, headers=_HEAD, timeout=self.timeout,
                           verify=False, follow_redirects=True)
@@ -207,9 +215,15 @@ class NoticeService:
         return [it for _, it in scored[:limit]]
 
     def collect(self, query: str, per_board: int = 12) -> tuple[str, list[NoticeItem]]:
-        """질의의 학과 보드(+형제)를 라이브 fetch → 최신순 병합."""
+        """질의의 학과 공지를 수집 → 최신순 병합.
+        GitHub 모드(Colab): raw 데이터만 사용, 라이브 크롤 금지(없으면 빈 결과)."""
         depts = self.resolve_depts(query)
         label = " / ".join(d["name"] for d in depts) or "충남대"
+
+        from . import github_data
+        if github_data.is_enabled():
+            return label, self._collect_from_github(depts, label)
+
         seen, items = set(), []
         for d in depts:
             for b in self._sibling_boards(d["board"]):
@@ -222,3 +236,28 @@ class NoticeService:
         # 최신순: article_no 내림차순 (없으면 뒤로)
         items.sort(key=lambda x: x.article_no or -1, reverse=True)
         return label, items
+
+    def _collect_from_github(self, depts: list[dict], label: str) -> list[NoticeItem]:
+        """GitHub raw notice_cache.json 에서 resolve된 학과 공지 추출. 없으면 빈 리스트."""
+        from . import github_data
+        data = github_data.fetch_json("notice_cache.json")
+        if not data:
+            return []
+        seen, items = set(), []
+        dept_names = {d["name"] for d in depts}
+        for dept_label, raw_items in data.items():
+            # 학과명 부분일치(크롤 시 label 과 resolve label 이 다를 수 있음)
+            if not any(n in dept_label or dept_label in n for n in dept_names):
+                continue
+            for raw in raw_items:
+                try:
+                    it = NoticeItem(**raw)
+                except Exception:
+                    continue
+                key = it.article_no or it.title
+                if key in seen:
+                    continue
+                seen.add(key)
+                items.append(it)
+        items.sort(key=lambda x: x.article_no or -1, reverse=True)
+        return items

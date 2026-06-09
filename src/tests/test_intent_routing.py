@@ -104,5 +104,28 @@ class TestIntentRouting(unittest.TestCase):
         self.assertIntent("제3학생회관에서 전과 규정", Intent.ACADEMIC)
 
 
+class TestGitHubDataMode(unittest.TestCase):
+    """GitHub 데이터 모드: Colab 에서 CNU 라이브 fetch 전면 차단."""
+
+    def test_cnu_fetch_blocked_when_github_mode(self):
+        # CNU_DATA_REPO 설정 시 *.cnu.ac.kr 요청은 즉시 ConnectError (78초 대기 X)
+        import importlib
+        os.environ["CNU_DATA_REPO"] = "https://raw.githubusercontent.com/x/y/main"
+        try:
+            import cnubot._net as net
+            importlib.reload(net)
+            self.assertTrue(net._GITHUB_MODE)
+            import httpx
+            import time as _t
+            t0 = _t.time()
+            with self.assertRaises(httpx.ConnectError):
+                net.get("https://computer.cnu.ac.kr/computer/notice/bachelor.do")
+            self.assertLess(_t.time() - t0, 1.0, "차단이 즉시여야 함(라이브 대기 없음)")
+        finally:
+            os.environ.pop("CNU_DATA_REPO", None)
+            import cnubot._net as net
+            importlib.reload(net)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
