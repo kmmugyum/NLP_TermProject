@@ -914,7 +914,13 @@ class Orchestrator:
              "학사지원과 (학적)",
              "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05030201.html"),
         )
+        # '학생회관'은 식사 맥락(학식/메뉴/끼니)이면 시설 안내가 아니라 학식 질의 →
+        # _STANDALONE_SITES 매칭에서 제외하고 cafeteria 경로로 흘려보낸다.
+        _meal_ctx = bool(_re.search(
+            r"학식|메뉴|식단|점심|저녁|아침|조식|중식|석식|식사|먹", query))
         for kws, label, url in _STANDALONE_SITES:
+            if "학생회관" in kws and _meal_ctx:
+                continue  # 식사 맥락 학생회관 질의 → 시설 안내 스킵
             if any(k in query for k in kws):
                 from .schemas import Reference
                 static = (
@@ -1134,7 +1140,7 @@ class Orchestrator:
                 "학년-학기별 주요 교과목을 정리해 답하세요. 표의 교과목명·학점을 그대로 쓰고 "
                 "지어내지 마세요. 학부 과정이며 대학원(고급/특론/논문연구) 과목은 제외하세요.\n\n"
                 f"[학부 교과과정]\n{page_text}\n\n[질문]\n{query}")
-            return P(Intent.ACADEMIC, max_tokens=768, refined=refined, prompt=prompt,
+            return P(Intent.ACADEMIC, max_tokens=512, refined=refined, prompt=prompt,
                      references=[Reference(title="학부 교과과정", source_url=page_url)])
         # 규정/요건 질의면 학사요람 boost된 청크 + 학부 교과과정 페이지를 모두 grounding으로 결합.
         self._progress("학사 인덱스 검색 중…")
@@ -1203,7 +1209,7 @@ class Orchestrator:
         for ttl, url in adds:
             if url and not any(url in (r.source_url or "") for r in refs):
                 refs.append(Reference(title=ttl, source_url=url))
-        return P(Intent.ACADEMIC, max_tokens=768, refined=refined,
+        return P(Intent.ACADEMIC, max_tokens=512, refined=refined,
                  prompt=build_academic_prompt(q, rr_chunks, extra), references=refs)
 
     def handle(self, query: str) -> CNUBotResponse:

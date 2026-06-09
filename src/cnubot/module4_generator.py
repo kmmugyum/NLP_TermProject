@@ -49,14 +49,23 @@ def _scrub_cumulative_table(content: str) -> str:
 
 
 def build_academic_prompt(query: str, chunks: list[RetrievedChunk],
-                          extra_context: str | None = None) -> str:
-    ctx = "\n\n".join(
-        f"[자료 {i + 1}] 제목: {c.title or '-'} | 출처: {c.source_url or '-'}\n"
-        f"본문: {_scrub_cumulative_table(c.content or '')}"
-        for i, c in enumerate(chunks)
-    )
-    if extra_context:  # adaptive: 상위 출처 페이지 본문을 추가로 읽어 더 깊게 답변
-        ctx += f"\n\n[상위 출처 페이지 전문]\n{extra_context}"
+                          extra_context: str | None = None,
+                          max_chunks: int = 5, max_chunk_chars: int = 1200,
+                          max_total_chars: int = 7000) -> str:
+    # 프롬프트 슬림화: 청크 수·길이 상한으로 7B 모델 속도·정확도 확보.
+    # (긴 컨텍스트는 생성 지연 + 핵심 누락 환각의 주원인)
+    ctx_parts, total = [], 0
+    for i, c in enumerate(chunks[:max_chunks]):
+        body = _scrub_cumulative_table(c.content or "")[:max_chunk_chars]
+        part = (f"[자료 {i + 1}] 제목: {c.title or '-'} | 출처: {c.source_url or '-'}\n"
+                f"본문: {body}")
+        if total + len(part) > max_total_chars:
+            break
+        ctx_parts.append(part)
+        total += len(part)
+    ctx = "\n\n".join(ctx_parts)
+    if extra_context:  # adaptive: 상위 출처 페이지 본문(있으면 길이 제한해 추가)
+        ctx += f"\n\n[상위 출처 페이지 전문]\n{extra_context[:2000]}"
     return (
         "당신은 충남대학교 학사·생활 안내 봇입니다. 아래 [참고 자료]에 근거해서만 답하세요.\n"
         "자료에 없는 내용은 지어내지 말고 '관련 정보를 찾을 수 없습니다'라고 답하세요.\n"
