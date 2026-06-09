@@ -68,7 +68,8 @@ _HALL_CANONICAL_RX = re.compile(r"제[1-4]학생회관|생활과학대학")
 # 이 명사가 있고 학사 규정 키워드가 없으면 temporal_notice 확정(LLM의 academic 오분류 우회).
 # recency('최신/최근') 동반은 불필요 — '학과 공지', '공지 알려줘'처럼 시점어 없는
 # 공지 조회도 게시판 조회이므로 temporal_notice 가 맞다(학사 키워드가 academic 가드).
-_NOTICE_NOUN_RX = re.compile(r"공지|공지사항|게시판|게시글|게시물|새\s*글|소식|알림")
+# '공지'는 '인공지능'의 '공지'와 오매칭되므로 앞에 '인'이 오면 제외(negative lookbehind).
+_NOTICE_NOUN_RX = re.compile(r"(?<!인)공지|게시판|게시글|게시물|새\s*글|소식|알림")
 
 
 def normalize_synonyms(query: str) -> str:

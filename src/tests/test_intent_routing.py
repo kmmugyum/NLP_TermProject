@@ -103,6 +103,16 @@ class TestIntentRouting(unittest.TestCase):
         # '제3학생회관'이 있어도 '전과 규정'이 함께면 학사(오버라이드 제외)
         self.assertIntent("제3학생회관에서 전과 규정", Intent.ACADEMIC)
 
+    # --- '인공지능'의 '공지' 오매칭 회귀: 학사 질의가 공지로 새면 안 됨 ---
+    def test_ai_not_misrouted_to_notice(self):
+        # '인공지능'에 '공지'가 들어있어 공지 오버라이드로 새던 버그.
+        # llm=None 이면 academic fallback. 핵심은 temporal_notice 가 아니어야 함.
+        for q in ["컴퓨터인공지능학부 미적분학은 몇 학년 과목이야",
+                  "인공지능학과 졸업요건", "인공지능학과 1학년 교과목"]:
+            self.assertNotEqual(self.router.get_intent(q).intent,
+                                Intent.TEMPORAL_NOTICE,
+                                f"{q!r} 가 공지로 오분류됨('인공지능'의 '공지' 오매칭)")
+
 
 class TestGitHubDataMode(unittest.TestCase):
     """GitHub 데이터 모드: Colab 에서 CNU 라이브 fetch 전면 차단."""
