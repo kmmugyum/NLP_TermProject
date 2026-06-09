@@ -60,9 +60,10 @@ def _build_orch():
     router = CNUHybridIntentRouter(llm=HFIntentLLM(backend=llm))
     foodcourt = render_foodcourt(FOODCOURT_PATH) if Path(FOODCOURT_PATH).exists() else None
     notice = NoticeService() if (_PKG_ROOT / "cnubot" / "data" / "dept_registry.json").exists() else None
+    from cnubot.module4_api import _now  # KST 시각(학식 오늘/내일 날짜 하루밀림 방지)
     return Orchestrator(
         router, academic, cafeteria, CNUGenerator(llm),
-        foodcourt_text=foodcourt, notice=notice,
+        foodcourt_text=foodcourt, notice=notice, now_fn=_now,
     )
 
 

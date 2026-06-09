@@ -1886,7 +1886,7 @@ def build_real_orchestrator() -> Orchestrator:
 
     notice = NoticeService() if (_PKG / "data" / "dept_registry.json").exists() else None
     return Orchestrator(router, academic, cafeteria, CNUGenerator(llm),
-                        foodcourt_text=foodcourt, notice=notice)
+                        foodcourt_text=foodcourt, notice=notice, now_fn=_now)
 
 
 # ===== 게이트웨이: 세션 + 추론 워커(서브프로세스) 라이프사이클 =====
@@ -1905,8 +1905,13 @@ _sessions: dict[str, datetime] = {}
 _sess_lock = threading.Lock()
 
 
+_KST = timezone(timedelta(hours=9))
+
+
 def _now() -> datetime:
-    return datetime.now(timezone.utc)
+    # 학식 '오늘/내일' 날짜 계산은 한국 시간 기준. Colab/서버가 UTC여도 KST로 고정
+    # (UTC 사용 시 한국 새벽~오전엔 날짜가 하루 밀려 '내일'이 '오늘'로 나오던 버그).
+    return datetime.now(_KST)
 
 
 class _WorkerManager:
