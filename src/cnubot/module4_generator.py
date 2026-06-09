@@ -120,10 +120,30 @@ def build_cafeteria_table(menus: list[DailyMenu]) -> str:
     return "\n".join(rows)
 
 
-def build_cafeteria_header(menus: list[DailyMenu], date_label: str = "") -> str:
-    """질의 날짜의 확정 식단표(코드 생성). LLM 을 거치지 않으므로 환각/잘림/깨짐이 원천 불가능."""
+# 질의의 끼니 키워드 → meal_type 매핑. 여러 표현을 표준 끼니로.
+_MEAL_TYPE_KEYWORDS = {
+    "조식": "조식", "아침": "조식", "아침밥": "조식",
+    "중식": "중식", "점심": "중식", "점심밥": "중식",
+    "석식": "석식", "저녁": "석식", "저녁밥": "석식",
+}
+
+
+def filter_menus_by_meal_type(menus: list[DailyMenu], query: str) -> list[DailyMenu]:
+    """질의에 끼니 키워드(점심/석식 등)가 있으면 그 끼니만 남긴다. 없으면 전체 유지."""
+    wanted = {mt for kw, mt in _MEAL_TYPE_KEYWORDS.items() if kw in (query or "")}
+    if not wanted:
+        return menus
+    filtered = [m for m in menus if m.meal_type in wanted]
+    return filtered or menus  # 해당 끼니가 표에 없으면 전체로 폴백(빈 표 방지)
+
+
+def build_cafeteria_header(menus: list[DailyMenu], date_label: str = "",
+                           query: str = "") -> str:
+    """질의 날짜의 확정 식단표(코드 생성). LLM 을 거치지 않으므로 환각/잘림/깨짐이 원천 불가능.
+    질의에 끼니 키워드가 있으면 그 끼니만 표시(점심→중식, 저녁→석식 등)."""
     when = date_label or "오늘"
-    return f"[{when} 식단표]\n{build_cafeteria_table(menus)}"
+    shown = filter_menus_by_meal_type(menus, query)
+    return f"[{when} 식단표]\n{build_cafeteria_table(shown)}"
 
 
 # '가장 비싼/싼', '추천', 끼니/식당 한정 등 표를 그대로 보여주는 것 이상으로

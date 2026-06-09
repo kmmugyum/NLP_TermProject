@@ -374,6 +374,26 @@ body {
 .thinking-dots span:nth-child(3) { animation-delay: 0.32s; }
 
 /* ---- References ---- */
+.meal-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 13px;
+  table-layout: auto;
+}
+.meal-table th, .meal-table td {
+  border: 1px solid var(--border-light);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+}
+.meal-table th {
+  background: var(--border-light);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.meal-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.02); }
 .refs-section {
   margin-top: 10px;
   padding-top: 10px;
@@ -599,6 +619,33 @@ function postprocess(text, query) {
   return text;
 }
 
+/* 마크다운 표(| a | b |) → HTML <table>. 표가 아닌 줄은 esc + 줄바꿈.
+   외부 라이브러리 없이 식단표 형식만 처리(깔끔한 렌더링). */
+function renderBodyWithTables(text) {
+  const lines = (text || "").split("\n");
+  let html = "", i = 0;
+  const isRow = s => /^\s*\|.*\|\s*$/.test(s);
+  const isSep = s => /^\s*\|[\s:|-]+\|\s*$/.test(s);  // |---|---| 구분행
+  const cells = s => s.trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim());
+  while (i < lines.length) {
+    if (isRow(lines[i]) && i + 1 < lines.length && isSep(lines[i + 1])) {
+      const head = cells(lines[i]); i += 2;
+      let rows = "";
+      while (i < lines.length && isRow(lines[i]) && !isSep(lines[i])) {
+        rows += "<tr>" + cells(lines[i]).map(c => `<td>${esc(c)}</td>`).join("") + "</tr>";
+        i++;
+      }
+      html += '<table class="meal-table"><thead><tr>'
+            + head.map(c => `<th>${esc(c)}</th>`).join("")
+            + "</tr></thead><tbody>" + rows + "</tbody></table>";
+    } else {
+      html += esc(lines[i]) + "<br>";
+      i++;
+    }
+  }
+  return html;
+}
+
 /* ============================================================
    Render final bubble
    ============================================================ */
@@ -606,7 +653,7 @@ function renderFinal(el, query, intent, fallback, body, refs) {
   const i = intent || "out_of_scope";
   let h = `<div class="intent-bar"><span class="intent-badge b-${i}">${INTENT_KR[i]||i}</span>`
          + (fallback ? '<span class="fallback-label">정보 없음/거부</span>' : '') + `</div>`
-         + '<span class="body-text">' + esc(postprocess(body, query)) + '</span>';
+         + '<span class="body-text">' + renderBodyWithTables(postprocess(body, query)) + '</span>';
   if (refs && refs.length) {
     h += '<div class="refs-section"><div class="refs-label">출처</div>'
        + refs.map(r => `<a class="ref-link" href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.title||r.source_url)}</a>`).join("")

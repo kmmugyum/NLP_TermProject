@@ -1119,7 +1119,7 @@ class Orchestrator:
             # 토큰 잘림·멀티바이트 깨짐이 원천 불가능. 분석 질의일 때만 LLM 보조를 덧붙인다.
             from .module4_generator import (
                 build_cafeteria_header, build_cafeteria_prompt, is_meal_analysis_query)
-            table = build_cafeteria_header(rr.menus, rr.meal_date_label or "")
+            table = build_cafeteria_header(rr.menus, rr.meal_date_label or "", query)
             if not is_meal_analysis_query(query):
                 # 단순 조회('내일/오늘 메뉴') → 표만 static 반환(LLM 미사용 = 환각 불가).
                 return P(Intent.CAFETERIA, static=table, refined=refined)
