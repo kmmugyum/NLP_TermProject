@@ -1911,7 +1911,8 @@ _KST = timezone(timedelta(hours=9))
 def _now() -> datetime:
     # 학식 '오늘/내일' 날짜 계산은 한국 시간 기준. Colab/서버가 UTC여도 KST로 고정
     # (UTC 사용 시 한국 새벽~오전엔 날짜가 하루 밀려 '내일'이 '오늘'로 나오던 버그).
-    return datetime.now(_KST)
+    # naive 로 반환(tzinfo 제거): 캐시 timestamp 등 기존 naive datetime 과 빼기 호환.
+    return datetime.now(_KST).replace(tzinfo=None)
 
 
 class _WorkerManager:
