@@ -64,6 +64,20 @@ fi
 if [ -d "/content/drive/MyDrive" ]; then
     export CNU_DATA_REPO="https://raw.githubusercontent.com/kmmugyum/NLP_TermProject/main"
     echo "[github-data] GitHub 데이터 모드 ON: $CNU_DATA_REPO (CNU 라이브 fetch 차단)"
+    # 서버 시작 시 최신 학식·공지 JSON 을 github_data 캐시 디렉토리에 미리 받아둠
+    # → 첫 질의 시 fetch 지연 제거. retriever 는 런타임에 이 캐시를 읽는다(CNU_DATA_LOCAL).
+    # 실패해도 무관: github_data 가 런타임에 다시 raw fetch 시도(이중 안전망).
+    export CNU_DATA_LOCAL="$SCRIPT_DIR/.cnu_data_cache"
+    mkdir -p "$CNU_DATA_LOCAL"
+    for f in meal_cache notice_cache; do
+        if curl -fsSL "$CNU_DATA_REPO/data/$f.json" -o "$CNU_DATA_LOCAL/$f.json.tmp" 2>/dev/null; then
+            mv "$CNU_DATA_LOCAL/$f.json.tmp" "$CNU_DATA_LOCAL/$f.json"
+            echo "[github-data] $f.json 사전 캐시 완료"
+        else
+            rm -f "$CNU_DATA_LOCAL/$f.json.tmp"
+            echo "[github-data] $f.json 사전 캐시 실패 — 런타임에 재시도됨"
+        fi
+    done
 else
     echo "[github-data] GitHub 모드 OFF (Colab 아님) — 라이브 크롤 사용"
 fi
