@@ -12,9 +12,18 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR/src"
 mkdir -p "$SCRIPT_DIR/outputs"
 
+# ---- 실행 로깅: 모든 출력을 화면 + outputs/run_chatbot.log 에 동시 기록하고,
+#      각 단계 시작 시 '▶ STEP n | ...' 배너로 지금 무엇을 실행 중인지 보여준다. ----
+_RUN_LOG="$SCRIPT_DIR/outputs/run_chatbot.log"
+exec > >(tee -a "$_RUN_LOG") 2>&1
+_STEP=0
+_log() { _STEP=$((_STEP+1)); printf '\n[%s] ▶ STEP %s | %s\n' "$(date +%H:%M:%S)" "$_STEP" "$*"; }
+_log "chatbot.sh 시작 (PID $$ · 로그: $_RUN_LOG)"
+
 # ============================================================
 # 의존성 자동 셋업 (Colab Free / 로컬 양쪽 모두 안전)
 # ============================================================
+_log "의존성 확인·설치 (미설치 시 ~3~5분, '.'=진행중)"
 pip install -q -U pip setuptools wheel >/dev/null 2>&1 || true
 pip uninstall -y -q torchao torchcodec >/dev/null 2>&1 || true
 
@@ -99,12 +108,12 @@ fi
 # 서버 실행 (배치 모드 ON)
 # ============================================================
 export CNU_BATCH_MODE=1
-echo "[server] 서버 시작 (배치 모드)..."
+_log "서버 기동 (배치 모드) — uvicorn server:app :8000"
 python -m uvicorn server:app --host 0.0.0.0 --port 8000 &
 SERVER_PID=$!
 
 # 서버 준비 대기 — /health 의 ready:true(모델 로딩 완료)까지 대기.
-echo "[server] 모델 로딩 대기 중... (최대 수 분)"
+_log "모델 로딩 대기 (Qwen2.5-7B 4bit + KURE-v1, 최대 수 분)"
 for i in $(seq 1 600); do
     if curl -s http://localhost:8000/health 2>/dev/null | grep -q '"ready": *true'; then
         echo "[server] 서버 준비 완료 (${i}초) — 모델 로딩 완료"
@@ -135,7 +144,7 @@ fi
 # ============================================================
 # 배치 추론: test_chat.json → chat_output.json
 # ============================================================
-echo "[batch] 배치 추론 시작: data/test_chat.json → outputs/chat_output.json"
+_log "배치 추론 시작: data/test_chat.json → outputs/chat_output.json"
 curl -s -X POST http://localhost:8000/api/v1/batch/start \
      -H "Content-Type: application/json" | python -m json.tool 2>/dev/null || true
 
@@ -149,7 +158,7 @@ while true; do
     sleep 5
 done
 
-echo "[batch] 배치 완료!"
+_log "배치 완료 — chat_output.json 저장됨, 실시간 채팅 대기"
 
 # 배치 모드 해제 → 실시간 채팅 가능
 export CNU_BATCH_MODE=0

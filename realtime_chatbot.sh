@@ -8,9 +8,18 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR/src"
 mkdir -p "$SCRIPT_DIR/outputs"
 
+# ---- 실행 로깅: 모든 출력을 화면 + outputs/run_realtime.log 에 동시 기록하고,
+#      각 단계 시작 시 '▶ STEP n | ...' 배너로 지금 무엇을 실행 중인지 보여준다. ----
+_RUN_LOG="$SCRIPT_DIR/outputs/run_realtime.log"
+exec > >(tee -a "$_RUN_LOG") 2>&1
+_STEP=0
+_log() { _STEP=$((_STEP+1)); printf '\n[%s] ▶ STEP %s | %s\n' "$(date +%H:%M:%S)" "$_STEP" "$*"; }
+_log "realtime_chatbot.sh 시작 (PID $$ · 로그: $_RUN_LOG)"
+
 # ============================================================
 # 의존성 자동 셋업
 # ============================================================
+_log "의존성 확인·설치 (미설치 시 ~3~5분, '.'=진행중)"
 pip install -q -U pip setuptools wheel >/dev/null 2>&1 || true
 pip uninstall -y -q torchao torchcodec >/dev/null 2>&1 || true
 
@@ -108,12 +117,13 @@ echo ""
 # Colab 환경 감지
 if [ -n "${COLAB_RELEASE_TAG:-}" ] || [ -d "/content" ]; then
     echo "[server] Colab 환경 감지됨"
+    _log "서버 기동 (실시간 모드) — uvicorn server:app :8000"
     # 서버를 백그라운드로 실행
     python -m uvicorn server:app --host 0.0.0.0 --port 8000 &
     SERVER_PID=$!
     # 서버 준비 대기 — /health 의 ready:true(모델 로딩 완료)까지 대기.
     # 단순 200이 아니라 ready 값을 확인해야 모델 로딩 중 조기 통과를 막는다.
-    echo "[server] 모델 로딩 대기 중... (최대 수 분)"
+    _log "모델 로딩 대기 (Qwen2.5-7B 4bit + KURE-v1, 최대 수 분)"
     for i in $(seq 1 600); do
         if curl -s http://localhost:8000/health 2>/dev/null | grep -q '"ready": *true'; then
             echo "[server] 서버 준비 완료 (${i}초) — 모델 로딩 완료"
@@ -146,6 +156,7 @@ print(eval_js('google.colab.kernel.proxyPort(8000)'))
     echo ""
     wait $SERVER_PID
 else
+    _log "서버 기동 (실시간 모드, 로컬) — uvicorn server:app :8000"
     echo "[server] Web UI: http://localhost:8000"
     python -m uvicorn server:app --host 0.0.0.0 --port 8000
 fi
