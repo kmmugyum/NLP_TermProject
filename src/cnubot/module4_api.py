@@ -1157,7 +1157,8 @@ class Orchestrator:
         if _SHUTTLE_RE.search(query):
             from .schemas import Reference
             shuttle_url = "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05050501.html"
-            return P(Intent.ACADEMIC, is_fallback=True, refined=query,
+            # is_fallback=False: 정상 안내(학사) 응답이므로 UI '거부' 배지가 붙으면 안 됨.
+            return P(Intent.ACADEMIC, is_fallback=False, refined=query,
                      static=("충남대학교 셔틀버스(통학버스)의 노선·시간표·정류장 등 자세한 정보는 "
                              f"아래 공식 '셔틀버스 안내' 페이지에서 확인해 주세요:\n{shuttle_url}"),
                      references=[Reference(title="셔틀버스 안내", source_url=shuttle_url)])
@@ -1633,9 +1634,23 @@ class Orchestrator:
                 query):
             return None
         self._progress("학사일정 캘린더 확인 중…")
-        from .notice import fetch_page_text
-        url = ("http://plus.cnu.ac.kr/_prog/academic_calendar/"
+        url = ("https://plus.cnu.ac.kr/_prog/academic_calendar/"
                "?site_dvs_cd=kr&menu_dvs_cd=05020101")
+        # GitHub 모드(Colab): 라이브 fetch가 막히므로 사전 크롤된 academic_calendar.json 사용.
+        # 이 JSON 은 (날짜, 이벤트명) 쌍을 보존해 '날짜만 나오고 명칭 없음' 문제를 해결한다.
+        from . import github_data
+        if github_data.is_enabled():
+            cal = github_data.fetch_json("academic_calendar.json")
+            if cal and cal.get("months"):
+                lines = []
+                for mm in cal["months"]:
+                    lines.append(f"[{mm.get('month','')}]")
+                    for it in mm.get("items", []):
+                        d = it.get("date", ""); ev = it.get("event", "")
+                        lines.append(f"- {d} {ev}".rstrip())
+                return "\n".join(lines), url
+            return None
+        from .notice import fetch_page_text
         txt = fetch_page_text(url, max_chars=9000)  # 1~12월 전체 일정 커버
         if not txt:
             return None
