@@ -162,6 +162,17 @@ _COLLEGE_DOMAINS: tuple = (
 _COLLEGE_NOISE = {"국가안보융합학부", "자유전공학부", "대학/학부", "대학·학부", "입학과",
                   "충남대학교 입학과"}
 
+# 학사 신호: 교과목/학년/학점/졸업/커리큘럼 등. 라우터가 OUT_OF_SCOPE/TEMPORAL_NOTICE로
+# 오라우팅해도 이 신호가 있으면 학사 경로로 교정한다(회화체 '~은 몇 학년 과목이야?' 구제).
+_ACADEMIC_SIGNAL_RE = _re.compile(
+    r"몇\s*학년|학년\s*과목|교과목|교과과정|커리큘럼|이수학점|"
+    r"졸업\s*요건|졸업\s*학점|선수과목|학점\s*인정")
+# 실시간 공지 신호: 위 학사 신호와 함께 있으면 교정하지 않는다(진짜 공지 보존).
+# '공지'는 '인공지능'의 '공지' 오매칭 방지(negative lookbehind).
+_NOTICE_SIGNAL_RE = _re.compile(r"(?<!인)공지|게시|최근|새\s*글|소식|공고|알림")
+# 셔틀/스쿨버스/통학버스: 표면형 나열 대신 광역 토큰으로 결정론 라우팅(시간표/노선/배차 등 모두).
+_SHUTTLE_RE = _re.compile(r"셔틀|스쿨버스|통학버스")
+
 _GLUED_LATIN_RE = _re.compile(r"(?<=[가-힣])[A-Za-z]+(?=[가-힣])")
 # 한자(CJK Unified, 호환·확장 일부) + 일본어 가나(히라가나·가타카나·반각 가나) 강제 제거.
 # LogitsProcessor의 토큰단 차단이 일부 도메인에서 누수되는 케이스(예: 학과명 한자 변형)를
@@ -1140,6 +1151,16 @@ class Orchestrator:
             if pn_pre:
                 return P(Intent.TEMPORAL_NOTICE, prompt=pn_pre[0], max_tokens=400,
                          references=pn_pre[1], refined=query)
+        # 셔틀/스쿨버스/통학버스: 5-way 분류의 정식 카테고리(라벨4)지만 라우터엔 독립 intent가
+        # 없어 표면형('시간표' 등)이 조금만 달라도 OOS로 샜다. 광역 토큰으로 결정론 라우팅하여
+        # 거부가 아닌 공식 안내(ACADEMIC)로 응답한다. 상세 배차표는 코퍼스에 없으므로 공식 페이지 안내.
+        if _SHUTTLE_RE.search(query):
+            from .schemas import Reference
+            shuttle_url = "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05050501.html"
+            return P(Intent.ACADEMIC, is_fallback=True, refined=query,
+                     static=("충남대학교 셔틀버스(통학버스)의 노선·시간표·정류장 등 자세한 정보는 "
+                             f"아래 공식 '셔틀버스 안내' 페이지에서 확인해 주세요:\n{shuttle_url}"),
+                     references=[Reference(title="셔틀버스 안내", source_url=shuttle_url)])
         ir = self.router.get_intent(query)
         refined = ir.refined_query
         q = ir.refined_query or query
@@ -1147,7 +1168,11 @@ class Orchestrator:
         # 학사 경로로 강제 전환(공지·refusal 대신 학사 코퍼스 답변).
         from .module3_retriever import is_regulation_query
         _is_reg = is_regulation_query(query)
-        if ir.intent == Intent.OUT_OF_SCOPE and not _is_reg:
+        # 학사 신호(몇 학년/교과목/커리큘럼 등)가 있고 공지 신호가 없으면 학사 질의로 본다.
+        # 라우터가 OUT_OF_SCOPE/TEMPORAL_NOTICE로 오라우팅해도 양쪽 분기에서 동일하게 교정.
+        _looks_academic = _is_reg or (
+            _ACADEMIC_SIGNAL_RE.search(query) and not _NOTICE_SIGNAL_RE.search(query))
+        if ir.intent == Intent.OUT_OF_SCOPE and not _looks_academic:
             pn = self._plan_notice(q, require_match=True)  # 행사명 등 공지 구제
             if pn:
                 return P(Intent.TEMPORAL_NOTICE, prompt=pn[0], max_tokens=400,
@@ -1155,12 +1180,8 @@ class Orchestrator:
             return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=REFUSAL_MSG, refined=refined)
         if ir.intent == Intent.TEMPORAL_NOTICE and not _is_reg:
             # LLM이 '인공지능학부 미적분학 몇 학년' 같은 학사 질의를 공지로 오판해도,
-            # 명시적 학사 신호(교과목/학년/학점/졸업/교과과정 등)가 있으면 학사로 교정.
-            # '공지/게시글/최근/공고' 같은 실시간 공지 신호가 함께면 교정 안 함(진짜 공지 보존).
-            if (_re.search(r"몇\s*학년|학년\s*과목|교과목|교과과정|커리큘럼|이수학점|"
-                           r"졸업\s*요건|졸업\s*학점|선수과목|학점\s*인정", query)
-                    # '공지'는 '인공지능'의 '공지' 오매칭 방지(negative lookbehind).
-                    and not _re.search(r"(?<!인)공지|게시|최근|새\s*글|소식|공고|알림", query)):
+            # 명시적 학사 신호가 있으면 학사로 교정. 공지 신호가 함께면 교정 안 함(진짜 공지 보존).
+            if _ACADEMIC_SIGNAL_RE.search(query) and not _NOTICE_SIGNAL_RE.search(query):
                 pass  # 학사 경로로 흘려보냄(아래 academic 처리)
             else:
                 pn = self._plan_notice(q, require_match=False)
@@ -1299,9 +1320,11 @@ class Orchestrator:
                 answer = p["static_prefix"] + (answer or "")
         else:
             answer = p["static"]
-        suffix = self._url_suffix(query, answer, p["is_fallback"])
-        if suffix:
-            answer = (answer or "").rstrip() + suffix
+        # 명시적 거부문에는 사이트 URL을 덧붙이지 않는다('범위 밖' + 정답 URL 동시 출력 모순 방지).
+        if answer != REFUSAL_MSG:
+            suffix = self._url_suffix(query, answer, p["is_fallback"])
+            if suffix:
+                answer = (answer or "").rstrip() + suffix
         return CNUBotResponse(answer=answer, references=p["references"], intent=p["intent"],
                               is_fallback=p["is_fallback"], refined_query=p["refined"])
 

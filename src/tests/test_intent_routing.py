@@ -114,6 +114,46 @@ class TestIntentRouting(unittest.TestCase):
                                 f"{q!r} 가 공지로 오분류됨('인공지능'의 '공지' 오매칭)")
 
 
+class TestOrchestratorRescueSignals(unittest.TestCase):
+    """_plan 의 OOS/notice→academic 구제 + 셔틀 결정론 라우팅 회귀(정규식 레벨).
+
+    실제 버그: 라이브 LLM 이 '미적분학은 몇 학년 과목이야?'를 out_of_scope 로,
+    '셔틀버스 시간표'를 (셔틀 intent 부재로) out_of_scope 로 흘려 '범위 밖' 거부가 났다.
+    이 구제는 module4_api 의 공유 정규식 상수로 동작하므로, 그 상수만 직접 검증한다
+    (fastapi 미설치 환경에서는 skip — 정규식 자체는 GPU/네트워크 불필요)."""
+
+    def setUp(self):
+        try:
+            from cnubot import module4_api as m
+        except Exception as e:  # fastapi 등 미설치 → 로컬 CI skip
+            self.skipTest(f"module4_api import 불가(의존성): {e}")
+        self.m = m
+
+    def test_academic_signal_rescues_verbose_curriculum(self):
+        # 회화체/축약형 양쪽 모두 학사 신호로 잡혀야 함(OOS·notice 양 분기에서 구제).
+        for q in ["미적분학은 몇 학년 과목이야?", "미적분학 몇학년과목?",
+                  "컴퓨터인공지능학부 미적분학은 몇 학년 과목이야"]:
+            self.assertTrue(self.m._ACADEMIC_SIGNAL_RE.search(q),
+                            f"{q!r} 가 학사 신호로 안 잡힘 → OOS 거부 위험")
+            self.assertFalse(self.m._NOTICE_SIGNAL_RE.search(q),
+                             f"{q!r} 에 공지 신호 오매칭 → 학사 구제가 막힘")
+
+    def test_academic_signal_does_not_overcapture_oos(self):
+        # 진짜 범위 밖 질의는 학사 신호로 잡히면 안 됨(거부 유지).
+        for q in ["성심당 빵 추천해줘", "오늘 날씨 어때?", "오늘 학식 메뉴"]:
+            self.assertFalse(self.m._ACADEMIC_SIGNAL_RE.search(q),
+                             f"{q!r} 가 학사 신호로 오매칭 → 잘못된 학사 라우팅")
+
+    def test_shuttle_deterministic_match(self):
+        # 셔틀류는 표면형(시간표/노선/첫차)이 달라도 광역 토큰으로 모두 잡혀야 함.
+        for q in ["셔틀버스 시간표", "셔틀 노선", "통학버스 첫차", "스쿨버스 운행시간"]:
+            self.assertTrue(self.m._SHUTTLE_RE.search(q),
+                            f"{q!r} 가 셔틀로 안 잡힘 → OOS 거부 위험")
+        for q in ["성심당 빵", "오늘 날씨", "미적분학 몇학년", "오늘 학식"]:
+            self.assertFalse(self.m._SHUTTLE_RE.search(q),
+                             f"{q!r} 가 셔틀로 오매칭")
+
+
 class TestGitHubDataMode(unittest.TestCase):
     """GitHub 데이터 모드: Colab 에서 CNU 라이브 fetch 전면 차단."""
 
