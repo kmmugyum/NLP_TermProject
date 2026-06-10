@@ -46,11 +46,18 @@ def _build_orch():
     from cnubot.module4_generator import HFAnswerLLM
     from cnubot.notice import NoticeService
 
-    # fresh clone 자립 부트스트랩: academic_real.bin 없으면 academic_v2_bin.zip 해제.
+    # 진행 로그: _build_orch 는 첫 호출 시 수 분 걸리는데(모델 다운로드/로딩) 그동안 조용해
+    # '멈춘 것처럼' 보인다. 각 단계를 flush 출력해 진행 상황을 가시화한다.
+    def _olog(msg):
+        print(f"[orch] {msg}", flush=True)
+
+    _olog("① 인덱스 부트스트랩 확인(academic_v2_bin.zip 해제 필요 시)...")
     ensure_academic_index()
 
     device = "cuda:0"
+    _olog("② KURE-v1 임베더 로딩 (cuda:0, 최초 1회 ~2.3GB 다운로드 — 이때 GPU는 아직 0, 다운로드 중)...")
     embedder = KUREEmbedder("nlpai-lab/KURE-v1", device)
+    _olog("③ 학사 인덱스 로딩(FAISS + meta)...")
     if Path(ACADEMIC_INDEX_PATH).exists():
         academic = AcademicRetriever(
             ACADEMIC_INDEX_PATH, ACADEMIC_META_PATH,
@@ -58,9 +65,13 @@ def _build_orch():
         )
     else:
         academic = AcademicRetriever(INDEX_PATH, META_PATH, embedder=embedder, top_k=3)
+    _olog("④ 식단 retriever 초기화(라이브 크롤 안 함)...")
     cafeteria = CafeteriaRetriever(cache_path=MEAL_CACHE_PATH)
+    _olog("⑤ Qwen2.5-7B 4bit 로딩 (최초 1회 다운로드/양자화 수 분 — 끝나면 GPU 메모리 ~5-6GB로 점프)...")
     llm = HFAnswerLLM("Qwen/Qwen2.5-7B-Instruct", device)
+    _olog("⑥ LLM 워밍업...")
     _ = llm.generate("안녕")  # warm-up
+    _olog("⑦ 라우터/공지/편의 구성 후 준비 완료")
     router = CNUHybridIntentRouter(llm=HFIntentLLM(backend=llm))
     foodcourt = render_foodcourt(FOODCOURT_PATH) if Path(FOODCOURT_PATH).exists() else None
     notice = NoticeService() if (_PKG_ROOT / "cnubot" / "data" / "dept_registry.json").exists() else None

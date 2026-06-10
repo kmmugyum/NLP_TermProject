@@ -69,10 +69,10 @@ echo "[deps] OK"
 #   classifier.ipynb / ui_demo.ipynb / realtime_chatbot.sh 와 동일 경로 공유.
 # ============================================================
 if [ -d "/content/drive/MyDrive" ]; then
-    export HF_HOME="/content/drive/MyDrive/hf_cache"
-    export HUGGINGFACE_HUB_CACHE="/content/drive/MyDrive/hf_cache/hub"
+    export HF_HOME="/content/hf_cache"
+    export HUGGINGFACE_HUB_CACHE="/content/hf_cache/hub"
     mkdir -p "$HUGGINGFACE_HUB_CACHE"
-    echo "[hf-cache] Drive 캐시 사용: $HF_HOME (재다운로드 방지)"
+    echo "[hf-cache] 로컬 캐시 사용: $HF_HOME (Drive FUSE 멈춤 회피·빠름. 세션마다 재다운로드)"
 else
     echo "[hf-cache] Drive 미마운트 — 기본 캐시(~/.cache) 사용. 재시작 시 재다운로드 가능."
 fi
