@@ -52,6 +52,12 @@ for f in ['$PKG/chatbot.sh','$PKG/src/classifier.ipynb','$PKG/academic_v2_bin.zi
 
 ## STEP 4 — Colab T4 실행·검증 (실제 출력으로 판정, 추측 금지)
 
+> **실행 순서 무관**: classifier.ipynb·chatbot.sh·realtime_chatbot.sh 중 무엇을 먼저 돌려도 됨.
+> 두 `.sh`의 첫 실행 시 deps 설치(~3~5분)는 **setsid+하트비트**로 처리되어 Colab 터미널이
+> 끊겨도(SIGHUP) 죽지 않고 백그라운드서 완주한다. 혹시 '.' 진행 중 화면이 끊기면 **같은 명령을
+> 다시 실행**하면 됨(이미 설치된 건 건너뛰고 즉시 다음 단계로). 첫 모델 다운로드(Qwen 7B)는
+> Drive 캐시(`hf_cache`)에 받혀 재실행 시 재다운로드 없음.
+
 ### (A) 에러 없이 동작
 1. **classifier.ipynb** 셀 순서 실행 → Cell 0(Drive마운트·zip해제·deps설치, 첫 실행은
    Qwen 7B 다운로드로 수 분) → `outputs/cls_output.json` 생성 + 최소합격선 셀 ✅

@@ -14,18 +14,33 @@ mkdir -p "$SCRIPT_DIR/outputs"
 pip install -q -U pip setuptools wheel >/dev/null 2>&1 || true
 pip uninstall -y -q torchao torchcodec >/dev/null 2>&1 || true
 
+# Colab 터미널은 출력 없는 긴 작업에서 연결을 끊고(→SIGHUP) foreground pip 설치를 중단시킨다
+# (증상: 설치 중 '[disconnected]' 후 멈춤). 회피: setsid 로 터미널과 분리해 SIGHUP 에 면역시키고,
+# 5초마다 '.' 하트비트를 찍어 idle 끊김을 막는다. 설령 터미널이 끊겨도 설치는 백그라운드에서
+# 완주하므로, 같은 명령을 다시 실행하면 import 체크를 통과해 즉시 다음 단계로 넘어간다.
+# → chatbot.sh / realtime_chatbot.sh 중 무엇을 먼저 돌리든 순서 무관하게 안전.
+_CNU_PIP_LOG=/tmp/cnu_pip.log
+_pip_bg() {  # 인자: pip 서브커맨드 전체. 진행 '.' 표시, 실패 시 로그 tail.
+    ( setsid pip "$@" ) >"$_CNU_PIP_LOG" 2>&1 &
+    local pid=$!
+    while kill -0 "$pid" 2>/dev/null; do printf '.'; sleep 5; done
+    wait "$pid"; local rc=$?
+    printf '\n'
+    [ "$rc" -ne 0 ] && { echo "[deps] pip 실패(로그 마지막 25줄):"; tail -n 25 "$_CNU_PIP_LOG"; }
+    return "$rc"
+}
+
 if ! python -c "import fastapi, uvicorn, transformers, faiss, bitsandbytes, sentence_transformers, peft, accelerate" >/dev/null 2>&1; then
-    echo "[deps] 의존성 미설치/불완전 — pip install 진행 (~3~5분)"
-    pip install -q --no-cache-dir --upgrade-strategy only-if-needed --prefer-binary \
-        -r "$SCRIPT_DIR/requirements.txt" || {
+    echo "[deps] 의존성 미설치/불완전 — 설치 진행 (~3~5분, '.'=진행중·터미널 끊김 방지)"
+    _pip_bg install --no-cache-dir --upgrade-strategy only-if-needed --prefer-binary -r "$SCRIPT_DIR/requirements.txt" || {
         echo "[deps] 1차 설치 실패 — force-reinstall 재시도"
-        pip install -q --no-cache-dir --force-reinstall \
-            -r "$SCRIPT_DIR/requirements.txt"
+        _pip_bg install --no-cache-dir --force-reinstall -r "$SCRIPT_DIR/requirements.txt"
     }
 fi
 
 if ! python -c "import bitsandbytes" >/dev/null 2>&1; then
-    pip install -q --no-cache-dir --force-reinstall "bitsandbytes>=0.46.1"
+    echo "[deps] bitsandbytes 단독 재시도"
+    _pip_bg install --no-cache-dir --force-reinstall "bitsandbytes>=0.46.1"
 fi
 
 python -c "import torch, transformers, bitsandbytes, sentence_transformers, faiss" || {
