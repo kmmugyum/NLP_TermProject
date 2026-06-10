@@ -11,9 +11,12 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 - **v2 인덱스**: 라이브 인덱스의 완전중복44.6%+표 빈파이프 깨짐(미적분학=2학년류 환각 원인)을
   79개 학과 와이드크롤 재청킹으로 정비 → 11,425청크(중복0/빈파이프0/<200자0), KURE-v1 빌드.
   repo 루트의 `academic_v2_bin.zip`(43.5MB)에 들어있음.
-- **환경호환 수정 4건**: ①requirements에 lxml+PyMuPDF+olefile  ②`ensure_academic_index()`
-  자립 부트스트랩  ③file_extractor fitz/olefile graceful 가드  ④classifier.ipynb/ui_demo.ipynb
-  의존성 게이트에 lxml. 연구서버 py3.10.12/torch2.5.1/pl2.4.0 실측 통과. 상세 `VERIFY_ENV_REPORT.md`.
+- **환경호환 수정**: ①requirements에 `torch==2.5.1 ; python_version<"3.11"`(py3.10 베이스 명시
+  설치=PDF명세, Colab 3.12는 마커 비활성+사전설치 torch 유지) + lxml+PyMuPDF+olefile
+  ②`ensure_academic_index()` 자립 부트스트랩  ③file_extractor fitz/olefile graceful 가드
+  ④classifier.ipynb/ui_demo.ipynb 의존성 게이트에 lxml  ⑤chatbot.sh/realtime_chatbot.sh:
+  setsid+하트비트(Colab 터미널 끊김에도 deps 설치 완주) + 단계 로깅(`▶ STEP n` 배너 +
+  `outputs/run_*.log` 자동 기록). 연구서버 py3.10.12/torch2.5.1/pl2.4.0 실측 통과. 상세 `VERIFY_ENV_REPORT.md`.
 - **수동 swap 불필요**: Colab 첫 진입점 실행 시 `ensure_academic_index()`가 zip 안
   `academic_v2_bin.zip`을 자동 해제→`academic_real.bin`(11,425벡터) 생성. 즉 **v2 인덱스가
   zip만으로 자동 적용**된다(과거 수동 swap 가이드는 불필요해짐).
@@ -21,7 +24,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # aeb471c(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # 4a7d873(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
@@ -69,6 +72,7 @@ for f in ['$PKG/chatbot.sh','$PKG/src/classifier.ipynb','$PKG/academic_v2_bin.zi
    ```
    기대: 서버 기동→/health ready→배치 50건→`outputs/chat_output.json` 생성, 에러 로그 없음.
    (academic_real.bin 자동 부트스트랩 로그가 떠야 함.)
+   진행 단계는 화면의 `▶ STEP n | ...` 배너로 확인, 전체 로그는 `outputs/run_chatbot.log`에 기록됨.
 
 ### (B) 학사 환각 사라짐 (UI 또는 realtime 질의로 실제 답변 캡처)
 3. `컴퓨터인공지능학부 미적분학은 몇 학년 과목이야?` → **1학년(1-1) 미적분학1**.
