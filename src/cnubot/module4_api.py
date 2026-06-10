@@ -101,14 +101,27 @@ def ensure_academic_index() -> None:
     # 1) 인덱스 본체: zip 에서 academic_v2.bin 추출 → academic_real.bin
     if not idx.exists():
         seen: dict = {}
+        # 1순위: repo 루트(_PKG.parent.parent)·cwd 인접 — 정상 배치면 여기서 즉시 발견
         for base in (_PKG.parent.parent, Path.cwd(), Path.cwd().parent):
             p = base / "academic_v2_bin.zip"
             if p.is_file():
                 seen[str(p.resolve())] = p
-        # Colab: /content 하위 임의 위치
-        for p in Path("/content").glob("**/academic_v2_bin.zip"):
-            if p.is_file():
-                seen[str(p.resolve())] = p
+        # 2순위(폴백): /content 하위 임의 위치. 1순위에서 찾았으면 건너뛴다.
+        # ※ Path('/content').glob('**/...') 는 /content/drive(Google Drive, 네트워크 FUSE)까지
+        #    재귀 스캔해 사실상 멈춤 → drive 경로는 제외하고, 이미 찾았으면 아예 실행 안 함.
+        if not seen:
+            try:
+                for p in Path("/content").iterdir():
+                    if not p.is_dir() or p.name == "drive":
+                        continue
+                    for q in p.glob("**/academic_v2_bin.zip"):
+                        if q.is_file():
+                            seen[str(q.resolve())] = q
+                top = Path("/content") / "academic_v2_bin.zip"
+                if top.is_file():
+                    seen[str(top.resolve())] = top
+            except (FileNotFoundError, PermissionError):
+                pass
         cands = list(seen.values())
         if not cands:
             raise FileNotFoundError(
