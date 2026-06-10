@@ -375,26 +375,16 @@ class CafeteriaRetriever:
         )
         if not needs_refresh:
             return
-        # GitHub 모드(Colab): raw 만 사용. 성공/실패 무관 라이브 크롤 금지.
+        # startup 에서는 라이브 크롤을 하지 않는다.
+        #  - 의도 분류 전용 노트북(classifier.ipynb)처럼 식단이 필요 없는 진입점도 이 생성자를
+        #    거치는데, Colab/해외 IP 에서 startup 라이브 크롤이 cnu.ac.kr 접속 지연으로 길게
+        #    매달려(분류가 멈춘 것처럼 보임) 진입을 막던 문제를 피한다.
+        #  - GitHub 모드면 raw 캐시만 빠르게 적재(네트워크 1회·타임아웃 有). 실제 식단 질의가
+        #    오면 retrieve()→_auto_refresh_if_needed 가 그때 lazy 하게 크롤/적재한다.
         from . import github_data
         if github_data.is_enabled():
-            self._load_meal_from_github()  # 실패해도 라이브로 안 감 → 없으면 fallback
-            return
-        # 한국 IP 환경: 라이브 크롤
-        try:
-            from .meal_crawler import MEAL_URL, crawl_week
-            print("[meal] 시작 시 식단 라이브 크롤 중...")
-            wc = crawl_week(MEAL_URL)
-            if wc.days:
-                self.update_cache_directly(wc)
-                try:
-                    Path(self.cache_path).write_text(
-                        wc.model_dump_json(), encoding="utf-8")
-                except Exception:
-                    pass
-                print(f"[meal] 라이브 크롤 완료: {len(wc.days)}일치 수집")
-        except Exception as e:
-            print(f"[meal] 시작 시 라이브 크롤 실패: {e}")
+            self._load_meal_from_github()
+        return
 
     def _load_meal_from_github(self) -> bool:
         """GitHub raw 에서 학식 캐시 로드. 성공 시 True(라이브 크롤 생략).
