@@ -16,7 +16,9 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
   ②`ensure_academic_index()` 자립 부트스트랩  ③file_extractor fitz/olefile graceful 가드
   ④classifier.ipynb/ui_demo.ipynb 의존성 게이트에 lxml  ⑤chatbot.sh/realtime_chatbot.sh:
   setsid+하트비트(Colab 터미널 끊김에도 deps 설치 완주) + 단계 로깅(`▶ STEP n` 배너 +
-  `outputs/run_*.log` 자동 기록). 연구서버 py3.10.12/torch2.5.1/pl2.4.0 실측 통과. 상세 `VERIFY_ENV_REPORT.md`.
+  `outputs/run_*.log` 자동 기록)  ⑥학식 캐시 버그 수정(주간 캐시가 크롤 1일 뒤 통째로 막혀
+  '오늘 학식'이 차단되던 것 → 날짜키 존재 여부로 판단). 연구서버 py3.10.12/torch2.5.1/pl2.4.0
+  실측 통과. 상세 `VERIFY_ENV_REPORT.md`.
 - **수동 swap 불필요**: Colab 첫 진입점 실행 시 `ensure_academic_index()`가 zip 안
   `academic_v2_bin.zip`을 자동 해제→`academic_real.bin`(11,425벡터) 생성. 즉 **v2 인덱스가
   zip만으로 자동 적용**된다(과거 수동 swap 가이드는 불필요해짐).
@@ -24,7 +26,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # 4a7d873(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # dde28b0(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
