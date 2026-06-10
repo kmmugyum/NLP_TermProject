@@ -29,6 +29,11 @@ uvicorn[standard]
 pydantic
 httpx
 beautifulsoup4
+lxml            # BeautifulSoup(..., "lxml") 파서 — meal_crawler/notice/module4_api 13곳에서 사용. Colab은 사전설치되나 클린 py3.10 환경엔 없어 명시 필요.
+
+# === 첨부파일 추출 (notice 본문 PDF/HWP) ===
+PyMuPDF         # file_extractor.extract_pdf(fitz). 미설치 시 graceful 처리되나, 기능 동작엔 필요.
+olefile         # file_extractor.extract_hwp. HWP(OLE) 파싱용. 미설치 시 graceful 처리.
 
 # === 명시적 미사용 ===
 # torch / torchvision / torchaudio  — Colab 사전설치본 (2.11.0+cu128) 그대로 사용

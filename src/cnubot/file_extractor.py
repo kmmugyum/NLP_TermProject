@@ -15,7 +15,10 @@ _HWPTAG_PARA_TEXT = 67  # HWPTAG_BEGIN(0x10) + 51
 
 
 def extract_pdf(file_bytes: bytes) -> str:
-    import fitz
+    try:
+        import fitz  # PyMuPDF — 미설치 시 엔진없음으로 graceful 처리(진입점 크래시 방지)
+    except ImportError:
+        return "[PDF_ERROR:no_engine(PyMuPDF)]"
 
     try:
         with fitz.open(stream=file_bytes, filetype="pdf") as doc:
@@ -25,7 +28,10 @@ def extract_pdf(file_bytes: bytes) -> str:
 
 
 def extract_hwp(file_bytes: bytes) -> str:
-    import olefile
+    try:
+        import olefile  # 미설치 시 graceful 처리(진입점 크래시 방지)
+    except ImportError:
+        return "[HWP_ERROR:no_engine(olefile)]"
 
     try:
         f = io.BytesIO(file_bytes)

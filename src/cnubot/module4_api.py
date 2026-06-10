@@ -82,6 +82,53 @@ ACADEMIC_DATA_PATH = str(_PKG / "data" / "cnu_academic_mock.json")
 FOODCOURT_PATH = str(_PKG / "data" / "cnu_1hak_foodcourt.json")
 
 
+def ensure_academic_index() -> None:
+    """Self-bootstrap: fresh git clone 에는 실제 벡터 .bin 이 없음(.gitignore).
+    repo 루트의 `academic_v2_bin.zip` 을 풀어 `academic_real.bin`(+meta)을 생성한다.
+    이미 있으면 no-op. 로컬(py3.10/torch2.5.1)·Colab(T4) 양쪽에서 동작.
+    모든 진입점이 chat_model._build_orch → 이 함수를 거치므로 단일 부트스트랩 지점."""
+    import zipfile
+    import shutil
+
+    idx = Path(ACADEMIC_INDEX_PATH)
+    meta = Path(ACADEMIC_META_PATH)
+    if idx.exists() and meta.exists():
+        return
+
+    storage = _PKG / "storage"
+    storage.mkdir(parents=True, exist_ok=True)
+
+    # 1) 인덱스 본체: zip 에서 academic_v2.bin 추출 → academic_real.bin
+    if not idx.exists():
+        seen: dict = {}
+        for base in (_PKG.parent.parent, Path.cwd(), Path.cwd().parent):
+            p = base / "academic_v2_bin.zip"
+            if p.is_file():
+                seen[str(p.resolve())] = p
+        # Colab: /content 하위 임의 위치
+        for p in Path("/content").glob("**/academic_v2_bin.zip"):
+            if p.is_file():
+                seen[str(p.resolve())] = p
+        cands = list(seen.values())
+        if not cands:
+            raise FileNotFoundError(
+                "academic_v2_bin.zip 을 찾을 수 없습니다. repo 루트(또는 /content 하위)에 "
+                "있어야 합니다 — fresh clone 자립 부트스트랩용."
+            )
+        with zipfile.ZipFile(cands[0]) as z:
+            names = z.namelist()
+            binname = next((n for n in names if n.endswith("academic_v2.bin")), names[0])
+            with z.open(binname) as src, open(idx, "wb") as dst:
+                shutil.copyfileobj(src, dst)
+
+    # 2) meta: storage/academic_v2.bin.meta.json → academic_real.bin.meta.json
+    if not meta.exists():
+        v2meta = storage / "academic_v2.bin.meta.json"
+        if not v2meta.is_file():
+            raise FileNotFoundError(f"메타 파일 없음: {v2meta}")
+        shutil.copy2(v2meta, meta)
+
+
 # 단과대학 → 공식 사이트 매핑(별칭 포함). 새 단과대학 추가 시 여기에만 한 줄 추가하면 됨.
 _COLLEGE_DOMAINS: tuple = (
     (("공과대학", "공대"), "https://eng.cnu.ac.kr"),

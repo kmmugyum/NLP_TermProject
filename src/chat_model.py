@@ -40,10 +40,14 @@ def _build_orch():
         CNUGenerator,
         CNUHybridIntentRouter,
         Orchestrator,
+        ensure_academic_index,
         render_foodcourt,
     )
     from cnubot.module4_generator import HFAnswerLLM
     from cnubot.notice import NoticeService
+
+    # fresh clone 자립 부트스트랩: academic_real.bin 없으면 academic_v2_bin.zip 해제.
+    ensure_academic_index()
 
     device = "cuda:0"
     embedder = KUREEmbedder("nlpai-lab/KURE-v1", device)
