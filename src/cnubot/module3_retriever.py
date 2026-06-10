@@ -491,10 +491,13 @@ class CafeteriaRetriever:
         c = self._cached
         if c is None or not c.days:
             return self._fallback(self.fallback_message)
-        if now - c.timestamp > timedelta(days=self.stale_after_days):  # 주간 신선도 만료
-            return self._fallback(self.fallback_message)
+        # 주간 캐시는 '날짜키(c.days) 존재 여부'로 신선도를 판단한다.
+        # (과거엔 now-timestamp>1일이면 캐시 전체를 버렸으나, 한 주치 캐시가 크롤 1일 뒤
+        #  통째로 막혀 — 특히 Colab 은 주기 크롤된 GitHub 캐시라 보통 1일 이상 경과 — 오늘
+        #  메뉴가 멀쩡히 있어도 '불러올 수 없습니다'가 뜨는 버그였다. 진짜 오래된(지난 주)
+        #  캐시는 c.days 에 오늘 날짜가 없어 아래 분기에서 자연히 fallback 되므로 안전하다.)
         menus = c.days.get(target.isoformat())
-        if not menus:  # 주말 휴무 / 미수집 날짜
+        if not menus:  # 주말 휴무 / 미수집 날짜 / 캐시가 이번 주가 아님
             return self._fallback(
                 f"{label} 식단 정보가 없습니다(주말 휴무이거나 수집되지 않음). "
                 "충남대 홈페이지를 확인해주세요.")
