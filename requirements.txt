@@ -1,12 +1,18 @@
-# CNU Campus ChatBot — Colab Free(T4) 호환 의존성
-# 핵심 발견: Colab 의 Python 3.12 + CUDA 12.8 환경에 매칭되는
-# torch 2.5.1 wheel 이 존재하지 않아 다운그레이드가 실제로는 실패하므로
-# torch/torchvision/torchaudio 는 사전설치본 그대로 사용 (정상 동작 검증됨).
+# CNU Campus ChatBot — 의존성 (대상: Python 3.10.12 / torch 2.5.1, 그리고 Colab Free T4)
 #
-# PDF p19 의 torch==2.5.1 명시는 dist-info 기준으로만 충족.
-# 동작 보장은 transformers 4.51.3 + bitsandbytes>=0.46.1 매칭으로 확보.
+# torch 버전 전략 (두 타깃 동시 지원):
+# - 베이스(Python 3.10.12): torch==2.5.1 명시 설치 (PDF p19 명세 충족, cu124 wheel 존재) — 검증됨.
+# - Colab(Python 3.12, torch 2.11.0+cu128 사전설치): 사전설치본 유지해야 CUDA 스택이 안 깨짐.
+# → 환경마커 `python_version < "3.11"` 로 명시 핀을 3.10 에서만 활성화. Colab(3.12)에선 이 줄이
+#   비활성 → transformers 등이 요구하는 torch 는 **사전설치본으로 충족**되고, 진입점들이
+#   `pip install --upgrade-strategy only-if-needed` 로 깔기에 재설치/다운그레이드 없이 그대로 유지된다.
+#   (주의: 빈 3.12 env 에 기본 전략으로 깔면 torch 최신이 transitive 로 끌려옴 — Colab 은 사전설치+
+#    only-if-needed 라 해당 없음.)
+# 동작 보장은 transformers 4.51.3 + bitsandbytes>=0.46.1 매칭으로도 확보.
+# pytorch-lightning 2.4.0 은 코드 미사용(import 0건) → 명시 안 함(환경에 있으면 충돌 없이 무시).
 
 # === Core (PDF 명세에 직접 영향) ===
+torch==2.5.1 ; python_version < "3.11"   # 3.10 베이스 전용. Colab(3.12)은 사전설치 torch 사용(이 줄 skip).
 transformers==4.51.3
 bitsandbytes>=0.46.1
 
@@ -35,7 +41,8 @@ lxml            # BeautifulSoup(..., "lxml") 파서 — meal_crawler/notice/modu
 PyMuPDF         # file_extractor.extract_pdf(fitz). 미설치 시 graceful 처리되나, 기능 동작엔 필요.
 olefile         # file_extractor.extract_hwp. HWP(OLE) 파싱용. 미설치 시 graceful 처리.
 
-# === 명시적 미사용 ===
-# torch / torchvision / torchaudio  — Colab 사전설치본 (2.11.0+cu128) 그대로 사용
-# torchao / torchcodec              — chatbot.sh 가 선제 제거 (transformers ↔ torch._dynamo skip_code mismatch 회피)
-# pytorch-lightning                 — 본 프로젝트 미사용
+# === 환경별 torch 처리 ===
+# torch          — 위 Core 에서 python<3.11(베이스)만 2.5.1 설치. Colab(3.12)은 사전설치본(2.11.0+cu128) 유지.
+# torchvision/torchaudio — 미사용(본 프로젝트는 torch 본체만 필요).
+# torchao / torchcodec   — chatbot.sh 가 선제 제거 (transformers ↔ torch._dynamo skip_code mismatch 회피).
+# pytorch-lightning      — 코드 미사용(import 0건). 환경에 있어도 무시.
