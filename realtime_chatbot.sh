@@ -41,8 +41,11 @@ _pip_bg() {  # 인자: pip 서브커맨드 전체. 진행 '.' 표시, 실패 시
     return "$rc"
 }
 
-if ! python -c "import fastapi, uvicorn, transformers, faiss, bitsandbytes, sentence_transformers, peft, accelerate" >/dev/null 2>&1; then
-    echo "[deps] 의존성 미설치/불완전 — 설치 진행 (~3~5분, '.'=진행중·터미널 끊김 방지)"
+# import 가능 여부 + 버전까지 검증: torch 2.5.x & transformers 4.51.3(검증된 페어링)이 아니면
+# 설치 강제. Colab 사전설치 torch 2.11 / 다른 transformers 를 그대로 쓰지 않고 핀 버전으로 정합.
+# (torch 2.11 이면 import transformers 가 TransformGetItemToIndex 로 예외→비0 종료→설치 트리거)
+if ! python -c "import sys; import fastapi,uvicorn,faiss,bitsandbytes,sentence_transformers,peft,accelerate; import torch,transformers; sys.exit(0 if torch.__version__.startswith('2.5') and transformers.__version__=='4.51.3' else 1)" >/dev/null 2>&1; then
+    echo "[deps] 미설치/버전불일치(torch!=2.5.x 또는 transformers!=4.51.3) — 설치 진행 (~3~5분, '.'=진행중)"
     _pip_bg install --no-cache-dir --upgrade-strategy only-if-needed --prefer-binary -r "$SCRIPT_DIR/requirements.txt" || {
         echo "[deps] 1차 설치 실패 — force-reinstall 재시도"
         _pip_bg install --no-cache-dir --force-reinstall -r "$SCRIPT_DIR/requirements.txt"
@@ -54,11 +57,10 @@ if ! python -c "import bitsandbytes" >/dev/null 2>&1; then
     _pip_bg install --no-cache-dir --force-reinstall "bitsandbytes>=0.46.1"
 fi
 
-python -c "import torch, transformers, bitsandbytes, sentence_transformers, faiss" || {
-    echo "[FATAL] 의존성 검증 실패. 런타임 재시작 후 다시 실행하세요."
+python -c "import torch, transformers, bitsandbytes, sentence_transformers, faiss; assert torch.__version__.startswith('2.5'), 'torch '+torch.__version__+' (2.5.x 아님)'; print('[deps] OK — torch='+torch.__version__+' transformers='+transformers.__version__)" || {
+    echo "[FATAL] 의존성 검증 실패(torch 2.5.1 정합 안 됨 가능). 런타임 재시작 후 다시 실행하세요."
     exit 1
 }
-echo "[deps] OK"
 
 # ============================================================
 # 서버 실행 (배치 모드 OFF — 즉시 채팅 가능)
