@@ -230,7 +230,10 @@ _EN_ACADEMIC_HINT_RE = _re.compile(
     r"graduat|credit|major|enroll|tuition|scholarship|semester|curriculum", _re.I)
 
 # M4b) 감정표현 공감: '상담' 키워드 없이 와도 차가운 OOS 대신 짧은 공감 + 학생상담센터 안내.
-_EMOTION_RE = _re.compile(r"우울|힘들|위로|외롭|지쳐|지친|스트레스|불안|괴로")
+# 주의: '위로'(comfort)는 '단위로/범위로/순위로/부위로/지위로' 등 '명사+로' 조사에 부분일치
+#       하므로 부정 후방탐색으로 그 케이스만 배제. '불안'도 '불안정/불안전' 부분일치 배제.
+_EMOTION_RE = _re.compile(
+    r"우울|힘들|(?<![단범순부지우하상위])위로|외롭|지쳐|지친|스트레스|불안(?!정|전)|괴로")
 _COUNSEL_URL = "https://plus.cnu.ac.kr/html/hub/support/support_020203.html"
 _EMOTION_MSG = (
     "많이 힘드셨겠어요. 혼자 감당하기 버거운 마음이 들 땐 전문가의 도움을 받는 것도 큰 힘이 됩니다. "
