@@ -1206,10 +1206,22 @@ class Orchestrator:
         # _STANDALONE_SITES 매칭에서 제외하고 cafeteria 경로로 흘려보낸다.
         _meal_ctx = bool(_re.search(
             r"학식|메뉴|식단|점심|저녁|아침|조식|중식|석식|식사|먹", query))
+        # 광범위 기관 위임(로스쿨·어학시험인증)은 '교육과정/요건/학점' 등 코퍼스 답변 가능한
+        # 세부 질의까지 선점해 과소응답(0초 URL 펀트)을 유발 → 세부 신호가 있으면 RAG에 양보.
+        # (자퇴 환불율·장학 자격·수강신청 방법 위임은 여기 해당 없음 = 의도된 펀트 유지.)
+        # 어학시험-인증 URL은 YIELD에서 제외: 양보 시 '스피킹 안 봐도 750만 넘으면 됨'류
+        # 유도성 질문에 7B가 잘못된 전제를 동조(확신성 오답)하는 게 안전한 펀트보다 해로움.
+        # (정상 phrasing의 WEST 어학요건 질의는 애초에 이 위임에 안 걸려 RAG가 정답함.)
+        _YIELD_TO_RAG_URLS = ("https://law.cnu.ac.kr",)
+        _rag_detail = bool(_re.search(
+            r"몇\s*과목|몇\s*학점|과목|학점|교육과정|커리큘럼|이수체계|이수|"
+            r"종합심화|심화|요건|등급|평점|장학|차이|구성|개설", query))
         # M1) 멀티 intent면 단일 토픽 URL 빠른경로 전체를 건너뛰어 종합 답변(academic RAG)으로.
         for kws, label, url in (() if _is_multi else _STANDALONE_SITES):
             if "학생회관" in kws and _meal_ctx:
                 continue  # 식사 맥락 학생회관 질의 → 시설 안내 스킵
+            if url in _YIELD_TO_RAG_URLS and _rag_detail:
+                continue  # 코퍼스 답변 가능한 세부 질의 → 기관 URL 펀트 대신 RAG
             if any(k in query for k in kws):
                 from .schemas import Reference
                 static = (
