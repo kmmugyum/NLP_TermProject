@@ -237,6 +237,31 @@ _EMOTION_MSG = (
     "충남대학교 학생상담센터에서 재학생 누구나 무료로 심리·정서 상담을 받을 수 있어요:\n"
     f"{_COUNSEL_URL}")
 
+# P1) 위기(자해/자살) 신호: '우울'만으로는 _EMOTION_RE에 우연히 걸리나, '죽고 싶다/사라지고
+#     싶다/자해'만 있으면 못 탐 → 별도 좁은 패턴으로 결정론 탐지. 학사 판단·권유(자퇴 등) 금지.
+_CRISIS_RE = _re.compile(
+    r"죽고\s?싶|죽고싶|사라지고\s?싶|없어지고\s?싶|살기\s?싫|자해|극단적\s?선택")
+_CRISIS_MSG = (
+    "지금 많이 힘드신 것 같아 마음이 쓰입니다. 그런 생각이 들 만큼 버거운 상황이라면 "
+    "혼자 견디지 마시고 꼭 도움을 받으셨으면 합니다. 충남대학교 학생상담센터에서 재학생 누구나 "
+    "무료로 즉시 상담을 받을 수 있고, 긴급할 땐 24시간 전문 상담도 연결됩니다:\n"
+    f"{_COUNSEL_URL}\n"
+    "- 자살예방 상담전화: 109 (24시간)\n"
+    "- 정신건강 상담전화: 1577-0199 (24시간)\n"
+    "당신은 혼자가 아닙니다. 지금 느끼는 어려움을 전문가와 함께 나눠 주세요.")
+
+# P0) 제3자(부모 등) 학생 개인정보 조회 차단: 개인정보보호법상 본인 외 제3자에게 학적·성적·
+#     장학 등 조회·제공 불가. '전화해 확인 요청하라' 같은 월권·창작을 LLM 전에 결정론 차단.
+#     좁게 — 제3자 주체 토큰 AND 개인정보 조회 행위 토큰이 둘 다 있을 때만 발동(본인 질의 오탐 금지).
+_THIRD_PARTY_SUBJECT_RE = _re.compile(
+    r"부모|학부모|보호자|자녀|우리\s?아이|우리\s?애|아들|딸|제\s?아이")
+_THIRD_PARTY_INFO_RE = _re.compile(
+    r"성적|학점|학적|등록금|장학|재학|휴학|제적|조회|확인|알려")
+_THIRD_PARTY_PII_MSG = (
+    "재학생 본인의 학적·성적·장학 등 개인정보는 개인정보보호법상 제3자(부모 포함)에게 조회·제공해 "
+    "드릴 수 없습니다. 학생 본인이 통합정보시스템(포털)에 직접 로그인해 확인해야 하며, 가족 위임도 "
+    "본인 동의하에 학사지원과 정식 절차로만 가능합니다. (납부 절차·증명 발급 등 일반 안내는 가능합니다.)")
+
 
 # 단과대/대학원 스코프 신호 토큰 (좁게 — 오탐 금지, '의' 한 글자 매칭 금지)
 _Q_MED_TOKENS = ("의대", "의과대", "의예과", "의학과", "수의대", "수의예과",
@@ -494,6 +519,20 @@ class Orchestrator:
         if _META_PROVOKE_RE.search(query):
             return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=_META_PROVOKE_MSG)
 
+        # P0) 제3자(부모 등) 학생 개인정보 조회 차단(모든 라우팅 이전):
+        # 제3자 주체 토큰 AND 개인정보 조회 행위 토큰이 둘 다 있을 때만 발동.
+        # 본인 질의("성적 장학금 평점 몇 이상?")는 제3자 토큰이 없어 걸리지 않는다.
+        if _THIRD_PARTY_SUBJECT_RE.search(query) and _THIRD_PARTY_INFO_RE.search(query):
+            return P(Intent.ACADEMIC, is_fallback=True, static=_THIRD_PARTY_PII_MSG)
+
+        # P1) 위기(자해/자살) 신호: 감정 공감 가드보다 먼저 — '우울' 없이 '죽고 싶다'만 와도 탐지.
+        # 학사 판단·권유(자퇴 등) 없이 공감 + 학생상담센터 + 24시간 위기상담 연계.
+        if _CRISIS_RE.search(query):
+            from .schemas import Reference
+            return P(Intent.OUT_OF_SCOPE, is_fallback=False, refined=query,
+                     static=_CRISIS_MSG,
+                     references=[Reference(title="학생상담센터", source_url=_COUNSEL_URL)])
+
         # 도서관 내부 시설(화장실·층별)은 평면도 이미지뿐 → 라우팅 전 전용 안내
         if "도서관" in query and _FACILITY_RE.search(query):
             return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=FACILITY_MSG)
@@ -562,6 +601,17 @@ class Orchestrator:
         # 인덱스 청크가 약하고 정보가 외부 사이트에 있는 카테고리(평생교육원·자유전공·ROTC 등)는
         # 키워드 매칭만으로 즉시 URL 안내(공지/엉뚱 학과 오라우팅 방지).
         _STANDALONE_SITES = (
+            # P2) 수치 환각 차단: 자퇴 환불율(80/50/20%)·장학 자격 커트 창작 → 검증된 URL 위임.
+            # 좁은 키워드만 → '장학금 평점 몇 이상'(본인 자격 질의 일반)은 안 걸리고, 반환/환불·
+            # 받을 자격 등 수치 창작이 일어나던 표현에서만 위임. 광범위 버킷보다 먼저(first-match).
+            (("등록금 반환", "등록금 환불", "자퇴 환불", "자퇴하면 환불",
+              "반환율", "반환 비율", "환불율", "환불 비율", "등록금 돌려"),
+             "등록금 납부·반환 안내(학사지원과)",
+             "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05030201.html"),
+            (("장학금 자격", "장학 자격", "받을 자격", "장학금 받을", "장학금 반환",
+              "장학 반환", "장학금 커트", "장학 커트", "장학금 기준 점수"),
+             "장학금 안내(학생과)",
+             "https://plus.cnu.ac.kr/html/hub/support/support_0201.html"),
             # 수강신청 방법(어떻게/전화·대리 가능 등) — 광범위한 '학과 사무실' 버킷보다 먼저
             # 매칭돼야 엉뚱한 '학과/대학원 안내'로 오라우팅되지 않음(first-match wins).
             # 좁은 키워드만(수강신청/수강정정) → 정상 학과위치 질의 오탐 방지.
