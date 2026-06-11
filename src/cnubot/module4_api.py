@@ -186,6 +186,65 @@ _NOTICE_SIGNAL_RE = _re.compile(r"(?<!인)공지|게시|최근|새\s*글|소식|
 # 셔틀/스쿨버스/통학버스: 표면형 나열 대신 광역 토큰으로 결정론 라우팅(시간표/노선/배차 등 모두).
 _SHUTTLE_RE = _re.compile(r"셔틀|스쿨버스|통학버스")
 
+# ── 라우팅 결함 4건(M1~M4) 가드용 좁은 패턴 ───────────────────────────────
+# M3) 메타/도발: 봇의 진위·환각을 따지는 비판/도발. 학식/메뉴 단어가 섞여 cafeteria로
+#     오라우팅돼 학식표를 덤프(도발에 표로 답하는 역효과)하는 것을 라우팅 전에 차단.
+#     좁게 — 일반 질의('학식 메뉴 알려줘')엔 진위 도발 토큰이 없어 걸리지 않는다.
+_META_PROVOKE_RE = _re.compile(
+    r"지어내|가짜|거짓말|꾸며|허위|챗봇\s*(?:맞|지어|이지)|"
+    r"진짜\s*(?:야|냐|임|인가|인지)|"
+    r"믿을\s*수\s*(?:있|없)|신뢰할\s*수\s*(?:있|없)")
+_META_PROVOKE_MSG = (
+    "이 봇은 충남대학교 공식 자료(학사 요람·학칙·공식 홈페이지 공지, 학생식당 운영 정보 등)에 "
+    "근거해 답변합니다. 임의로 정보를 만들어 내지 않으며, 자료에 없는 내용은 '확인되지 않는다'고 "
+    "안내합니다. 궁금한 학사·시설·학식 정보를 구체적으로 물어봐 주세요.")
+
+# M2) 도서관 운영시간: '도서관'+시간/개관/폐관 패턴은 위치('어디')가 아니라 운영시간 질의 →
+#     _FACILITY_RE(화장실·층별)·_SITE_GUIDE(위치)에 안 잡혀 OOS로 오거부됐다. 공식 URL 안내.
+_LIBRARY_HOURS_RE = _re.compile(
+    r"몇\s?시|운영\s?시간|이용\s?시간|개관|폐관|문\s?닫|문\s?여|"
+    r"주말.*(?:시간|시까지|운영)|평일.*(?:시간|시까지|운영)")
+
+# M1) 멀티 intent: 연결어로 묶인 서로 다른 학사 신호가 2개+면 URL 빠른경로(단일 토픽 위치질의)를
+#     건너뛰고 메인 academic RAG로 보내 한쪽만 답·드롭되는 일을 막는다.
+# 연결어: 명시적 접속(그리고/이고/하고/또/,/및/이랑) + 구어 의문접속(뭐고/뭐냐/뭐지 …고).
+# '고'는 단독으론 너무 흔해(보고/하고…) 의문사 직후('뭐고/뭐냐고')에서만 접속으로 인정.
+_MULTI_CONNECTOR_RE = _re.compile(
+    r"그리고|이고|하고|또|,|및|이랑|와\s|과\s|"
+    r"뭐고|뭐냐|뭐지|뭔지|어떻고|어떤지|"
+    r"(?:뭐|어디|언제|얼마|몇)\S*\s*고\s")
+# 서로 다른 토픽 신호(겹치지 않는 카테고리). 2개 이상 매칭되면 멀티 intent로 판단.
+_MULTI_SIGNAL_RES = (
+    _re.compile(r"학식|메뉴|식단|점심|저녁|아침|조식|중식|석식"),          # 식사
+    _re.compile(r"졸업|이수학점|학점|학년|교과목|커리큘럼|전공"),           # 학사 규정/과정
+    _re.compile(r"휴학|복학|수강신청|재수강|복수전공|부전공|전과"),         # 학적/신청
+    _re.compile(r"장학|등록금|학자금"),                                     # 등록/장학
+    _re.compile(r"도서관|기숙사|생활관|셔틀|체육|운동"),                    # 시설
+)
+
+# M4a) 한영 혼합 오거부: 영문이 섞여도 핵심 한국어/충남대 맥락 학사어가 있으면 학사로.
+#      명백 케이스만(졸업/학점/충남대 등) — 과탐 방지.
+_KOR_ACADEMIC_HINT_RE = _re.compile(
+    r"졸업|학점|학사|전공|휴학|수강신청|장학|등록금|충남대|CNU|cnu")
+_EN_ACADEMIC_HINT_RE = _re.compile(
+    r"graduat|credit|major|enroll|tuition|scholarship|semester|curriculum", _re.I)
+
+# M4b) 감정표현 공감: '상담' 키워드 없이 와도 차가운 OOS 대신 짧은 공감 + 학생상담센터 안내.
+_EMOTION_RE = _re.compile(r"우울|힘들|위로|외롭|지쳐|지친|스트레스|불안|괴로")
+_COUNSEL_URL = "https://plus.cnu.ac.kr/html/hub/support/support_020203.html"
+_EMOTION_MSG = (
+    "많이 힘드셨겠어요. 혼자 감당하기 버거운 마음이 들 땐 전문가의 도움을 받는 것도 큰 힘이 됩니다. "
+    "충남대학교 학생상담센터에서 재학생 누구나 무료로 심리·정서 상담을 받을 수 있어요:\n"
+    f"{_COUNSEL_URL}")
+
+
+def _multi_intent(query: str) -> bool:
+    """연결어로 묶인 서로 다른 토픽 신호가 2개 이상이면 멀티 intent로 판단(M1)."""
+    if not _MULTI_CONNECTOR_RE.search(query):
+        return False
+    hits = sum(1 for rx in _MULTI_SIGNAL_RES if rx.search(query))
+    return hits >= 2
+
 _GLUED_LATIN_RE = _re.compile(r"(?<=[가-힣])[A-Za-z]+(?=[가-힣])")
 # 한자(CJK Unified, 호환·확장 일부) + 일본어 가나(히라가나·가타카나·반각 가나)
 # + 키릴(U+0400~04FF)·아랍(U+0600~06FF) 강제 제거. LogitsProcessor가 한자/가나만 막아
@@ -381,9 +440,31 @@ class Orchestrator:
                 or _CLARIFY_DEICTIC_RE.match(_q) or _CLARIFY_SUBJLESS_RE.match(_q)):
             return P(Intent.ACADEMIC, is_fallback=True, static=CLARIFY_MSG)
 
+        # M3) 메타/도발 가드 (모든 라우팅·cafeteria override 이전):
+        # '학식/메뉴' 단어가 섞여도 진위 도발이면 학식표 덤프 대신 출처를 차분히 설명.
+        if _META_PROVOKE_RE.search(query):
+            return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=_META_PROVOKE_MSG)
+
         # 도서관 내부 시설(화장실·층별)은 평면도 이미지뿐 → 라우팅 전 전용 안내
         if "도서관" in query and _FACILITY_RE.search(query):
             return P(Intent.OUT_OF_SCOPE, is_fallback=True, static=FACILITY_MSG)
+        # M2) 도서관 운영시간 질의는 위치/시설 가드에 안 잡혀 OOS로 오거부됐다 → 공식 URL 안내.
+        if "도서관" in query and _LIBRARY_HOURS_RE.search(query):
+            from .schemas import Reference
+            lib_url = "https://library.cnu.ac.kr"
+            return P(Intent.ACADEMIC, is_fallback=False, refined=query,
+                     static=("충남대학교 중앙도서관의 개관·운영시간(평일·주말·시험기간 연장 등)은 "
+                             f"열람실별로 다를 수 있어, 정확한 시간은 아래 공식 페이지에서 확인해 "
+                             f"주세요:\n{lib_url}"),
+                     references=[Reference(title="중앙도서관", source_url=lib_url)])
+        # M4b) 감정표현 공감: '상담' 키워드 없이 와도 차가운 OOS 대신 짧은 공감 + 학생상담센터 안내.
+        # 학사 신호가 함께면(예: '시험 스트레스 줄이려 휴학 가능?') 공감 가드를 건너뛰고 학사 처리.
+        if _EMOTION_RE.search(query) and not _ACADEMIC_SIGNAL_RE.search(query):
+            from .schemas import Reference
+            return P(Intent.OUT_OF_SCOPE, is_fallback=False, refined=query,
+                     static=_EMOTION_MSG,
+                     references=[Reference(title="학생상담센터", source_url=_COUNSEL_URL)])
+
         # 주관적·외부정보 거절: 충남대 행정/학사 봇 범위 외
         # (평판·순위·주관 평가·교내 비교·근처 시설·통학거리·SNS 굿즈 등)
         _REJECT_PATTERNS = (
@@ -417,8 +498,11 @@ class Orchestrator:
                     "주관적 평가, 캠퍼스 외부 정보, 비공식 콘텐츠는 다루지 않습니다. "
                     "관련해서 학교 공식 자료나 학사정보가 궁금하시면 다시 질문해 주세요."
                 ))
+        # M1) 멀티 intent(연결어 + 서로 다른 토픽 신호 2개+)면 URL 빠른경로(단일 토픽 위치질의)를
+        # 건너뛰고 메인 academic RAG로 보내 한쪽만 답·드롭되는 일을 막는다.
+        _is_multi = _multi_intent(query)
         # 시설/기관 위치 질의: 정확히 '시설명 + 어디·위치·주소·찾는' → _SITE_GUIDE 공식 URL.
-        if _re.search(r"어디|위치|주소|찾[\s가-힣]{0,3}", query):
+        if not _is_multi and _re.search(r"어디|위치|주소|찾[\s가-힣]{0,3}", query):
             for kws, label, url in _SITE_GUIDE:
                 if any(k in query for k in kws):
                     from .schemas import Reference
@@ -1012,7 +1096,8 @@ class Orchestrator:
         # _STANDALONE_SITES 매칭에서 제외하고 cafeteria 경로로 흘려보낸다.
         _meal_ctx = bool(_re.search(
             r"학식|메뉴|식단|점심|저녁|아침|조식|중식|석식|식사|먹", query))
-        for kws, label, url in _STANDALONE_SITES:
+        # M1) 멀티 intent면 단일 토픽 URL 빠른경로 전체를 건너뛰어 종합 답변(academic RAG)으로.
+        for kws, label, url in (() if _is_multi else _STANDALONE_SITES):
             if "학생회관" in kws and _meal_ctx:
                 continue  # 식사 맥락 학생회관 질의 → 시설 안내 스킵
             if any(k in query for k in kws):
@@ -1174,7 +1259,12 @@ class Orchestrator:
                      references=[Reference(title="학과 구성원", source_url=page_url)])
         # 행사명/프로그램명류(영문 4+ 토큰: devday, hackathon, husscon 등)는 라우터가 academic으로
         # 오라우팅하는 경향 → 라우터 전에 공지 제목 매칭 시도(require_match=True). 매칭되면 그 공지로.
-        if _re.search(r"[A-Za-z]{4,}", query):
+        # 단, M4a) 한영 혼합 학사질의(graduation/credit 등 + 충남대/학점 등)는 이 영문토큰 공지
+        # 선점에 걸려 notice로 새던 버그가 있어, 이 경우 선점을 건너뛰고 아래 학사 라우팅(_kor_en_academic
+        # 교정)으로 보낸다.
+        _kor_en_academic = bool(
+            _EN_ACADEMIC_HINT_RE.search(query) and _KOR_ACADEMIC_HINT_RE.search(query))
+        if _re.search(r"[A-Za-z]{4,}", query) and not _kor_en_academic:
             pn_pre = self._plan_notice(query, require_match=True)
             if pn_pre:
                 return P(Intent.TEMPORAL_NOTICE, prompt=pn_pre[0], max_tokens=400,
@@ -1199,7 +1289,11 @@ class Orchestrator:
         _is_reg = is_regulation_query(query)
         # 학사 신호(몇 학년/교과목/커리큘럼 등)가 있고 공지 신호가 없으면 학사 질의로 본다.
         # 라우터가 OUT_OF_SCOPE/TEMPORAL_NOTICE로 오라우팅해도 양쪽 분기에서 동일하게 교정.
-        _looks_academic = _is_reg or (
+        # M4a) 한영 혼합 오거부 교정: 영문 학사어(graduation/credit 등)와 한국어/충남대 맥락
+        # 학사어가 함께면 영문 때문에 OOS로 떨어지지 않도록 학사 질의로 본다(명백 케이스만).
+        _kor_en_academic = bool(
+            _EN_ACADEMIC_HINT_RE.search(query) and _KOR_ACADEMIC_HINT_RE.search(query))
+        _looks_academic = _is_reg or _kor_en_academic or (
             _ACADEMIC_SIGNAL_RE.search(query) and not _NOTICE_SIGNAL_RE.search(query))
         if ir.intent == Intent.OUT_OF_SCOPE and not _looks_academic:
             pn = self._plan_notice(q, require_match=True)  # 행사명 등 공지 구제

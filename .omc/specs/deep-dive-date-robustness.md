@@ -34,7 +34,19 @@
 ## 비판자 최종 판정
 **ACCEPT-WITH-RESERVATIONS** — F1/F2/F3 검증·무회귀. F1 calendar 경로 보강으로 "다음학기 2개월" 환각 제거 완결.
 
-## 잔여(비차단, 후속)
-- "몇 주차"는 temporal_notice로 라우팅 + 주차 데이터 부재 → grounding만으론 한계.
+## MAJOR 라우팅 4건 (2차 라운드, writer↔critic, 완료)
+critic이 짚은 정확한 위치로 writer 수정 → MAJOR타깃+회귀18건 eval → critic 최종.
+| M | 결함 | 수정(module4_api `_plan` 좁은 가드) | 결과 |
+|---|---|---|---|
+| M1 | 멀티intent first-match로 한쪽 드롭 | `_multi_intent()`(연결어+2신호) 시 URL 빠른경로 skip→academic RAG | 장문 신입생질문 구조화 답변 ✅ / 학식+학사 교차파이프라인은 학식 누락(비차단) |
+| M2 | 도서관 운영시간 OOS 오거부 | `_LIBRARY_HOURS_RE`+"도서관" → library.cnu 안내 | ✅ |
+| M3 | 도발("지어내잖아")→학식표 덤프 | `_META_PROVOKE_RE` 가드(cafeteria override보다 먼저)→차분한 출처 설명 | ✅ |
+| M4a | 한영혼합 학사질의 notice 오라우팅 | 영문토큰 notice선점(line1262) **앞에** kor+en 학사 예외 hoist→academic | ✅ ("130 credits" 영어 답) |
+| M4b | 감정표현('상담' 없으면) flat OOS | `_EMOTION_RE`→공감+학생상담센터 | ✅ |
+- 회귀: OOD거부·엣지·서울대·학식표·130·미적분=1학년·학사일정·되물음·날짜·devday 공지선점 **전부 정상(0)**.
+- 1차 writer가 M4a를 line1289(선점 뒤)에 둬 dead code였던 것을 critic이 규명→hoist로 활성화.
+
+## 잔여(비차단)
+- "몇 주차"는 temporal_notice 라우팅 + 주차 데이터 부재 → grounding만으론 한계.
 - "다음 학기" 학기 모호성 + 2학기 개강 calendar 데이터 부족(retrieval/data).
-- MAJOR 라우팅(멀티intent 분해·도서관시간·도발·한영) → 회귀위험으로 이번 범위 제외, 후속 plan.
+- M1 학식+학사 교차파이프라인 통합답변은 cross-pipeline 기능(라우팅 버그 아님).
