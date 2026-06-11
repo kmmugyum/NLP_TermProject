@@ -22,6 +22,10 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
   ⑧HF 캐시를 로컬 `/content/hf_cache`로(Drive FUSE에 2.3GB+ 쓰며 멈추던 것 회피·빠름) +
   `_build_orch`에 `[orch] ①~⑦` 단계 로그(모델 다운로드/로딩 진행 가시화). 연구서버
   py3.10.12/torch2.5.1/pl2.4.0 실측 통과. 상세 `VERIFY_ENV_REPORT.md`.
+- **출력 품질·강건성 수정(deep-dive, writer↔critic 검증)**: ⑨답변 자연스러움(외국문자·중복·장황 정리)
+  ⑩날짜 grounding(현재날짜 KST 주입 → "오늘 며칠"·"다음학기 몇 달" 환각 제거) ⑪모호/빈 질문 되물음
+  ⑫메타태그 누수 제거 ⑬라우팅 일반화(멀티intent·도서관 운영시간·도발 방어·한영혼합·공감). 회귀 0
+  실측. 상세 `OUTPUT_NATURALNESS_REPORT.md`·`.omc/specs/deep-dive-date-robustness.md`.
 - **수동 swap 불필요**: Colab 첫 진입점 실행 시 `ensure_academic_index()`가 zip 안
   `academic_v2_bin.zip`을 자동 해제→`academic_real.bin`(11,425벡터) 생성. 즉 **v2 인덱스가
   zip만으로 자동 적용**된다(과거 수동 swap 가이드는 불필요해짐).
@@ -29,7 +33,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # 7345fa9(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # 2705db7(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
@@ -89,6 +93,13 @@ for f in ['$PKG/chatbot.sh','$PKG/src/classifier.ipynb','$PKG/academic_v2_bin.zi
 6. `오늘 학식 뭐야` → 식단 정상(OOS 오거부 없음).
 7. `컴퓨터인공지능학부 최근 공지` → 공지 목록 정상.
 8. `성심당 어디야` / `오늘 날씨` → 여전히 거부(진짜 OOS).
+
+### (D) 강건성/일반화 (deep-dive 수정 — 선택 확인)
+9. `오늘 며칠이야?` → 현재 날짜로 답(환각 날짜 없음).
+10. `다음 학기 개강 몇 달 남았어?` → 오늘 기준 기간 추정(과거 "2개월" 환각 없음).
+11. `그거 언제까지였지?` / `?` → "질문이 모호해요…" 되물음(임의 답 안 함).
+12. `도서관 주말 몇 시까지 열어?` → library.cnu 안내(OOS 거부 아님).
+13. `나 우울한데 위로 좀` → 공감+학생상담센터. `너 학식 다 지어내잖아?` → 차분한 출처 설명(학식표 덤프 아님).
 
 ## STEP 5 — 판정 & main 병합
 - **(A) 두 출력파일 무에러 생성 AND (B) 환각 3~5 통과 AND (C) 회귀 6~8 정상** → 통과.
