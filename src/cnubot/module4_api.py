@@ -36,6 +36,19 @@ from .module4_generator import (
 _FACILITY_RE = _re.compile(
     r"화장실|엘리베이터|승강기|에스컬레이터|흡연|사물함|자판기|평면도|층별|몇\s?층|비상구")
 
+# 모호/빈 질문 되물음(clarify) guard 패턴. 좁게 — 정상 질문은 절대 걸리지 않게.
+CLARIFY_MSG = ("질문이 모호해요. 무엇에 대해(어떤 신청/일정/과목 등) 묻는지 "
+               "조금만 더 구체적으로 알려주세요.")
+# (a) 구두점/공백만으로 이뤄진 빈 입력(예: "?", "??", "...").
+_CLARIFY_EMPTY_RE = _re.compile(r"^[?？.\s]+$")
+# (b) 지시어-only 모호("그거 언제까지?", "이거 어디?") — 지시어로 시작하고 곧장 의문사.
+#     한글 사이엔 \b가 경계로 안 잡혀 사용하지 않음(start-anchor로 충분히 좁음).
+_CLARIFY_DEICTIC_RE = _re.compile(
+    r"^(그거|그건|그게|이거|이게|저거|저건|그)\s*(언제|어디|얼마|뭐|어떻게|까지)")
+# (b') 주어 없는 동작-only 모호("신청 언제부터?", "접수 어디?").
+_CLARIFY_SUBJLESS_RE = _re.compile(
+    r"^(신청|접수|등록)\s*(언제|어디|어떻게)")
+
 # 대표→하위 도메인 라우팅: 코퍼스에 답 없으면 가장 관련된 CNU 사이트 URL을 안내.
 # (키워드 튜플, 라벨, URL) — 위에서부터 우선 매칭.
 _SITE_GUIDE = [
@@ -309,7 +322,7 @@ class Orchestrator:
             if b:
                 parts.append(f"=== {it.title} ===\n{b}")
         body = "\n\n".join(parts) if parts else None
-        prompt = build_notice_prompt(q, items, label, body=body)
+        prompt = build_notice_prompt(q, items, label, body=body, now=_now())
         focus_set = {id(it) for it in focuses}
         refs = [Reference(title=it.title[:70], source_url=it.url)
                 for it in focuses + [x for x in items if id(x) not in focus_set]][:5]
@@ -359,6 +372,14 @@ class Orchestrator:
             return dict(intent=intent, is_fallback=is_fallback, static=static, prompt=prompt,
                         max_tokens=max_tokens, references=references or [], refined=refined,
                         static_prefix=static_prefix)
+
+        # 모호/빈 질문 되물음 guard (라우팅 전): 환각·임의답 대신 구체화 요청.
+        # 좁은 패턴만 — 정상 질문("오늘 학식 뭐야", "졸업 몇 학점")은 걸리지 않는다.
+        _q = (query or "").strip()
+        _qn = _q.replace(" ", "")
+        if (len(_qn) <= 2 or _CLARIFY_EMPTY_RE.match(_q)
+                or _CLARIFY_DEICTIC_RE.match(_q) or _CLARIFY_SUBJLESS_RE.match(_q)):
+            return P(Intent.ACADEMIC, is_fallback=True, static=CLARIFY_MSG)
 
         # 도서관 내부 시설(화장실·층별)은 평면도 이미지뿐 → 라우팅 전 전용 안내
         if "도서관" in query and _FACILITY_RE.search(query):
@@ -1060,6 +1081,8 @@ class Orchestrator:
             from .schemas import Reference
             page_text, page_url = cal
             prompt = (
+                f"[오늘 날짜] {_now():%Y-%m-%d (%a)} — '며칠 남음/몇 주차/몇 달 남음' 등 기간 "
+                "계산이 필요하면 반드시 이 날짜를 기준으로 계산하고, 자료에 없으면 추측하지 마세요.\n"
                 "당신은 충남대학교 학사일정 안내 봇입니다. 아래 [학사일정 캘린더]는 plus.cnu의 "
                 "공식 학사일정 페이지에서 가져온 본문입니다.\n"
                 "1) 질문이 묻는 기간(예: 시험기간·방학·개강·종강·등록기간·수강신청 기간)에 "
@@ -1316,7 +1339,8 @@ class Orchestrator:
             if url and not any(url in (r.source_url or "") for r in refs):
                 refs.append(Reference(title=ttl, source_url=url))
         return P(Intent.ACADEMIC, max_tokens=512, refined=refined,
-                 prompt=build_academic_prompt(q, rr_chunks, extra), references=refs)
+                 prompt=build_academic_prompt(q, rr_chunks, extra, now=_now()),
+                 references=refs)
 
     def handle(self, query: str) -> CNUBotResponse:
         import time as _t

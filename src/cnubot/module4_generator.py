@@ -10,6 +10,7 @@ from __future__ import annotations
 import os
 import re
 import threading
+from datetime import datetime
 from typing import Protocol
 
 _CJK_RE = re.compile("[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff65-\uff9f]")  # 한자+일본어 가나 차단(드리프트). 한글 U+AC00~ 제외
@@ -23,6 +24,27 @@ from .schemas import (
     RetrievalResult,
     RetrievedChunk,
 )
+
+# 응답 끝에 누수되는 7B 환각 메타태그(예: "관리[SystemMessage]: ...") 컷.
+# 끝부분(trailing)만 제거. 정상 본문에 흔한 "시스템 공학"·"시스템 프로그래밍" 같은
+# 한국어 어구를 깨뜨리지 않도록, (1) 대괄호로 감싼 태그 [System...] 형태,
+# (2) 영문 역할명 뒤에 콜론이 붙은 "System:"/"Assistant:" 형태에만 한정한다.
+_META_TAIL_BRACKET_RE = re.compile(
+    r"\s*\(?\s*(관리|시스템)?\s*\[(System|SystemMessage|Assistant|User|시스템)[^\]]*\]\s*:?.*$",
+    flags=re.S,
+)
+_META_TAIL_COLON_RE = re.compile(
+    r"\s*\(?\s*(관리|시스템)?\s*(SystemMessage|System|Assistant|User)\s*:.*$",
+    flags=re.S,
+)
+
+
+def _strip_meta_tail(text: str) -> str:
+    """디코딩된 응답 끝의 메타태그(SystemMessage/Assistant 등) 누수를 잘라낸다."""
+    text = _META_TAIL_BRACKET_RE.sub("", text)
+    text = _META_TAIL_COLON_RE.sub("", text)
+    return text.rstrip()
+
 
 REFUSAL_MSG = "충남대학교 학사/학식 관련 질문에만 답변할 수 있습니다."
 NOTICE_MSG = ("최신 공지사항·학사일정 등 실시간 정보는 저장된 자료로 답변드리기 어렵습니다. "
@@ -48,10 +70,21 @@ def _scrub_cumulative_table(content: str) -> str:
     return _CUMULATIVE_CREDITS_RE.sub("[누적 수료학점 표 — 답변에 옮기지 말 것]", content)
 
 
+def _date_line(now: datetime | None) -> str:
+    """now가 있으면 프롬프트 맨 앞에 주입할 '오늘 날짜' 한 줄(날짜·기간 계산 grounding)."""
+    if now is None:
+        return ""
+    return (
+        f"[오늘 날짜] {now:%Y-%m-%d (%a)} — 날짜·기간(며칠/몇 주차/몇 달 남음 등) 계산이 "
+        "필요하면 반드시 이 날짜를 기준으로 계산하고, 모르면 추측하지 마세요.\n"
+    )
+
+
 def build_academic_prompt(query: str, chunks: list[RetrievedChunk],
                           extra_context: str | None = None,
                           max_chunks: int = 5, max_chunk_chars: int = 1200,
-                          max_total_chars: int = 7000) -> str:
+                          max_total_chars: int = 7000,
+                          now: datetime | None = None) -> str:
     # 프롬프트 슬림화: 청크 수·길이 상한으로 7B 모델 속도·정확도 확보.
     # (긴 컨텍스트는 생성 지연 + 핵심 누락 환각의 주원인)
     ctx_parts, total = [], 0
@@ -67,6 +100,7 @@ def build_academic_prompt(query: str, chunks: list[RetrievedChunk],
     if extra_context:  # adaptive: 상위 출처 페이지 본문(있으면 길이 제한해 추가)
         ctx += f"\n\n[상위 출처 페이지 전문]\n{extra_context[:2000]}"
     return (
+        _date_line(now) +
         "당신은 충남대학교 학사·생활 안내 봇입니다. 아래 [참고 자료]에 근거해서만 답하세요.\n"
         "자료에 없는 내용은 지어내지 말고 '관련 정보를 찾을 수 없습니다'라고 답하세요.\n"
         "교과목/과목명 규칙: ①자료에 한국어 명칭이 있으면 한국어를 본문에, 영문은 괄호 병기. "
@@ -186,7 +220,8 @@ def build_cafeteria_prompt(query: str, menus: list[DailyMenu], date_label: str =
 
 
 def build_notice_prompt(query: str, items: list[NoticeItem], label: str,
-                        body: str | None = None) -> str:
+                        body: str | None = None,
+                        now: datetime | None = None) -> str:
     lines = "\n".join(f"- ({it.posted or '날짜미상'}) {it.title}" for it in items)
     extra = (f"\n\n[관련 공지 본문]\n{body}" if body else "")
     body_rule = (
@@ -195,6 +230,7 @@ def build_notice_prompt(query: str, items: list[NoticeItem], label: str,
         "'본문에는 일정/응시장소 등만 있고 행사 내용은 안내돼 있지 않습니다'처럼 정직히 밝히세요.\n"
         if body else "")
     return (
+        _date_line(now) +
         f"당신은 충남대학교 {label} 공지 안내 봇입니다. 아래 [최근 공지 목록]은 최신순입니다.\n"
         "다음 규칙을 지키세요:\n"
         "1) '최근/최신/요즘 공지' 같은 일반적 질의면 맨 위에서 **3~5건**을 글머리표로 나열하세요. "
@@ -268,10 +304,12 @@ class CNUGenerator:
 
     def generate_notice(self, query: str, items: list[NoticeItem], label: str,
                         focus: NoticeItem | None = None,
-                        body: str | None = None) -> CNUBotResponse:
+                        body: str | None = None,
+                        now: datetime | None = None) -> CNUBotResponse:
         """temporal_notice: 라이브 공지 목록(+특정 공지 본문)을 LLM이 추려 답변."""
         answer = self.llm.generate(
-            build_notice_prompt(query, items, label, body=body), max_new_tokens=400)
+            build_notice_prompt(query, items, label, body=body, now=now),
+            max_new_tokens=400)
         # 본문 참조한 공지를 ref 맨 앞에
         head = [focus] if focus else []
         refs = [Reference(title=it.title[:70], source_url=it.url)
@@ -397,7 +435,9 @@ class HFAnswerLLM:
         gen = out[0][inputs["input_ids"].shape[1]:]
         text = self.tokenizer.decode(gen, skip_special_tokens=True)
         # 멀티바이트(한글)가 토큰 경계에서 잘리면 U+FFFD(�)가 남는다 → 제거.
-        return text.replace("�", "").strip()
+        text = text.replace("�", "").strip()
+        # F3: 응답 끝 메타태그(관리[SystemMessage]: …) 7B 환각 누수 컷.
+        return _strip_meta_tail(text)
 
     def generate_stream(self, prompt: str, max_new_tokens: int | None = None,
                         block_hanzi: bool | None = None):
