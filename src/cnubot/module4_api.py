@@ -245,19 +245,30 @@ _Q_GRAD_TOKENS = ("대학원", "석사", "박사", "석박", "수료")
 # 청크 소속 신호 (title의 단과대 prefix + source_url 호스트/경로)
 _C_MED_TOKENS = ("의과대학", "medicine.cnu", "수의과대학", "vetmed",
                  "약학대학", "pharm.cnu", "치의학", "dentistry", "간호대학", "nursing.cnu")
-_C_GRAD_TOKENS = ("대학원", "/grad/", "grad.cnu")
+# 대학원 신호는 URL(호스트/경로) 우선. title의 'bare 대학원'은 'X | 대학원 | …' 처럼
+# 명시 섹션일 때만 인정하고, 일반 페이지의 '대학/대학원' 네비 breadcrumb 은 제외(오탐 방지).
+_C_GRAD_URL_TOKENS = ("/grad/", "grad.cnu")
 
 
-def _scope_filter(query: str, chunks):
+def _chunk_is_grad(c) -> bool:
+    url = (c.source_url or "").lower()
+    if any(tok in url for tok in _C_GRAD_URL_TOKENS):
+        return True
+    title = c.title or ""
+    return ("대학원" in title) and ("대학/대학원" not in title)  # breadcrumb 제외
+
+
+def _scope_filter(query: str, chunks, refined: str = ""):
     """오코퍼스 오귀속 방지 게이트.
 
     일반 학부 질의(의대/대학원 신호 없음)에 의대·대학원 *전용* 청크가 끌려오면 제거.
     의대/대학원 질의면 해당 청크 유지(과도억제 금지). 일반 공통 학부 청크는
-    c_med/c_grad 토큰에 안 걸리므로 영향 없음(휴학·복수전공·장학·졸업학점130 등).
+    의대/대학원 신호에 안 걸리므로 영향 없음(휴학·복수전공·장학·졸업학점130 등).
+    스코프 신호는 원문 query + refined(검색에 쓴 문자열) 합쳐 판정(둘 중 하나라도 있으면 scoped).
     """
     if not chunks:
         return chunks
-    qt = query or ""
+    qt = (query or "") + " " + (refined or "")
     q_med = any(tok in qt for tok in _Q_MED_TOKENS)
     q_grad = any(tok in qt for tok in _Q_GRAD_TOKENS)
     # 질의가 이미 의대/대학원 스코프면 게이트 무력화 → 정당 질의 그대로 답.
@@ -267,7 +278,7 @@ def _scope_filter(query: str, chunks):
     for c in chunks:
         sig = ((c.title or "") + " " + (c.source_url or "")).lower()
         c_med = any(tok.lower() in sig for tok in _C_MED_TOKENS)
-        c_grad = any(tok.lower() in sig for tok in _C_GRAD_TOKENS)
+        c_grad = _chunk_is_grad(c)
         if c_med and not q_med:
             continue  # 일반 학부 질의에 의대 전용 청크 → drop
         if c_grad and not q_grad:
@@ -1414,7 +1425,7 @@ class Orchestrator:
         rr = self.academic.retrieve(q, top_k=8 if is_reg else None)
         # 스코프 게이트: 일반 학부 질의에 끌려온 의대/대학원 전용 청크 제거(오코퍼스 오귀속 방지).
         # 전부 drop되면 rr.chunks=[] → 아래 `not rr.chunks` 폴백이 자료없음 위임 처리.
-        rr.chunks = _scope_filter(query, list(rr.chunks))
+        rr.chunks = _scope_filter(query, list(rr.chunks), refined=q)
         from .schemas import Reference
         live = None if is_reg else self._read_dept_relevant(query)
         # DB(요람)에 청크가 없거나 약함 → 라이브 페이지로 즉시 폴백
