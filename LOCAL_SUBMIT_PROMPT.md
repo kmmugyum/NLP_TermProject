@@ -33,7 +33,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # 2705db7(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # c173b78(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
