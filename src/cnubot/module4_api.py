@@ -238,6 +238,44 @@ _EMOTION_MSG = (
     f"{_COUNSEL_URL}")
 
 
+# 단과대/대학원 스코프 신호 토큰 (좁게 — 오탐 금지, '의' 한 글자 매칭 금지)
+_Q_MED_TOKENS = ("의대", "의과대", "의예과", "의학과", "수의대", "수의예과",
+                 "약대", "약학", "치대", "치의학", "간호대", "간호학과")
+_Q_GRAD_TOKENS = ("대학원", "석사", "박사", "석박", "수료")
+# 청크 소속 신호 (title의 단과대 prefix + source_url 호스트/경로)
+_C_MED_TOKENS = ("의과대학", "medicine.cnu", "수의과대학", "vetmed",
+                 "약학대학", "pharm.cnu", "치의학", "dentistry", "간호대학", "nursing.cnu")
+_C_GRAD_TOKENS = ("대학원", "/grad/", "grad.cnu")
+
+
+def _scope_filter(query: str, chunks):
+    """오코퍼스 오귀속 방지 게이트.
+
+    일반 학부 질의(의대/대학원 신호 없음)에 의대·대학원 *전용* 청크가 끌려오면 제거.
+    의대/대학원 질의면 해당 청크 유지(과도억제 금지). 일반 공통 학부 청크는
+    c_med/c_grad 토큰에 안 걸리므로 영향 없음(휴학·복수전공·장학·졸업학점130 등).
+    """
+    if not chunks:
+        return chunks
+    qt = query or ""
+    q_med = any(tok in qt for tok in _Q_MED_TOKENS)
+    q_grad = any(tok in qt for tok in _Q_GRAD_TOKENS)
+    # 질의가 이미 의대/대학원 스코프면 게이트 무력화 → 정당 질의 그대로 답.
+    if q_med and q_grad:
+        return chunks
+    kept = []
+    for c in chunks:
+        sig = ((c.title or "") + " " + (c.source_url or "")).lower()
+        c_med = any(tok.lower() in sig for tok in _C_MED_TOKENS)
+        c_grad = any(tok.lower() in sig for tok in _C_GRAD_TOKENS)
+        if c_med and not q_med:
+            continue  # 일반 학부 질의에 의대 전용 청크 → drop
+        if c_grad and not q_grad:
+            continue  # 학부 질의에 대학원 전용 청크 → drop
+        kept.append(c)
+    return kept
+
+
 def _multi_intent(query: str) -> bool:
     """연결어로 묶인 서로 다른 토픽 신호가 2개 이상이면 멀티 intent로 판단(M1)."""
     if not _MULTI_CONNECTOR_RE.search(query):
@@ -1374,6 +1412,9 @@ class Orchestrator:
         # 규정/요건 질의면 학사요람 boost된 청크 + 학부 교과과정 페이지를 모두 grounding으로 결합.
         self._progress("학사 인덱스 검색 중…")
         rr = self.academic.retrieve(q, top_k=8 if is_reg else None)
+        # 스코프 게이트: 일반 학부 질의에 끌려온 의대/대학원 전용 청크 제거(오코퍼스 오귀속 방지).
+        # 전부 drop되면 rr.chunks=[] → 아래 `not rr.chunks` 폴백이 자료없음 위임 처리.
+        rr.chunks = _scope_filter(query, list(rr.chunks))
         from .schemas import Reference
         live = None if is_reg else self._read_dept_relevant(query)
         # DB(요람)에 청크가 없거나 약함 → 라이브 페이지로 즉시 폴백
