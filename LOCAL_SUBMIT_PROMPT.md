@@ -33,7 +33,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # bd825b8(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # c96bab2(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
@@ -71,9 +71,13 @@ for f in ['$PKG/chatbot.sh','$PKG/src/classifier.ipynb','$PKG/academic_v2_bin.zi
 > Drive 캐시(`hf_cache`)에 받혀 재실행 시 재다운로드 없음.
 
 ### (A) 에러 없이 동작
-1. **classifier.ipynb** 셀 순서 실행 → Cell 0(Drive마운트·zip해제·deps설치, 첫 실행은
-   Qwen 7B 다운로드로 수 분) → `outputs/cls_output.json` 생성 + 최소합격선 셀 ✅
-   (건수 일치·label int 0~4).
+> **torch 정합 주의(c96bab2)**: Colab이 torch 2.11을 사전설치 → transformers 4.51.3와 비호환
+> (`TransformGetItemToIndex` ImportError). Cell 0이 requirements의 `torch==2.5.1`로 다운그레이드한다.
+> 커널에 torch 2.11이 이미 적재돼 있으면 **Cell 0이 런타임을 1회 자동 재시작**하니, 재시작되면
+> **Cell 0을 다시 실행**하면 된다(2회차엔 torch 2.5.1로 로드되어 통과). 첫 설치는 ~2~4분.
+1. **classifier.ipynb** 셀 순서 실행 → Cell 0(Drive마운트·zip해제·deps설치·torch 2.5.1 정합,
+   첫 실행은 Qwen 7B 다운로드로 수 분) → `🎉 OK — torch=2.5.1 …` 출력 확인 →
+   `outputs/cls_output.json` 생성 + 최소합격선 셀 ✅ (건수 일치·label int 0~4).
 2. **chatbot.sh** — 새 셀에서:
    ```python
    %cd /content/workspace/Termproject_김무겸     # Cell 0 출력에 찍힌 PROJECT_ROOT
