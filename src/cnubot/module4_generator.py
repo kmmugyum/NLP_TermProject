@@ -70,13 +70,19 @@ def _scrub_cumulative_table(content: str) -> str:
     return _CUMULATIVE_CREDITS_RE.sub("[누적 수료학점 표 — 답변에 옮기지 말 것]", content)
 
 
+_KOR_WEEKDAYS = ("월", "화", "수", "목", "금", "토", "일")
+
+
 def _date_line(now: datetime | None) -> str:
-    """now가 있으면 프롬프트 맨 앞에 주입할 '오늘 날짜' 한 줄(날짜·기간 계산 grounding)."""
+    """now가 있으면 프롬프트 맨 앞에 주입할 '오늘 날짜' 한 줄(날짜·기간 계산 grounding).
+    요일은 한국어로 미리 계산해 명시한다(영문 %a 를 모델이 잘못 번역/환각하는 문제 방지)."""
     if now is None:
         return ""
+    dow = _KOR_WEEKDAYS[now.weekday()]
     return (
-        f"[오늘 날짜] {now:%Y-%m-%d (%a)} — 날짜·기간(며칠/몇 주차/몇 달 남음 등) 계산이 "
-        "필요하면 반드시 이 날짜를 기준으로 계산하고, 모르면 추측하지 마세요.\n"
+        f"[오늘 날짜] {now:%Y년 %m월 %d일} {dow}요일 — 요일은 여기 적힌 '{dow}요일'을 그대로 쓰고 "
+        "다시 계산하지 마세요. 날짜·기간(며칠/몇 주차/몇 달 남음 등) 계산이 필요하면 반드시 이 "
+        "날짜를 기준으로 계산하고, 모르면 추측하지 마세요.\n"
     )
 
 
