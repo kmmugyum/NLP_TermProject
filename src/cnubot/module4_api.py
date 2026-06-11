@@ -1182,7 +1182,16 @@ class Orchestrator:
                 "항목을 합쳐 새 기간을 만들지 마세요(예: '하기방학 6.22~7.10'은 환각). 본문에 "
                 "**시작일만** 적혀 있으면 답변에도 시작일만 안내하고 종료일은 '본문에 명시되어 있지 "
                 "않음'으로 밝히세요. 본문에 '기간 X~Y'로 적힌 항목은 그 항목의 명칭 그대로(예: "
-                "'하기 계절학기 6.22~7.10') 인용하고, 다른 항목의 명칭으로 바꿔 말하지 마세요.\n\n"
+                "'하기 계절학기 6.22~7.10') 인용하고, 다른 항목의 명칭으로 바꿔 말하지 마세요.\n"
+                "5) [학기 해석 — 반드시 위 [오늘 날짜] 기준] 본문에는 '제1학기/제2학기' '하기/동기' "
+                "라벨이 붙은 일정이 함께 들어 있습니다. 이 라벨로 학기를 구분해 답하세요.\n"
+                "   - '다음 학기 개강/다음 개강/다음 학기' → [오늘 날짜] **이후** 가장 가까운 "
+                "'제N학기 개강일'을 고르세요(예: 오늘이 제1학기 중인 6월이면 → 09.01 '제2학기 "
+                "개강일'). 과거 개강일이나 무관한 날짜를 절대 고르지 마세요.\n"
+                "   - '이번 학기' → [오늘 날짜]가 속한 학기. '이번 학기 종강/방학' → 그 학기의 "
+                "방학 시작일(예: 제1학기 중이면 하기방학 시작일).\n"
+                "   - '몇 달/며칠 남았나' 류는 위에서 고른 정확한 날짜와 [오늘 날짜]의 차이로만 "
+                "계산하세요.\n\n"
                 f"[학사일정 캘린더]\n{page_text}\n\n[질문]\n{query}"
             )
             return P(Intent.ACADEMIC, max_tokens=500, refined=query,
@@ -1784,12 +1793,29 @@ class Orchestrator:
                         d = it.get("date", ""); ev = it.get("event", "")
                         lines.append(f"- {d} {ev}".rstrip())
                 return "\n".join(lines), url
-            return None
+            return self._academic_calendar_index_fallback(query, url)
         from .notice import fetch_page_text
         txt = fetch_page_text(url, max_chars=9000)  # 1~12월 전체 일정 커버
         if not txt:
-            return None
+            return self._academic_calendar_index_fallback(query, url)
         return txt, url
+
+    def _academic_calendar_index_fallback(self, query: str, url: str):
+        """라이브 fetch/GitHub JSON 이 비거나 실패했을 때의 안전망.
+        학사(academic) 인덱스에서 학사일정 관련 청크를 retrieve 해 page_text 대신 반환한다.
+        구조 변경 없이 기존 self.academic.retrieve 만 재활용. 검색 실패 시 None →
+        호출부에서 cal=None 이 되어 기존 academic RAG 경로로 자연스럽게 흐른다."""
+        try:
+            rr = self.academic.retrieve(query)
+            chunks = list(rr.chunks)
+            if not chunks:
+                return None
+            text = "\n\n".join(c.content for c in chunks[:8] if c.content)
+            if not text.strip():
+                return None
+            return text, url
+        except Exception:
+            return None
 
     def _read_library_notices(self, query: str):
         """'도서관 + 공지/소식' 질의 → library.cnu.ac.kr 일반공지 게시판 라이브 fetch.
