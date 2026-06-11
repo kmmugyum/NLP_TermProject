@@ -33,7 +33,7 @@ push해뒀다. **아직 main 미병합.** 너의 일은 이 브랜치로 제출 
 ## STEP 1 — fix 브랜치 받기
 ```bash
 cd /tmp && rm -rf ntp_sub && gh repo clone kmmugyum/NLP_TermProject ntp_sub -- -b fix/env-compat-py310-torch251 --depth 1
-cd ntp_sub && git log -1 --format='%h %s'      # c173b78(또는 이후) 확인
+cd ntp_sub && git log -1 --format='%h %s'      # f0a7444(또는 이후) 확인
 ls academic_v2_bin.zip src/classifier.ipynb chatbot.sh requirements.txt   # 존재 확인
 ```
 
@@ -100,6 +100,16 @@ for f in ['$PKG/chatbot.sh','$PKG/src/classifier.ipynb','$PKG/academic_v2_bin.zi
 11. `그거 언제까지였지?` / `?` → "질문이 모호해요…" 되물음(임의 답 안 함).
 12. `도서관 주말 몇 시까지 열어?` → library.cnu 안내(OOS 거부 아님).
 13. `나 우울한데 위로 좀` → 공감+학생상담센터. `너 학식 다 지어내잖아?` → 차분한 출처 설명(학식표 덤프 아님).
+14. `융합전공은 모듈 단위로 끊어 들으면 마이크로디그리로 학점 교차 인정돼?` → 학사 답변/위임.
+    (과거 '단위로'의 '위로' 부분일치로 상담센터 메시지가 잘못 뜨던 버그 수정 회귀확인 — f0a7444)
+
+### (빠른 일반 질문 5개) — 데모 시 가장 먼저 던져볼 평이한 질문
+> 환각·회귀·라우팅을 한 번에 훑는 일상 질문. 모두 자연스러운 학사 답변이 나와야 정상.
+1. `충남대 졸업하려면 몇 학점 들어야 해?`            → 130학점.
+2. `복수전공이랑 부전공 차이가 뭐야?`                → 목적/이수범위/학점(복수39·부전공24~30) 구분 설명.
+3. `성적 장학금 받으려면 평점 몇 이상이어야 해?`      → 3.25 이상.
+4. `휴학은 최대 몇 학기까지 할 수 있어?`             → 통산 6학기(3년)류.
+5. `오늘 학식 뭐 나와?`                              → 오늘 날짜 식단(OOS 오거부 없이).
 
 ## STEP 5 — 판정 & main 병합
 - **(A) 두 출력파일 무에러 생성 AND (B) 환각 3~5 통과 AND (C) 회귀 6~8 정상** → 통과.
