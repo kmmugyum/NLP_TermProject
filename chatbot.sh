@@ -25,7 +25,9 @@ _log "chatbot.sh 시작 (PID $$ · 로그: $_RUN_LOG)"
 # ============================================================
 _log "의존성 확인·설치 (미설치 시 ~3~5분, '.'=진행중)"
 pip install -q -U pip setuptools wheel >/dev/null 2>&1 || true
-pip uninstall -y -q torchao torchcodec >/dev/null 2>&1 || true
+# torchvision/torchaudio 도 제거: Colab 사전설치본(torch 2.11 정합)이 requirements 의 torch 2.5.1 과
+# 불일치 → 미사용이므로 선제 제거해 import 충돌 방지.
+pip uninstall -y -q torchao torchcodec torchvision torchaudio >/dev/null 2>&1 || true
 
 # Colab 터미널은 출력 없는 긴 작업에서 연결을 끊고(→SIGHUP) foreground pip 설치를 중단시킨다
 # (증상: 설치 중 '[disconnected]' 후 멈춤). 회피: setsid 로 터미널과 분리해 SIGHUP 에 면역시키고,
