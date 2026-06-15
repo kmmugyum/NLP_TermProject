@@ -26,3 +26,7 @@ outputs/*.json
 hf_cache/
 model/
 *.bak_*
+domain_crawl.log
+/src/cnubot/storage/_domain_chunks.json
+/src/cnubot/storage/domain.bin*
+domain_crawl_cron.log

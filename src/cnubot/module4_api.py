@@ -57,7 +57,7 @@ _SITE_GUIDE = [
      "총학생회/동아리", "http://cnustudent.cnu.ac.kr"),
     (("셔틀", "셔틀버스", "스쿨버스", "통학버스"),
      "셔틀버스 안내",
-     "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05050501.html"),
+     "https://plus.cnu.ac.kr/html/kr/sub05/sub05_050403.html"),
     (("ROTC", "rotc", "학군단", "학사장교"),
      "학군단", "https://116rotc.cnu.ac.kr"),
     (("평생교육원", "평교원", "평생교육"),
@@ -1161,7 +1161,7 @@ class Orchestrator:
         # 거부가 아닌 공식 안내(ACADEMIC)로 응답한다. 상세 배차표는 코퍼스에 없으므로 공식 페이지 안내.
         if _SHUTTLE_RE.search(query):
             from .schemas import Reference
-            shuttle_url = "https://plus.cnu.ac.kr/html/kr/sub05/sub05_05050501.html"
+            shuttle_url = "https://plus.cnu.ac.kr/html/kr/sub05/sub05_050403.html"
             # is_fallback=False: 정상 안내(학사) 응답이므로 UI '거부' 배지가 붙으면 안 됨.
             return P(Intent.ACADEMIC, is_fallback=False, refined=query,
                      static=("충남대학교 셔틀버스(통학버스)의 노선·시간표·정류장 등 자세한 정보는 "
