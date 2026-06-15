@@ -1,7 +1,14 @@
 {
-  "fetched_at": "2026-06-15T06:00:19.415293",
+  "fetched_at": "2026-06-15T12:00:16.415401",
   "data": {
     "응용생물학과": [
+      {
+        "title": "2026학년도 제2학기 등록금 납부 안내",
+        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=589373&article.offset=0&articleLimit=10",
+        "dept": "응용생물학과",
+        "posted": "26.06.15",
+        "article_no": 589373
+      },
       {
         "title": "2026학년도 하기 계절학기 수강신청 취소 안내",
         "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=588803&article.offset=0&articleLimit=10",
@@ -64,13 +71,6 @@
         "dept": "응용생물학과",
         "posted": "26.04.15",
         "article_no": 584033
-      },
-      {
-        "title": "2026학년도 제1학기 중간 강의평가 실시 안내",
-        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=582759&article.offset=0&articleLimit=10",
-        "dept": "응용생물학과",
-        "posted": "26.03.31",
-        "article_no": 582759
       }
     ],
     "아시아비즈니스국제학과": [
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타]고용노동부 국민취업지원제도 사업 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589368&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.15",
+        "article_no": 589368
+      },
+      {
         "title": "[공지] 충남대-공주대 통합 찬반투표 대비 구성원 대토론회 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589333&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -252,13 +259,6 @@
         "dept": "경제학과",
         "posted": "26.06.15",
         "article_no": 589316
-      },
-      {
-        "title": "[기타] 2026학년도 CNU Learning Together(50호) 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589294&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.15",
-        "article_no": 589294
       },
       {
         "title": "***<2026학년도 제2학기 학습공동체>***",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "‘충남대-공주대 통합 찬반투표 대비 구성원 대토론회’ 참석 요청",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589393&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.06.15",
+        "article_no": 589393
+      },
+      {
         "title": "[한국CDE학회] 2026 하계학술대회 개최 안내 (8. 19-22, 제주 부영호텔&리조트)",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589237&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -882,13 +889,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.06.02",
         "article_no": 588207
-      },
-      {
-        "title": "[대학원] 2026년 한국장학재단 박사우수장학금(이공계) 신규장학생 선발 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=587699&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.05.27",
-        "article_no": 587699
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -2884,6 +2884,13 @@
     ],
     "경제학과": [
       {
+        "title": "[기타]고용노동부 국민취업지원제도 사업 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589368&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.15",
+        "article_no": 589368
+      },
+      {
         "title": "[공지] 충남대-공주대 통합 찬반투표 대비 구성원 대토론회 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589333&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2896,13 +2903,6 @@
         "dept": "경제학과",
         "posted": "26.06.15",
         "article_no": 589316
-      },
-      {
-        "title": "[기타] 2026학년도 CNU Learning Together(50호) 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589294&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.15",
-        "article_no": 589294
       },
       {
         "title": "[공지] 교직과정 이수 예정자 선발 및 폐지 안내",
@@ -2977,7 +2977,7 @@
         "article_no": 589238
       },
       {
-        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내(기한연장)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=588684&article.offset=0&articleLimit=10",
         "dept": "사범대학",
         "posted": "26.06.08",
@@ -3042,6 +3042,13 @@
     ],
     "사범대학 교육학과 / 사범대학": [
       {
+        "title": "2026학년도 나의 교육현장 답사기 공모전 안내",
+        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=589395&article.offset=0&articleLimit=10",
+        "dept": "사범대학 교육학과",
+        "posted": "26.06.15",
+        "article_no": 589395
+      },
+      {
         "title": "2026학년도 나의 교육현장 답사기 공모전 안내(접수: 2026. 7.31.(목)까지)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=589238&article.offset=0&articleLimit=10",
         "dept": "사범대학",
@@ -3063,14 +3070,14 @@
         "article_no": 589117
       },
       {
-        "title": "[육성]2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "[육성]2026학년도 융합교육 연구공동체 프로그램 운영 안내(신청기간 연장)",
         "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=588741&article.offset=0&articleLimit=10",
         "dept": "사범대학 교육학과",
         "posted": "26.06.08",
         "article_no": 588741
       },
       {
-        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내(기한연장)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=588684&article.offset=0&articleLimit=10",
         "dept": "사범대학",
         "posted": "26.06.08",
@@ -3117,13 +3124,6 @@
         "dept": "사범대학 교육학과",
         "posted": "26.06.01",
         "article_no": 588009
-      },
-      {
-        "title": "2026년 직업계고 글로벌 현장학습 영어 심화교육 보조교사 선발 안내",
-        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=587833&article.offset=0&articleLimit=10",
-        "dept": "사범대학 교육학과",
-        "posted": "26.05.28",
-        "article_no": 587833
       },
       {
         "title": "2025학년도 글로벌 역량과 네트워크를 위한 해외파견 단기 프로그램 선정 결과 안내",
@@ -3277,7 +3277,7 @@
         "article_no": 589238
       },
       {
-        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내(기한연장)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=588684&article.offset=0&articleLimit=10",
         "dept": "사범대학",
         "posted": "26.06.08",
@@ -3426,6 +3426,13 @@
     ],
     "전기공학과": [
       {
+        "title": "‘충남대-공주대 통합 찬반투표 대비 구성원 대토론회’ 참석 안내",
+        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=589360&article.offset=0&articleLimit=10",
+        "dept": "전기공학과",
+        "posted": "26.06.15",
+        "article_no": 589360
+      },
+      {
         "title": "2026 올해의 캡스톤디자인 아이디어 공모전(1학기) 공모전 운영 안내[RISE 사업단]",
         "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=588959&article.offset=0&articleLimit=10",
         "dept": "전기공학과",
@@ -3452,13 +3459,6 @@
         "dept": "전기공학과",
         "posted": "26.06.05",
         "article_no": 588543
-      },
-      {
-        "title": "[육성]2026학년도 창의융합대학 뉴비(New飛) 전공탐색전 Pre-Fair 참가팀 신청서 제출 안내",
-        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=588419&article.offset=0&articleLimit=10",
-        "dept": "전기공학과",
-        "posted": "26.06.04",
-        "article_no": 588419
       },
       {
         "title": "2026학년도 제1학기 미래설계상담 교과목 배정 명단 안내",
@@ -4077,6 +4077,20 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
+        "title": "2026년 청(소)년 기후변화 컨퍼런스 LCOY Korea 개최 안내",
+        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=589392&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학 산림환경자원학과",
+        "posted": "26.06.15",
+        "article_no": 589392
+      },
+      {
+        "title": "2026년 임업통계 활용 경진대회 개최 안내",
+        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=589387&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학 산림환경자원학과",
+        "posted": "26.06.15",
+        "article_no": 589387
+      },
+      {
         "title": "★2025학년도 농생명융합학부 학과(부) 1차 추가 배정 세부시행 계획 안내 ★",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=589200&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -4138,20 +4152,6 @@
         "dept": "농업생명과학대학 산림환경자원학과",
         "posted": "26.05.28",
         "article_no": 587758
-      },
-      {
-        "title": "2026년 유엔참전국 미래세대 교류캠프 참가자 모집 안내(국내 대학생)",
-        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=587757&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학 산림환경자원학과",
-        "posted": "26.05.28",
-        "article_no": 587757
-      },
-      {
-        "title": "「2026년 학생성공 성장캠프(부산경남)」운영안내",
-        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=587756&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학 산림환경자원학과",
-        "posted": "26.05.28",
-        "article_no": 587756
       },
       {
         "title": "2026학년도 2학기 국가장학금 1차 신청 안내",
@@ -4781,7 +4781,7 @@
         "article_no": 588743
       },
       {
-        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내(기한연장)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=588684&article.offset=0&articleLimit=10",
         "dept": "사범대학",
         "posted": "26.06.08",
@@ -5104,6 +5104,13 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "2026학년도 하기방학특별학기[재학생] 수강신청 안내",
+        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=589378&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기계공학교육과",
+        "posted": "26.06.15",
+        "article_no": 589378
+      },
+      {
         "title": "2026-1학기 심화종합설계_성과발표회",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=589327&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -5235,13 +5242,6 @@
         "dept": "사범대학 기계공학교육과",
         "posted": "26.05.19",
         "article_no": 586938
-      },
-      {
-        "title": "2026학년도 하기 계절학기 수강신청 안내",
-        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=585636&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기계공학교육과",
-        "posted": "26.04.30",
-        "article_no": 585636
       },
       {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
@@ -5795,6 +5795,13 @@
     ],
     "약학대학": [
       {
+        "title": "2025학년도 후기(2026. 8월 졸업) 대학원 학위청구논문 원문파일 제출 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=589374&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.06.15",
+        "article_no": 589374
+      },
+      {
         "title": "2026학년도 제2학기 등록금 납부 안내",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=589311&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5828,13 +5835,6 @@
         "dept": "약학대학",
         "posted": "26.06.05",
         "article_no": 588651
-      },
-      {
-        "title": "2026학년도 하계방학 중 국립공주대학교 공주캠퍼스 학생생활관 입실신청 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=588372&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.06.04",
-        "article_no": 588372
       },
       {
         "title": "6학년 실무실습 자격 요건 안내",
@@ -6592,7 +6592,7 @@
         "article_no": 589238
       },
       {
-        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내",
+        "title": "2026학년도 융합교육 연구공동체 프로그램 운영 안내(기한연장)",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=588684&article.offset=0&articleLimit=10",
         "dept": "사범대학",
         "posted": "26.06.08",
@@ -6741,6 +6741,20 @@
     ],
     "무역학과": [
       {
+        "title": "[안내] 2026학년도 하기방학특별학기[재학생] 수강신청 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=589391&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.06.15",
+        "article_no": 589391
+      },
+      {
+        "title": "[안내] 2026학년도 제2학기 등록금 납부 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=589390&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.06.15",
+        "article_no": 589390
+      },
+      {
         "title": "[장학] 2026년도 우수 학부연구생 지원 안내",
         "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=589177&article.offset=0&articleLimit=10",
         "dept": "무역학과",
@@ -6760,20 +6774,6 @@
         "dept": "무역학과",
         "posted": "26.06.11",
         "article_no": 589133
-      },
-      {
-        "title": "[장학] 2027학년도 소아·청소년 당뇨인 푸른빛 희망 장학금 지원 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=589132&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.06.11",
-        "article_no": 589132
-      },
-      {
-        "title": "[안내] 2026년 부마민주항쟁기념재단 장학생 모집 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=589131&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.06.11",
-        "article_no": 589131
       },
       {
         "title": "[해외] 2026학년도 무역학과 Trade Bridge 프로그램 안내 및 참가자 모집",
