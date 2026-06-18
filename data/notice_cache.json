@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-18T12:00:16.639553",
+  "fetched_at": "2026-06-18T18:00:17.359261",
   "data": {
     "응용생물학과": [
       {
@@ -2326,13 +2326,6 @@
         "article_no": 589823
       },
       {
-        "title": "2026년도 우수 학부연구생 지원 안내(6.18(목) 오전 11시까지 추천서 및 서식 등 모두 제출)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=589522&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.06.16",
-        "article_no": 589522
-      },
-      {
         "title": "1학기 미래설계상담 신청 마감되었습니다.(2회 이상  : 1회 대면 필수)",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=589490&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2471,6 +2464,13 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "25.10.20",
         "article_no": 562651
+      },
+      {
+        "title": "★★[졸업요건] 비교과 졸업요건: 프로젝트 교과목 및 트랙 이수 안내 및 제출 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=555194&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "25.07.09",
+        "article_no": 555194
       }
     ],
     "건설공학교육과": [
@@ -3735,6 +3735,13 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "2026년 청(소)년 기후변화 컨퍼런스 LCOY Korea 행사 안내문",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=589830&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.06.18",
+        "article_no": 589830
+      },
+      {
         "title": "[신규과정] 74기 물환경 엔지니어링 Tool 마스터 과정 교육생 모집안내 협조 요청(~6.25)",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=589778&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3796,13 +3803,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.06.16",
         "article_no": 589559
-      },
-      {
-        "title": "2026학년도 하기방학특별학기[재학생] 수강신청 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=589557&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.06.16",
-        "article_no": 589557
       },
       {
         "title": "[총무과] 설 명절「청렴주의보」발령 안내(2026년 제1호)",
