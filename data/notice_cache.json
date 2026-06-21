@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-21T12:00:15.950512",
+  "fetched_at": "2026-06-21T18:00:17.564041",
   "data": {
     "응용생물학과": [
       {
@@ -3570,11 +3570,11 @@
         "article_no": 588491
       },
       {
-        "title": "미래설계상담 상담신청방법(대면, 비대면) [1학년 필수확인바람]",
-        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=588334&article.offset=0&articleLimit=10",
+        "title": "(응시권 소진) 2026학년도 학부 신입생 대상 정기토익 무료 응시권 선착순 배부(6. 4.~ 6. 12.)",
+        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=588335&article.offset=0&articleLimit=10",
         "dept": "에너지공학과",
         "posted": "26.06.02",
-        "article_no": 588334
+        "article_no": 588335
       },
       {
         "title": "장학게시판 안내",
@@ -5018,13 +5018,6 @@
         "article_no": 588046
       },
       {
-        "title": "제2회  KMI 청년의사 글로벌 헬스 리더십 캠프 참가자 모집",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=587508&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.05.26",
-        "article_no": 587508
-      },
-      {
         "title": "2026년도 2학기 국가근로장학금 1차 학생 신청기간 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=587391&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5058,6 +5051,13 @@
         "dept": "의과대학",
         "posted": "26.05.19",
         "article_no": 586921
+      },
+      {
+        "title": "교육부 주관「의과대학 교육 혁신 우수사례 공모전」개최 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=586633&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.05.14",
+        "article_no": 586633
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6834,13 +6834,6 @@
         "article_no": 588046
       },
       {
-        "title": "제2회  KMI 청년의사 글로벌 헬스 리더십 캠프 참가자 모집",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=587508&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.05.26",
-        "article_no": 587508
-      },
-      {
         "title": "2026년도 2학기 국가근로장학금 1차 학생 신청기간 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=587391&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6874,6 +6867,13 @@
         "dept": "의과대학",
         "posted": "26.05.19",
         "article_no": 586921
+      },
+      {
+        "title": "교육부 주관「의과대학 교육 혁신 우수사례 공모전」개최 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=586633&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.05.14",
+        "article_no": 586633
       },
       {
         "title": "2026년도 수의사관후보생 지원 안내",
