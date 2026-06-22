@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-21T18:00:17.564041",
+  "fetched_at": "2026-06-22T00:00:15.748901",
   "data": {
     "응용생물학과": [
       {
@@ -4976,6 +4976,13 @@
     ],
     "의과대학": [
       {
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.22",
+        "article_no": 589955
+      },
+      {
         "title": "2026학년도 하계방학 하계 2차 학생생활관 특별개관 신청 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589853&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5051,13 +5058,6 @@
         "dept": "의과대학",
         "posted": "26.05.19",
         "article_no": 586921
-      },
-      {
-        "title": "교육부 주관「의과대학 교육 혁신 우수사례 공모전」개최 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=586633&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.05.14",
-        "article_no": 586633
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6785,6 +6785,13 @@
     ],
     "수의과대학 / 의과대학": [
       {
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.22",
+        "article_no": 589955
+      },
+      {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
         "url": "https://vetmed.cnu.ac.kr/vetmed/community/notice.do?mode=view&articleNo=589889&article.offset=0&articleLimit=10",
         "dept": "수의과대학",
@@ -6867,13 +6874,6 @@
         "dept": "의과대학",
         "posted": "26.05.19",
         "article_no": 586921
-      },
-      {
-        "title": "교육부 주관「의과대학 교육 혁신 우수사례 공모전」개최 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=586633&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.05.14",
-        "article_no": 586633
       },
       {
         "title": "2026년도 수의사관후보생 지원 안내",
