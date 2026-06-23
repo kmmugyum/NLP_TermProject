@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-23T00:00:16.375946",
+  "fetched_at": "2026-06-23T06:00:15.515827",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,20 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 멀티 LLM을 활용한 AI 챌린지 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590133&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.23",
+        "article_no": 590133
+      },
+      {
+        "title": "[기타] Adobe 라이선스 회수 및 2026학년도 2학기 사용 신청 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590110&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.23",
+        "article_no": 590110
+      },
+      {
         "title": "[기타] 2026년 후반기 예비군 전입 신고 관련 알림",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590078&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -252,20 +266,6 @@
         "dept": "경제학과",
         "posted": "26.06.22",
         "article_no": 590077
-      },
-      {
-        "title": "[기타] 거점특화 CNU-WITH GMP 품질관리(QA·QC) 실무 교육 홍보",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590076&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.22",
-        "article_no": 590076
-      },
-      {
-        "title": "[기타] 2026학년도 하계방학 하계 2차 학생생활관 특별개관 신청 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589905&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.19",
-        "article_no": 589905
       },
       {
         "title": "***<2026학년도 제2학기 학습공동체>***",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "멀티 LLM을 활용한 AI 챌린지 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=590136&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.06.23",
+        "article_no": 590136
+      },
+      {
         "title": "[육성]「STAR-CCM+ Basic 교육」홍보 요청",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589879&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -882,13 +889,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.06.15",
         "article_no": 589393
-      },
-      {
-        "title": "[한국CDE학회] 2026 하계학술대회 개최 안내 (8. 19-22, 제주 부영호텔&리조트)",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589237&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.06.12",
-        "article_no": 589237
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -1712,6 +1712,13 @@
     ],
     "토목공학과": [
       {
+        "title": "2026년도 현장실습 일정 공지",
+        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=590111&article.offset=0&articleLimit=10",
+        "dept": "토목공학과",
+        "posted": "26.06.23",
+        "article_no": 590111
+      },
+      {
         "title": "2026학년도 제2학기 등록금 납부 안내",
         "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=589207&article.offset=0&articleLimit=10",
         "dept": "토목공학과",
@@ -1738,13 +1745,6 @@
         "dept": "토목공학과",
         "posted": "26.06.01",
         "article_no": 588153
-      },
-      {
-        "title": "2026학년도 하기 계절학기 수강료 추가 납부 안내",
-        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=587965&article.offset=0&articleLimit=10",
-        "dept": "토목공학과",
-        "posted": "26.05.29",
-        "article_no": 587965
       },
       {
         "title": "★이수면제 교과목(화학개론실험,물리학실험2,기초통계입문,프로그래밍언어) 안내",
@@ -2835,6 +2835,20 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 멀티 LLM을 활용한 AI 챌린지 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590133&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.23",
+        "article_no": 590133
+      },
+      {
+        "title": "[기타] Adobe 라이선스 회수 및 2026학년도 2학기 사용 신청 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590110&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.23",
+        "article_no": 590110
+      },
+      {
         "title": "[기타] 2026년 후반기 예비군 전입 신고 관련 알림",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590078&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2847,20 +2861,6 @@
         "dept": "경제학과",
         "posted": "26.06.22",
         "article_no": 590077
-      },
-      {
-        "title": "[기타] 거점특화 CNU-WITH GMP 품질관리(QA·QC) 실무 교육 홍보",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590076&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.22",
-        "article_no": 590076
-      },
-      {
-        "title": "[기타] 2026학년도 하계방학 하계 2차 학생생활관 특별개관 신청 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=589905&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.19",
-        "article_no": 589905
       },
       {
         "title": "[기타] 2026학년도 창의융합대학 뉴비(New飛) 전공탐색전 Pre-Fair 안내(프로젝트 참가 희망팀 모집) ~ 6.24.(수)까지 신청",
@@ -2993,6 +2993,13 @@
     ],
     "사범대학 교육학과 / 사범대학": [
       {
+        "title": "2026학년도 하계방학 학생성공장학금(학부연구생) 운영 계획 안내 및 장학생 추천 요청",
+        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=590132&article.offset=0&articleLimit=10",
+        "dept": "사범대학 교육학과",
+        "posted": "26.06.23",
+        "article_no": 590132
+      },
+      {
         "title": "2026학년도 융합교육 연구공동체 선정결과 발표 및 활동방법 안내",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=589881&article.offset=0&articleLimit=10",
         "dept": "사범대학",
@@ -3075,13 +3082,6 @@
         "dept": "사범대학",
         "posted": "26.06.08",
         "article_no": 588684
-      },
-      {
-        "title": "2026년도 리빙랩 기초과정 참가자 모집 공고 및 홍보 요청",
-        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=588506&article.offset=0&articleLimit=10",
-        "dept": "사범대학 교육학과",
-        "posted": "26.06.05",
-        "article_no": 588506
       },
       {
         "title": "2025학년도 글로벌 역량과 네트워크를 위한 해외파견 단기 프로그램 선정 결과 안내",
@@ -5246,6 +5246,13 @@
     ],
     "신소재공학과": [
       {
+        "title": "2026학년도 제2학기 강의시간표(안) 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=590098&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.06.23",
+        "article_no": 590098
+      },
+      {
         "title": "2026학년도 하계방학 학생성공장학금(학부연구생) 사전선발 안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=590064&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5272,13 +5279,6 @@
         "dept": "신소재공학과",
         "posted": "26.06.15",
         "article_no": 589287
-      },
-      {
-        "title": "2026학년도 제2학기 등록금 납부 안내",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=589230&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.06.12",
-        "article_no": 589230
       },
       {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
@@ -5490,6 +5490,27 @@
     ],
     "해양환경과학과": [
       {
+        "title": "[공지] 2026년 후반기 예비군 전입 신고 관련 안내",
+        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=590096&article.offset=0&articleLimit=10",
+        "dept": "해양환경과학과",
+        "posted": "26.06.23",
+        "article_no": 590096
+      },
+      {
+        "title": "[홍보] [거점특화 CNU-WITH] GMP 품질관리(QA·QC) 실무 교육 안내",
+        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=590094&article.offset=0&articleLimit=10",
+        "dept": "해양환경과학과",
+        "posted": "26.06.23",
+        "article_no": 590094
+      },
+      {
+        "title": "[홍보] 2026년 앵커 혁신성과·도전 지역혁신사례 경진대회 참가 안내",
+        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=590093&article.offset=0&articleLimit=10",
+        "dept": "해양환경과학과",
+        "posted": "26.06.23",
+        "article_no": 590093
+      },
+      {
         "title": "[홍보] 2026학년도 하계방학 하계 2차 학생생활관 특별개관 신청 안내",
         "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=589903&article.offset=0&articleLimit=10",
         "dept": "해양환경과학과",
@@ -5574,20 +5595,6 @@
         "article_no": 588636
       },
       {
-        "title": "[홍보] [대전국제개발협력센터] 2026년도 대학생 해외봉사단 모집 안내",
-        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=588198&article.offset=0&articleLimit=10",
-        "dept": "해양환경과학과",
-        "posted": "26.06.02",
-        "article_no": 588198
-      },
-      {
-        "title": "[공지] 2026학년도 2학기 학생생활관 입주 신청 안내",
-        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=588196&article.offset=0&articleLimit=10",
-        "dept": "해양환경과학과",
-        "posted": "26.06.02",
-        "article_no": 588196
-      },
-      {
         "title": "[교직과정 이수자] 2026학년도 1학기 교육봉사활동 결과 보고서 제출 안내",
         "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=588186&article.offset=0&articleLimit=10",
         "dept": "해양환경과학과",
@@ -5614,13 +5621,6 @@
         "dept": "해양환경과학과",
         "posted": "26.05.29",
         "article_no": 587941
-      },
-      {
-        "title": "[홍보]「2026년 학생성공 성장캠프(부산경남)」운영안내",
-        "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=587838&article.offset=0&articleLimit=10",
-        "dept": "해양환경과학과",
-        "posted": "26.05.28",
-        "article_no": 587838
       },
       {
         "title": "2026학년도 하기 계절학기 수강료 납부 안내",
@@ -5953,32 +5953,32 @@
         "article_no": 588024
       },
       {
+        "title": "「2026 CNU 생성형AI 실전 캠프」 개최 안내 및 홍보",
+        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=587991&article.offset=0&articleLimit=10",
+        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
+        "posted": "26.06.01",
+        "article_no": 587991
+      },
+      {
+        "title": "2026학년도 제1학기 시험 시행 안내",
+        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=587798&article.offset=0&articleLimit=10",
+        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
+        "posted": "26.05.28",
+        "article_no": 587798
+      },
+      {
+        "title": "2026년(2기)「경진대회 지원」교외경진대회 참가학생 지원 안내",
+        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=587029&article.offset=0&articleLimit=10",
+        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
+        "posted": "26.05.20",
+        "article_no": 587029
+      },
+      {
         "title": "「2026학년도 1학기」 영어능력 인정 신청 안내",
         "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=578624&article.offset=0&articleLimit=10",
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
         "posted": "26.02.27",
         "article_no": 578624
-      },
-      {
-        "title": "[전파트랙] 2026년 1학기 전파융합캡스톤디자인1 진행일정 안내",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=578223&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.02.24",
-        "article_no": 578223
-      },
-      {
-        "title": "(전학년 해당) 2026학년도 １학기 미래설계상담 일정 내역 공지",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=577928&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.02.20",
-        "article_no": 577928
-      },
-      {
-        "title": "(정통트랙)2026년 1학기 통신시스템캡스톤디자인1 진행 일정 안내",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=577896&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.02.20",
-        "article_no": 577896
       },
       {
         "title": "(전학년해당) 교내장학생 선발을 위한 서류 제출(~6월 30일까지)",
