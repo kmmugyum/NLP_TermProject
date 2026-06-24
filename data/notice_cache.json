@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-24T12:00:17.131353",
+  "fetched_at": "2026-06-24T18:00:15.673107",
   "data": {
     "응용생물학과": [
       {
@@ -268,18 +268,18 @@
         "article_no": 590110
       },
       {
+        "title": "[기타] 2026년 후반기 예비군 전입 신고 관련 알림",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590078&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.22",
+        "article_no": 590078
+      },
+      {
         "title": "***<2026학년도 제2학기 학습공동체>***",
         "url": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do?mode=view&articleNo=588839&article.offset=0&articleLimit=10",
         "dept": "농업경제학과",
         "posted": "26.06.09",
         "article_no": 588839
-      },
-      {
-        "title": "[기타] 2026학년도 창의융합대학 뉴비(New飛) 전공탐색전 Pre-Fair 안내(프로젝트 참가 희망팀 모집) ~ 6.24.(수)까지 신청",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=588423&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.04",
-        "article_no": 588423
       },
       {
         "title": "[공지] 교직과정 이수 예정자 선발 및 폐지 안내",
@@ -2863,11 +2863,11 @@
         "article_no": 590110
       },
       {
-        "title": "[기타] 2026학년도 창의융합대학 뉴비(New飛) 전공탐색전 Pre-Fair 안내(프로젝트 참가 희망팀 모집) ~ 6.24.(수)까지 신청",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=588423&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026년 후반기 예비군 전입 신고 관련 알림",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590078&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.06.04",
-        "article_no": 588423
+        "posted": "26.06.22",
+        "article_no": 590078
       },
       {
         "title": "[공지] 교직과정 이수 예정자 선발 및 폐지 안내",
