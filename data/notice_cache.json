@@ -1,7 +1,21 @@
 {
-  "fetched_at": "2026-06-26T00:00:15.604393",
+  "fetched_at": "2026-06-26T06:00:16.292589",
   "data": {
     "응용생물학과": [
+      {
+        "title": "개인형이동장치(PM) 안전교육 실시 및 협조 안내",
+        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=590426&article.offset=0&articleLimit=10",
+        "dept": "응용생물학과",
+        "posted": "26.06.26",
+        "article_no": 590426
+      },
+      {
+        "title": "2026학년도 교직과정 이수예정자 선발 안내",
+        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=590398&article.offset=0&articleLimit=10",
+        "dept": "응용생물학과",
+        "posted": "26.06.26",
+        "article_no": 590398
+      },
       {
         "title": "[그린바이오] 2026-1 마이크로디그리과정 성적 우수 장학생 선발 안내",
         "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=590351&article.offset=0&articleLimit=10",
@@ -57,20 +71,6 @@
         "dept": "응용생물학과",
         "posted": "26.05.19",
         "article_no": 586987
-      },
-      {
-        "title": "2025학년도 후기 졸업예정자 졸업논문 및 졸업자격 시행 계획 안내",
-        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=586827&article.offset=0&articleLimit=10",
-        "dept": "응용생물학과",
-        "posted": "26.05.18",
-        "article_no": 586827
-      },
-      {
-        "title": "2026년 실험실 배정 안내",
-        "url": "https://abio.cnu.ac.kr/abio/community/board01.do?mode=view&articleNo=586501&article.offset=0&articleLimit=10",
-        "dept": "응용생물학과",
-        "posted": "26.05.13",
-        "article_no": 586501
       }
     ],
     "아시아비즈니스국제학과": [
@@ -396,11 +396,11 @@
     ],
     "동물자원과학부": [
       {
-        "title": "[그린바이오 혁신융합대학사업단]2026년도 1학기 마이크로디그리과정 성적 우수 장학생 선발 계획 및 신청 안내(~7/20 17:00)",
-        "url": "https://animal.cnu.ac.kr/animal/board/board01.do?mode=view&articleNo=590326&article.offset=0&articleLimit=10",
+        "title": "개인형이동장치(PM) 안전교육 실시 및 협조 안내",
+        "url": "https://animal.cnu.ac.kr/animal/board/board01.do?mode=view&articleNo=590420&article.offset=0&articleLimit=10",
         "dept": "동물자원과학부",
-        "posted": "26.06.25",
-        "article_no": 590326
+        "posted": "26.06.26",
+        "article_no": 590420
       },
       {
         "title": "충남대학교 장학관련 게시판 안내",
@@ -5246,6 +5246,13 @@
     ],
     "신소재공학과": [
       {
+        "title": "2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=590405&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.06.26",
+        "article_no": 590405
+      },
+      {
         "title": "2026학년도 제2학기 강의시간표(안) 안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=590098&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5272,13 +5279,6 @@
         "dept": "신소재공학과",
         "posted": "26.06.16",
         "article_no": 589444
-      },
-      {
-        "title": "KAIST 부설 나노종합기술원, 나노소재개발센터 기술 개발 참여 및 보조 업무 모집 안",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=589287&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.06.15",
-        "article_no": 589287
       },
       {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
@@ -5660,6 +5660,13 @@
     ],
     "유기재료공학과": [
       {
+        "title": "개인형이동장치(PM) 안전교육 실시 및 협조 안내",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=37",
+        "dept": "유기재료공학과",
+        "posted": null,
+        "article_no": 37
+      },
+      {
         "title": "2026학년도 하계방학 학생성공장학금(학부연구생) 선발 계획 안내 및 장학생 추천 요청",
         "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=36",
         "dept": "유기재료공학과",
@@ -5721,13 +5728,6 @@
         "dept": "유기재료공학과",
         "posted": null,
         "article_no": 27
-      },
-      {
-        "title": "멀티 LLM을 활용한 AI챌린지 안내",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=26",
-        "dept": "유기재료공학과",
-        "posted": null,
-        "article_no": 26
       },
       {
         "title": "2026학년도 논문지도교수 신청 및 실험실 오픈랩 개최 안내(2026년 10월 말~11월 중순경 예정)",
