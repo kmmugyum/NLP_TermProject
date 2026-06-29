@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-29T06:00:15.960879",
+  "fetched_at": "2026-06-29T12:00:15.474335",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,20 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 등록금 반환 신청 메뉴 개설 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590616&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590616
+      },
+      {
+        "title": "[기타] 2026학년도 하기 계절학기 대전교통공사 오픈캠퍼스 참여자 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590615&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590615
+      },
+      {
         "title": "[교직이수] 2026(2025입학)년도 교직과정 이수예정자 선발 안내(7.13.(월)~7.15.(수)까지 신청)",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590543&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -259,20 +273,6 @@
         "dept": "경제학과",
         "posted": "26.06.29",
         "article_no": 590522
-      },
-      {
-        "title": "[기타] 졸업생 취업 특화 선배의 커리어 리얼토크 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590520&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.29",
-        "article_no": 590520
-      },
-      {
-        "title": "[수업] 2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590519&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.29",
-        "article_no": 590519
       },
       {
         "title": "***<2026학년도 제2학기 학습공동체>***",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "등록금 반환 신청 메뉴 개설 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=590612&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.06.29",
+        "article_no": 590612
+      },
+      {
         "title": "멀티 LLM을 활용한 AI 챌린지 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=590136&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -882,13 +889,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.06.16",
         "article_no": 589469
-      },
-      {
-        "title": "‘충남대-공주대 통합 찬반투표 대비 구성원 대토론회’ 참석 요청",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589393&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.06.15",
-        "article_no": 589393
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -1712,6 +1712,13 @@
     ],
     "토목공학과": [
       {
+        "title": "등록금 반환 신청 안내",
+        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=590607&article.offset=0&articleLimit=10",
+        "dept": "토목공학과",
+        "posted": "26.06.29",
+        "article_no": 590607
+      },
+      {
         "title": "2026년도 현장실습 일정 공지",
         "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=590111&article.offset=0&articleLimit=10",
         "dept": "토목공학과",
@@ -1738,13 +1745,6 @@
         "dept": "토목공학과",
         "posted": "26.06.02",
         "article_no": 588275
-      },
-      {
-        "title": "2026년도 학부생 미니 연구 프로젝트 지원사업 신청 안내",
-        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=588153&article.offset=0&articleLimit=10",
-        "dept": "토목공학과",
-        "posted": "26.06.01",
-        "article_no": 588153
       },
       {
         "title": "★이수면제 교과목(화학개론실험,물리학실험2,기초통계입문,프로그래밍언어) 안내",
@@ -2277,6 +2277,13 @@
     ],
     "컴퓨터인공지능학부": [
       {
+        "title": "2026학년도 제2학기 재입학 시행계획 및 모집요강 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=590605&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.06.29",
+        "article_no": 590605
+      },
+      {
         "title": "2026년도 교직과정 이수예정자 선발 안내(접수 : 7.13.(월)~7.17.(금))",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=590601&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2296,13 +2303,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.06.16",
         "article_no": 589522
-      },
-      {
-        "title": "1학기 미래설계상담 신청 마감되었습니다.(2회 이상  : 1회 대면 필수)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=589490&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.06.16",
-        "article_no": 589490
       },
       {
         "title": "2026년 구글코리아 청년 AI 역량강화 프로그램(Google AI Professional Certificate) 신청 안내",
@@ -2835,6 +2835,20 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 등록금 반환 신청 메뉴 개설 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590616&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590616
+      },
+      {
+        "title": "[기타] 2026학년도 하기 계절학기 대전교통공사 오픈캠퍼스 참여자 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590615&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590615
+      },
+      {
         "title": "[교직이수] 2026(2025입학)년도 교직과정 이수예정자 선발 안내(7.13.(월)~7.15.(수)까지 신청)",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590543&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2854,20 +2868,6 @@
         "dept": "경제학과",
         "posted": "26.06.29",
         "article_no": 590522
-      },
-      {
-        "title": "[기타] 졸업생 취업 특화 선배의 커리어 리얼토크 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590520&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.29",
-        "article_no": 590520
-      },
-      {
-        "title": "[수업] 2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590519&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.06.29",
-        "article_no": 590519
       },
       {
         "title": "[공지] 교직과정 이수 예정자 선발 및 폐지 안내",
@@ -5404,6 +5404,13 @@
     ],
     "간호대학": [
       {
+        "title": "등록금 반환 신청 메뉴 개설 안내",
+        "url": "https://nursing.cnu.ac.kr/nursing1/announce/notice.do?mode=view&articleNo=590614&article.offset=0&articleLimit=10",
+        "dept": "간호대학",
+        "posted": "26.06.29",
+        "article_no": 590614
+      },
+      {
         "title": "2026학년도 제2학기 정기휴업에 따른 보충강의 지정일 안내",
         "url": "https://nursing.cnu.ac.kr/nursing1/announce/notice.do?mode=view&articleNo=590343&article.offset=0&articleLimit=10",
         "dept": "간호대학",
@@ -5437,13 +5444,6 @@
         "dept": "간호대학",
         "posted": "26.04.22",
         "article_no": 584714
-      },
-      {
-        "title": "2026학년도 1학기 보훈장학(대학원생) 및 보훈가족장학(학부) 신청 안내",
-        "url": "https://nursing.cnu.ac.kr/nursing1/announce/notice.do?mode=view&articleNo=581998&article.offset=0&articleLimit=10",
-        "dept": "간호대학",
-        "posted": "26.03.25",
-        "article_no": 581998
       },
       {
         "title": "주차 등록 안내(25.5.30.변경)",
@@ -5746,6 +5746,13 @@
     ],
     "약학대학": [
       {
+        "title": "등록금 반환 신청 메뉴 개설",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=590608&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.06.29",
+        "article_no": 590608
+      },
+      {
         "title": "2026년 상반기 식의약 청년체험단(약대생) 프로그램 개최 안내",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=590565&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5779,13 +5786,6 @@
         "dept": "약학대학",
         "posted": "26.06.29",
         "article_no": 590498
-      },
-      {
-        "title": "2026학년도 3차 외국어특강 수강생 모집",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=590488&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.06.29",
-        "article_no": 590488
       },
       {
         "title": "6학년 실무실습 자격 요건 안내",
