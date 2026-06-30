@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-30T12:00:17.161239",
+  "fetched_at": "2026-06-30T18:00:16.843258",
   "data": {
     "응용생물학과": [
       {
@@ -282,6 +282,27 @@
         "article_no": 590540
       },
       {
+        "title": "[기타 2026학년도 CNU Learning Together(51호) 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590522&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590522
+      },
+      {
+        "title": "[기타] 졸업생 취업 특화 선배의 커리어 리얼토크 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590520&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590520
+      },
+      {
+        "title": "[수업] 2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590519&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590519
+      },
+      {
         "title": "***<2026학년도 제2학기 학습공동체>***",
         "url": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do?mode=view&articleNo=588839&article.offset=0&articleLimit=10",
         "dept": "농업경제학과",
@@ -317,32 +338,11 @@
         "article_no": 580751
       },
       {
-        "title": "[공지] 2026학년도 1학기 지도교수(미래설계상담교수) 배정 결과",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=580361&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.11",
-        "article_no": 580361
-      },
-      {
         "title": "***<26. 1학기 외국어성적우수 장학금 추가 신청 안내>***",
         "url": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do?mode=view&articleNo=580187&article.offset=0&articleLimit=10",
         "dept": "농업경제학과",
         "posted": "26.03.10",
         "article_no": 580187
-      },
-      {
-        "title": "[공지] 2026학년도 1학기 졸업논문 및 졸업인증제 시행 안내(대상자: 2026년 8월 졸업예정자)",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=579895&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.09",
-        "article_no": 579895
-      },
-      {
-        "title": "[수업] 2026학년도 제1학기 학생 출석인정 신청 및 변경 사항 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=579571&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.05",
-        "article_no": 579571
       },
       {
         "title": "2026학년도 제 1학기 휴학 및 복학  신청 안내",
@@ -1012,18 +1012,18 @@
         "article_no": 580535
       },
       {
+        "title": "풀브라이트 미국유학, 연구 장학금 설명회",
+        "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=580532&article.offset=0&articleLimit=10",
+        "dept": "생물환경화학과",
+        "posted": "26.03.12",
+        "article_no": 580532
+      },
+      {
         "title": "장학게시판 안내(충남대 장학게시판 이용)",
         "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=579989&article.offset=0&articleLimit=10",
         "dept": "생물환경화학과",
         "posted": "26.03.09",
         "article_no": 579989
-      },
-      {
-        "title": "2026학년도 1학기 출석인정 안내",
-        "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=579614&article.offset=0&articleLimit=10",
-        "dept": "생물환경화학과",
-        "posted": "26.03.06",
-        "article_no": 579614
       },
       {
         "title": "2026학년도 제 1학기 온라인 폭력예방교육 이수방법 안내",
@@ -2305,6 +2305,13 @@
         "article_no": 589522
       },
       {
+        "title": "1학기 미래설계상담 신청 마감되었습니다.(2회 이상  : 1회 대면 필수)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=589490&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.06.16",
+        "article_no": 589490
+      },
+      {
         "title": "2026년 구글코리아 청년 AI 역량강화 프로그램(Google AI Professional Certificate) 신청 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=588913&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2387,13 +2394,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.04.08",
         "article_no": 583440
-      },
-      {
-        "title": "[장학]충남대 홈페이지 => 장학전용 게시판 생성 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=578981&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.03.26",
-        "article_no": 578981
       },
       {
         "title": "★★[졸업요건'25.10.20. 수정] 2025 CNU 교양교육과정 개편 및 경과조치 안내 (시행: 2025년 9일) 및 학과 졸업요건표(개편 적용)",
@@ -2812,6 +2812,13 @@
         "article_no": 587035
       },
       {
+        "title": "2026학년도 1학기 졸업논문 제출 안내",
+        "url": "https://dcbi.cnu.ac.kr/cbi/community/notice.do?mode=view&articleNo=586424&article.offset=0&articleLimit=10",
+        "dept": "생명정보융합학과",
+        "posted": "26.05.12",
+        "article_no": 586424
+      },
+      {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
         "url": "https://dcbi.cnu.ac.kr/cbi/community/notice.do?mode=view&articleNo=579698&article.offset=0&articleLimit=10",
         "dept": "생명정보융합학과",
@@ -2824,13 +2831,6 @@
         "dept": "생명정보융합학과",
         "posted": "26.03.03",
         "article_no": 578935
-      },
-      {
-        "title": "2026학년도 제1학기 휴학 및 복학 신청 안내",
-        "url": "https://dcbi.cnu.ac.kr/cbi/community/notice.do?mode=view&articleNo=575632&article.offset=0&articleLimit=10",
-        "dept": "생명정보융합학과",
-        "posted": "26.01.23",
-        "article_no": 575632
       }
     ],
     "경제학과": [
@@ -2870,32 +2870,32 @@
         "article_no": 590540
       },
       {
+        "title": "[기타 2026학년도 CNU Learning Together(51호) 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590522&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590522
+      },
+      {
+        "title": "[기타] 졸업생 취업 특화 선배의 커리어 리얼토크 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590520&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590520
+      },
+      {
+        "title": "[수업] 2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590519&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.06.29",
+        "article_no": 590519
+      },
+      {
         "title": "[공지] 교직과정 이수 예정자 선발 및 폐지 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=585918&article.offset=0&articleLimit=10",
         "dept": "경제학과",
         "posted": "26.05.06",
         "article_no": 585918
-      },
-      {
-        "title": "[공지] 2026학년도 1학기 지도교수(미래설계상담교수) 배정 결과",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=580361&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.11",
-        "article_no": 580361
-      },
-      {
-        "title": "[공지] 2026학년도 1학기 졸업논문 및 졸업인증제 시행 안내(대상자: 2026년 8월 졸업예정자)",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=579895&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.09",
-        "article_no": 579895
-      },
-      {
-        "title": "[수업] 2026학년도 제1학기 학생 출석인정 신청 및 변경 사항 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=579571&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.03.05",
-        "article_no": 579571
       },
       {
         "title": "[공지] 2026학년도 국내 다른대학수학 신청 게시글 안내(특허청 포함)",
@@ -3419,18 +3419,18 @@
         "article_no": 588959
       },
       {
+        "title": "2026.1학기 출석인정 신청 미승인자 알림",
+        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=588946&article.offset=0&articleLimit=10",
+        "dept": "전기공학과",
+        "posted": "26.06.10",
+        "article_no": 588946
+      },
+      {
         "title": "2026학년도 하기 계절학기 운영계획 안내",
         "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=581272&article.offset=0&articleLimit=10",
         "dept": "전기공학과",
         "posted": "26.03.18",
         "article_no": 581272
-      },
-      {
-        "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
-        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=580914&article.offset=0&articleLimit=10",
-        "dept": "전기공학과",
-        "posted": "26.03.16",
-        "article_no": 580914
       },
       {
         "title": "2026학년도 제1학기 영어능력인정 신청 안내",
@@ -5281,6 +5281,13 @@
         "article_no": 589995
       },
       {
+        "title": "2026학년도 제1학기 기말 강의평가  실시 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=589444&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.06.16",
+        "article_no": 589444
+      },
+      {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=582339&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5293,13 +5300,6 @@
         "dept": "신소재공학과",
         "posted": "26.03.12",
         "article_no": 580599
-      },
-      {
-        "title": "[중요] 신학기 맞이 안전한 캠퍼스 확립을 위한 협조 요청",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=579753&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.03.06",
-        "article_no": 579753
       },
       {
         "title": "2026.1학기 영어능력인정 신청 안내[★통합정보시스템 신청 후, 영어성적증명서 원본 학과로 제출]",
@@ -5979,13 +5979,6 @@
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
         "posted": "26.02.27",
         "article_no": 578624
-      },
-      {
-        "title": "(전학년해당) 교내장학생 선발을 위한 서류 제출(~6월 30일까지)",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=569217&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.03.31",
-        "article_no": 569217
       }
     ],
     "예술대학 조소과 / 예술대학": [
