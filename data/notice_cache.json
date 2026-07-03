@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T06:00:16.415582",
+  "fetched_at": "2026-07-03T12:00:16.145414",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 2026년 AI 기반 해커톤 썸머 캠프 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591099&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.03",
+        "article_no": 591099
+      },
+      {
         "title": "[기타] 2026년 하계 CNU 취업캠프 참여자 모집 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590997&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -280,13 +287,6 @@
         "dept": "경제학과",
         "posted": "26.07.01",
         "article_no": 590823
-      },
-      {
-        "title": "[기타] 2026학년도 1차 Library Academy 교육 신청 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590786&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.01",
-        "article_no": 590786
       },
       {
         "title": "***<2026학년도 교직과정 이수 신청 및 예정자 선발 안내>***",
@@ -893,6 +893,13 @@
     ],
     "생물환경화학과 / 화학과": [
       {
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591091&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.03",
+        "article_no": 591091
+      },
+      {
         "title": "2026. 2학기 학자금대출 기본계획 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591043&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -954,13 +961,6 @@
         "dept": "화학과",
         "posted": "26.07.01",
         "article_no": 590755
-      },
-      {
-        "title": "2026. 1차 CNU드림꾸러미(1차) 선발 결과 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=590652&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.06.30",
-        "article_no": 590652
       },
       {
         "title": "2026년 후반기 예비군 전입 신고 공지",
@@ -1056,6 +1056,13 @@
     ],
     "생화학과 / 화학과": [
       {
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591091&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.03",
+        "article_no": 591091
+      },
+      {
         "title": "2026. 2학기 학자금대출 기본계획 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591043&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -1117,13 +1124,6 @@
         "dept": "화학과",
         "posted": "26.07.01",
         "article_no": 590755
-      },
-      {
-        "title": "2026. 1차 CNU드림꾸러미(1차) 선발 결과 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=590652&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.06.30",
-        "article_no": 590652
       },
       {
         "title": "2026년도 우수 학부연구생 지원 안내(4학년 1학기 학부생 대상)",
@@ -1391,6 +1391,13 @@
     ],
     "응용화학공학과 / 화학과": [
       {
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591091&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.03",
+        "article_no": 591091
+      },
+      {
         "title": "2026. 2학기 학자금대출 기본계획 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591043&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -1452,13 +1459,6 @@
         "dept": "화학과",
         "posted": "26.07.01",
         "article_no": 590755
-      },
-      {
-        "title": "2026. 1차 CNU드림꾸러미(1차) 선발 결과 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=590652&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.06.30",
-        "article_no": 590652
       },
       {
         "title": "2026학년도 하기방학기간 천원의 아침밥 변경운영 안내",
@@ -1633,6 +1633,13 @@
     ],
     "화학과": [
       {
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591091&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.03",
+        "article_no": 591091
+      },
+      {
         "title": "2026. 2학기 학자금대출 기본계획 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591043&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -1694,13 +1701,6 @@
         "dept": "화학과",
         "posted": "26.07.01",
         "article_no": 590755
-      },
-      {
-        "title": "2026. 1차 CNU드림꾸러미(1차) 선발 결과 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=590652&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.06.30",
-        "article_no": 590652
       },
       {
         "title": "[[2025.8월 및 2026.2월 졸업예정자 대상 안내]] 개인정보제공 및 활용동의서 수집 안내",
@@ -2042,6 +2042,13 @@
     ],
     "사범대학 화학공학교육과 / 화학과": [
       {
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591091&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.03",
+        "article_no": 591091
+      },
+      {
         "title": "2026. 2학기 학자금대출 기본계획 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591043&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -2124,13 +2131,6 @@
         "dept": "화학과",
         "posted": "26.07.01",
         "article_no": 590755
-      },
-      {
-        "title": "2026. 1차 CNU드림꾸러미(1차) 선발 결과 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=590652&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.06.30",
-        "article_no": 590652
       },
       {
         "title": "2025학년도 후기 교원자격 무시험검정 신청서 제출 안내",
@@ -2284,7 +2284,7 @@
         "article_no": 590772
       },
       {
-        "title": "2026학년도 제2학기 재입학 시행계획 및 모집요강 안내",
+        "title": "2026학년도 제2학기 재입학 시행계획 및 모집요강 안내(7.3(금)16시까지)",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=590605&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
         "posted": "26.06.29",
@@ -2835,6 +2835,13 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 2026년 AI 기반 해커톤 썸머 캠프 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591099&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.03",
+        "article_no": 591099
+      },
+      {
         "title": "[기타] 2026년 하계 CNU 취업캠프 참여자 모집 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590997&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2875,13 +2882,6 @@
         "dept": "경제학과",
         "posted": "26.07.01",
         "article_no": 590823
-      },
-      {
-        "title": "[기타] 2026학년도 1차 Library Academy 교육 신청 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=590786&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.01",
-        "article_no": 590786
       },
       {
         "title": "[기타] 등록금 반환 신청 메뉴 개설 안내",
@@ -4969,6 +4969,13 @@
     ],
     "의과대학": [
       {
+        "title": "한국의료복지건축학회 2026 학술발표대회 '병원건축 기술과 과제' 개최 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591098&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.03",
+        "article_no": 591098
+      },
+      {
         "title": "[한국농어촌희망재단] 2026학년도 2학기 청년창업농장학생 장학금 신청 기간 연장 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591061&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5044,13 +5051,6 @@
         "dept": "의과대학",
         "posted": "26.06.26",
         "article_no": 590447
-      },
-      {
-        "title": "2026년 후반기 예비군 전입 신고 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.22",
-        "article_no": 589955
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6636,6 +6636,27 @@
     ],
     "무역학과": [
       {
+        "title": "[안내] 2026년 AI 기반 해커톤 썸머 캠프",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=591106&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.03",
+        "article_no": 591106
+      },
+      {
+        "title": "[안내] 2026년 2학기 농촌출신대학생 학자금대출 시행계획 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=591105&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.03",
+        "article_no": 591105
+      },
+      {
+        "title": "[장학] [한국농어촌희망재단] 2026학년도 2학기 청년창업농장학생 장학금 신청 기간 연장 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=591104&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.03",
+        "article_no": 591104
+      },
+      {
         "title": "[안내] 2026년도 제1기 국제협력센터 서포터즈(GLOVY) 모집 안내",
         "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=590953&article.offset=0&articleLimit=10",
         "dept": "무역학과",
@@ -6655,27 +6676,6 @@
         "dept": "무역학과",
         "posted": "26.07.02",
         "article_no": 590951
-      },
-      {
-        "title": "[안내]「2026년 하계 CNU 취업캠프 참여자 모집」",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=590949&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.02",
-        "article_no": 590949
-      },
-      {
-        "title": "[안내] 충남대학교 신규 공식 모바일 앱 시범 운영 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=590792&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.01",
-        "article_no": 590792
-      },
-      {
-        "title": "[장학] [OK배·정장학재단] 제17기 OK배정장학생 선발 모집",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=590791&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.01",
-        "article_no": 590791
       },
       {
         "title": "[안내] 2026학년도 제1학기 영어능력인정 신청 안내",
@@ -6721,6 +6721,13 @@
       }
     ],
     "수의과대학 / 의과대학": [
+      {
+        "title": "한국의료복지건축학회 2026 학술발표대회 '병원건축 기술과 과제' 개최 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591098&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.03",
+        "article_no": 591098
+      },
       {
         "title": "[한국농어촌희망재단] 2026학년도 2학기 청년창업농장학생 장학금 신청 기간 연장 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591061&article.offset=0&articleLimit=10",
@@ -6804,13 +6811,6 @@
         "dept": "의과대학",
         "posted": "26.06.26",
         "article_no": 590447
-      },
-      {
-        "title": "2026년 후반기 예비군 전입 신고 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.22",
-        "article_no": 589955
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
