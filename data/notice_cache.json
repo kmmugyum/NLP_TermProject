@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-09T12:00:15.686435",
+  "fetched_at": "2026-07-09T18:00:16.096078",
   "data": {
     "응용생물학과": [
       {
@@ -3235,13 +3235,6 @@
         "article_no": 591347
       },
       {
-        "title": "[2026년 8월 졸업예정자] 약물(마약류)중독진단 결과보고서 제출 안내(~7/9)",
-        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=590262&article.offset=0&articleLimit=10",
-        "dept": "사범대학 전기",
-        "posted": "26.06.24",
-        "article_no": 590262
-      },
-      {
         "title": "2026학년도 융합교육 연구공동체 선정결과 발표 및 활동방법 안내",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=589881&article.offset=0&articleLimit=10",
         "dept": "사범대학",
@@ -3380,6 +3373,13 @@
         "dept": "사범대학 전기",
         "posted": "24.01.31",
         "article_no": 504570
+      },
+      {
+        "title": "★④★ 학과 카카오톡 오픈채팅방 참여 안내",
+        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=504283&article.offset=0&articleLimit=10",
+        "dept": "사범대학 전기",
+        "posted": "24.01.30",
+        "article_no": 504283
       }
     ],
     "전기공학과": [
@@ -5053,11 +5053,11 @@
         "article_no": 590569
       },
       {
-        "title": "대한핵의학회「2026년 제2회 핵의학 학생캠프」참가자 모집",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590447&article.offset=0&articleLimit=10",
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.06.26",
-        "article_no": 590447
+        "posted": "26.06.22",
+        "article_no": 589955
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6820,11 +6820,11 @@
         "article_no": 590569
       },
       {
-        "title": "대한핵의학회「2026년 제2회 핵의학 학생캠프」참가자 모집",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590447&article.offset=0&articleLimit=10",
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.06.26",
-        "article_no": 590447
+        "posted": "26.06.22",
+        "article_no": 589955
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
