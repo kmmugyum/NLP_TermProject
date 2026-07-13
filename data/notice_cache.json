@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-13T00:00:15.658816",
+  "fetched_at": "2026-07-13T06:00:19.927482",
   "data": {
     "응용생물학과": [
       {
@@ -1289,7 +1289,7 @@
         "article_no": 238646
       },
       {
-        "title": "★CNU 메신저 알림 설정 방법 - 공지사항 안내 및 의사소통",
+        "title": "★CNU 메신저 사용 안내(공지사항 안내 및 의사소통)",
         "url": "https://biz.cnu.ac.kr/biz/community/notice.do?mode=view&articleNo=237802&article.offset=0&articleLimit=10",
         "dept": "경영학부",
         "posted": "21.07.02",
@@ -2191,6 +2191,13 @@
     ],
     "School of International Studie": [
       {
+        "title": "2026년도 인권지킴이 서포터즈 모집 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591715&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.13",
+        "article_no": 591715
+      },
+      {
         "title": "2026학년도 스피치 능력UP 집중 교육 과정(기초) 모집 안내",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591553&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2252,13 +2259,6 @@
         "dept": "School of International Studie",
         "posted": "26.07.06",
         "article_no": 591139
-      },
-      {
-        "title": "한국전력기술(주) 2026년도 Power Enginering School(PES) Summer Camp(34기) 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591118&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.06",
-        "article_no": 591118
       },
       {
         "title": "2026학년도 제2학기 등록금 납부 안내(Notice for payment of tuition fee for 2026-2 semester)",
@@ -3700,6 +3700,20 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "2026학년도 제5차~제6차 C2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내NU 교수법 워크숍 실시 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591714&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.13",
+        "article_no": 591714
+      },
+      {
+        "title": "[수당재단] 2026학년도 2학기 신규 장학생 추천",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591713&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.13",
+        "article_no": 591713
+      },
+      {
         "title": "2026학년도 스피치 능력UP 집중 교육 과정(기초) 모집 안내",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591588&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3754,20 +3768,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.07.08",
         "article_no": 591371
-      },
-      {
-        "title": "글로컬대학사업 서포터즈 추가 모집 공고",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591370&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.08",
-        "article_no": 591370
-      },
-      {
-        "title": "2026학년도 2학기「HD현대 채용연계형 현장실습학기제」 운영 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591221&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.06",
-        "article_no": 591221
       },
       {
         "title": "[예비군연대] 2026년 후반기 예비군 전입 신고 관련 안내",
@@ -4277,6 +4277,13 @@
     ],
     "Home": [
       {
+        "title": "2026학년도 제2학기 대학원 진학장학금 운영 안내",
+        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1153",
+        "dept": "Home",
+        "posted": "2026-07-13",
+        "article_no": null
+      },
+      {
         "title": "2025학년도 후기(2026.8월 졸업예정) 학사학위취득 유예 신청",
         "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1152",
         "dept": "Home",
@@ -4302,13 +4309,6 @@
         "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1149",
         "dept": "Home",
         "posted": "2026-07-07",
-        "article_no": null
-      },
-      {
-        "title": "2026년 하반기 한·미 대학생 연수(WEST) 지원자 모집 안내",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1148",
-        "dept": "Home",
-        "posted": "2026-07-02",
         "article_no": null
       }
     ],
@@ -4867,6 +4867,13 @@
     ],
     "기계공학부": [
       {
+        "title": "'한국디스플레이 산업전시회 견학' 학생 모집 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591670&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.07.13",
+        "article_no": 591670
+      },
+      {
         "title": "2025학년도 후기(2026년 8월 졸업) 학사학위취득 유예 신청 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591337&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -4928,13 +4935,6 @@
         "dept": "기계공학부",
         "posted": "26.06.10",
         "article_no": 588967
-      },
-      {
-        "title": "수상으로 이어지는 창의적 종합설계 준비 전략",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=588397&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.06.04",
-        "article_no": 588397
       },
       {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
@@ -5062,6 +5062,13 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "'한국디스플레이 산업전시회 견학' 학생 모집 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591670&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.07.13",
+        "article_no": 591670
+      },
+      {
         "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
         "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=591405&article.offset=0&articleLimit=10",
         "dept": "사범대학 기계공학교육과",
@@ -5186,13 +5193,6 @@
         "dept": "기계공학부",
         "posted": "26.06.10",
         "article_no": 588967
-      },
-      {
-        "title": "수상으로 이어지는 창의적 종합설계 준비 전략",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=588397&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.06.04",
-        "article_no": 588397
       },
       {
         "title": "2026학년도 2학기 학생생활관 입주 신청 안내",
@@ -5753,6 +5753,20 @@
     ],
     "약학대학": [
       {
+        "title": "2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591688&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.07.13",
+        "article_no": 591688
+      },
+      {
+        "title": "[의암손병희선생계승사업회] 2026학년도 의암 손병희 우수논문  장학생 선발 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591687&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.07.13",
+        "article_no": 591687
+      },
+      {
         "title": "2026년도 하기 CNU Insight Series: AI기반 연구역량 강화 아카데미 안내",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591578&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5772,20 +5786,6 @@
         "dept": "약학대학",
         "posted": "26.07.10",
         "article_no": 591575
-      },
-      {
-        "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금 대출 관련분야(원금상환, 이자지원) 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591336&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.08",
-        "article_no": 591336
-      },
-      {
-        "title": "2025학년도 후기 대학원 학위수여예정자 영문 성명 확인",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591283&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.07",
-        "article_no": 591283
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
@@ -6241,6 +6241,13 @@
     ],
     "국가안보융합학부": [
       {
+        "title": "[해양안보학전공] 2027학년도 수시모집 모집요강 카드 뉴스",
+        "url": "https://soins.cnu.ac.kr/soins/admissions/admissions-notice.do?mode=view&articleNo=591710&article.offset=0&articleLimit=10",
+        "dept": "국가안보융합학부",
+        "posted": "26.07.13",
+        "article_no": 591710
+      },
+      {
         "title": "[국토안보학전공] 2027학년도 수시모집 모집요강 카드 뉴스",
         "url": "https://soins.cnu.ac.kr/soins/admissions/admissions-notice.do?mode=view&articleNo=590549&article.offset=0&articleLimit=10",
         "dept": "국가안보융합학부",
@@ -6302,13 +6309,6 @@
         "dept": "국가안보융합학부",
         "posted": "25.02.07",
         "article_no": 538852
-      },
-      {
-        "title": "2025학년도 대학입학전형 정시모집 국가안보융합전형 2단계 전형 일정 및 장소 안내",
-        "url": "https://soins.cnu.ac.kr/soins/admissions/admissions-notice.do?mode=view&articleNo=535946&article.offset=0&articleLimit=10",
-        "dept": "국가안보융합학부",
-        "posted": "25.01.10",
-        "article_no": 535946
       }
     ],
     "스포츠과학과": [
@@ -6408,7 +6408,7 @@
     ],
     "정보통계학과": [
       {
-        "title": "[충남대학교 DS사업단] 2026 Data Science Summer Institute (참여신청 ~7.17.(금) 오전 10:00까지 / 교육기간 7.20.~9.17.)",
+        "title": "[충남대학교 DS사업단] 2026 Data Science Summer Institute (참여신청 ~7.20.(월) 오전 09:00까지 / 교육기간 7.20.~9.17.)",
         "url": "https://stat.cnu.ac.kr/stat/open/ds-notice.do?mode=view&articleNo=591202&article.offset=0&articleLimit=10",
         "dept": "정보통계학과",
         "posted": "26.07.06",
