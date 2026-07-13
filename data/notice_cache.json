@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-13T06:00:19.927482",
+  "fetched_at": "2026-07-13T12:00:14.999032",
   "data": {
     "응용생물학과": [
       {
@@ -1305,6 +1305,13 @@
     ],
     "농업생명과학대학": [
       {
+        "title": "※ 전과 지원 자격 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591744&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.07.13",
+        "article_no": 591744
+      },
+      {
         "title": "통합정보시스템 등록금 반환 신청 메뉴 개설 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591494&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -1359,13 +1366,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.04.03",
         "article_no": 583095
-      },
-      {
-        "title": "2026학년도 제1학기 중간 강의평가 실시 안내 (~4/23)",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=582817&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.04.01",
-        "article_no": 582817
       },
       {
         "title": "★(26.6.16. 수정) 2026학년도 농생명융합학부 전공자율선택제 전공배정 안내 ★",
@@ -3470,6 +3470,13 @@
     ],
     "영어교육과": [
       {
+        "title": "2026학년도 제2학기 영어교육과 시간표 안내",
+        "url": "https://enedu.cnu.ac.kr/enedu/community/notice.do?mode=view&articleNo=591728&article.offset=0&articleLimit=10",
+        "dept": "영어교육과",
+        "posted": "26.07.13",
+        "article_no": 591728
+      },
+      {
         "title": "대학교 캠퍼스 범죄 안전 대학(원)생 인식 조사",
         "url": "https://enedu.cnu.ac.kr/enedu/community/notice.do?mode=view&articleNo=591255&article.offset=0&articleLimit=10",
         "dept": "영어교육과",
@@ -3531,13 +3538,6 @@
         "dept": "영어교육과",
         "posted": "26.06.29",
         "article_no": 590506
-      },
-      {
-        "title": "2026학년도 2학기 현장실습학기제(백마인턴십) 운영 안내",
-        "url": "https://enedu.cnu.ac.kr/enedu/community/notice.do?mode=view&articleNo=590433&article.offset=0&articleLimit=10",
-        "dept": "영어교육과",
-        "posted": "26.06.26",
-        "article_no": 590433
       }
     ],
     "에너지공학과": [
@@ -3700,6 +3700,20 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "지역인재를 위한 AI 성장트랙 Campus AX-Ton",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591733&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.13",
+        "article_no": 591733
+      },
+      {
+        "title": "2026년도 인권지킴이 서포터즈 모집 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591729&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.13",
+        "article_no": 591729
+      },
+      {
         "title": "2026학년도 제5차~제6차 C2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내NU 교수법 워크숍 실시 안내",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591714&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3754,20 +3768,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.07.08",
         "article_no": 591391
-      },
-      {
-        "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금대출 관련분야(원금상환, 이자지원) 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591373&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.08",
-        "article_no": 591373
-      },
-      {
-        "title": "대학교 캠퍼스 범죄 안전 대학(원)생 인식 조사",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591371&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.08",
-        "article_no": 591371
       },
       {
         "title": "[예비군연대] 2026년 후반기 예비군 전입 신고 관련 안내",
@@ -4035,6 +4035,13 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
+        "title": "※ 전과 지원 자격 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591744&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.07.13",
+        "article_no": 591744
+      },
+      {
         "title": "통합정보시스템 등록금 반환 신청 메뉴 개설 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591494&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -4159,13 +4166,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.04.03",
         "article_no": 583095
-      },
-      {
-        "title": "2026학년도 제1학기 중간 강의평가 실시 안내 (~4/23)",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=582817&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.04.01",
-        "article_no": 582817
       },
       {
         "title": "★(26.6.16. 수정) 2026학년도 농생명융합학부 전공자율선택제 전공배정 안내 ★",
@@ -4976,6 +4976,13 @@
     ],
     "의과대학": [
       {
+        "title": "의학한림원「의사과학자상」수상후보자 공모 안내(~8.14.(금))",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591734&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.13",
+        "article_no": 591734
+      },
+      {
         "title": "2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591632&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5051,13 +5058,6 @@
         "dept": "의과대학",
         "posted": "26.06.29",
         "article_no": 590569
-      },
-      {
-        "title": "2026년 후반기 예비군 전입 신고 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.22",
-        "article_no": 589955
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -5911,6 +5911,13 @@
     ],
     "정보통신융합학부 ( 전파정보통신공학과 )": [
       {
+        "title": "2026학년도 2학기 휴학 및 복학신청 안내",
+        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=591752&article.offset=0&articleLimit=10",
+        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
+        "posted": "26.07.13",
+        "article_no": 591752
+      },
+      {
         "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
         "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=591334&article.offset=0&articleLimit=10",
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
@@ -5972,13 +5979,6 @@
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
         "posted": "26.06.01",
         "article_no": 588024
-      },
-      {
-        "title": "「2026 CNU 생성형AI 실전 캠프」 개최 안내 및 홍보",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=587991&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.06.01",
-        "article_no": 587991
       }
     ],
     "예술대학 조소과 / 예술대학": [
@@ -6729,6 +6729,13 @@
     ],
     "수의과대학 / 의과대학": [
       {
+        "title": "의학한림원「의사과학자상」수상후보자 공모 안내(~8.14.(금))",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591734&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.13",
+        "article_no": 591734
+      },
+      {
         "title": "2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591632&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6811,13 +6818,6 @@
         "dept": "의과대학",
         "posted": "26.06.29",
         "article_no": 590569
-      },
-      {
-        "title": "2026년 후반기 예비군 전입 신고 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.22",
-        "article_no": 589955
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
