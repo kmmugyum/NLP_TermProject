@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-14T12:00:16.152143",
+  "fetched_at": "2026-07-14T18:00:15.648835",
   "data": {
     "응용생물학과": [
       {
@@ -4983,6 +4983,20 @@
     ],
     "의과대학": [
       {
+        "title": "[가송재단] 2026학년도 2학기 장학생 선발 안내[2026. 8. 5.(수) 17시까지 행정실(본관 206호)로 원본 제출]",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591880&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.14",
+        "article_no": 591880
+      },
+      {
+        "title": "[충남평생교육진흥원] 2026학년도 재능키움 장학사업 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591877&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.14",
+        "article_no": 591877
+      },
+      {
         "title": "의학한림원「의사과학자상」수상후보자 공모 안내(~8.14.(금))",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591734&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5051,20 +5065,6 @@
         "dept": "의과대학",
         "posted": "26.06.30",
         "article_no": 590666
-      },
-      {
-        "title": "등록금 반환 신청 메뉴 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.29",
-        "article_no": 590580
-      },
-      {
-        "title": "한국보건산업진흥원「2026 연구 아이디어 기술사업화 챌린지」참가자 모집 공고",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590569&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.29",
-        "article_no": 590569
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6736,6 +6736,20 @@
     ],
     "수의과대학 / 의과대학": [
       {
+        "title": "[가송재단] 2026학년도 2학기 장학생 선발 안내[2026. 8. 5.(수) 17시까지 행정실(본관 206호)로 원본 제출]",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591880&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.14",
+        "article_no": 591880
+      },
+      {
+        "title": "[충남평생교육진흥원] 2026학년도 재능키움 장학사업 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591877&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.14",
+        "article_no": 591877
+      },
+      {
         "title": "2026학년도 제2학기 휴학 및 복학 신청 안내",
         "url": "https://vetmed.cnu.ac.kr/vetmed/community/notice.do?mode=view&articleNo=591764&article.offset=0&articleLimit=10",
         "dept": "수의과대학",
@@ -6818,20 +6832,6 @@
         "dept": "의과대학",
         "posted": "26.06.30",
         "article_no": 590666
-      },
-      {
-        "title": "등록금 반환 신청 메뉴 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.29",
-        "article_no": 590580
-      },
-      {
-        "title": "한국보건산업진흥원「2026 연구 아이디어 기술사업화 챌린지」참가자 모집 공고",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590569&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.29",
-        "article_no": 590569
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
