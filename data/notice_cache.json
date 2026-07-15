@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-15T06:00:16.133288",
+  "fetched_at": "2026-07-15T12:00:15.450205",
   "data": {
     "응용생물학과": [
       {
@@ -240,32 +240,46 @@
     ],
     "농업경제학과 / 경제학과": [
       {
-        "title": "[장학] 2026학년도 제1학기 교내 장학생 추가 선발 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591857&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 CNU 최애 강의 에세이 공모전 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592005&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591857
+        "posted": "26.07.15",
+        "article_no": 592005
       },
       {
-        "title": "[기타] 충남평생교육진흥원 2026학년도 재능키움 장학사업 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591809&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 2학기 교수학습지원센터 학습지원 프로그램 요구조사 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592004&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591809
+        "posted": "26.07.15",
+        "article_no": 592004
       },
       {
-        "title": "[장학] 가송재단 2026학년도 2학기 장학생 추천 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591808&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026 START UP-FIT 전공맞춤 창업특강 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592003&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591808
+        "posted": "26.07.15",
+        "article_no": 592003
       },
       {
-        "title": "[기타] 2026년 1차 ODA 사업 기획 관리 전문가 인증 프로그램(CNU-PPM)참여자 모집 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591807&article.offset=0&articleLimit=10",
+        "title": "[기타] 충청권 국립대학 공동 교육혁신센터 충청권 전북제주 국립대학 공동 교육혁신센터 비교과 프로그램 운영 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592002&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591807
+        "posted": "26.07.15",
+        "article_no": 592002
+      },
+      {
+        "title": "[기타] 2026학년도 제5차 CNU 알쓸교잡 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592001&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.15",
+        "article_no": 592001
+      },
+      {
+        "title": "***<2025학년도 후기 학사학위취득유예 신청 안내>***",
+        "url": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do?mode=view&articleNo=591967&article.offset=0&articleLimit=10",
+        "dept": "농업경제학과",
+        "posted": "26.07.15",
+        "article_no": 591967
       },
       {
         "title": "[학적] 2026학년도 제2학기 휴학 및 복학 신청 안내",
@@ -273,13 +287,6 @@
         "dept": "경제학과",
         "posted": "26.07.14",
         "article_no": 591803
-      },
-      {
-        "title": "[기타] 지역인재를 위한 AI 성장트랙 Campus AX-Ton 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591797&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591797
       },
       {
         "title": "[공지] 2026학년도 경제학과 학술대회 보고서 제출 관련 안내(표절검사 실시 등)",
@@ -378,13 +385,6 @@
         "dept": "농업경제학과",
         "posted": "26.01.13",
         "article_no": 574533
-      },
-      {
-        "title": "***<2025학년도 제2학기 공인영어능력(학점)인정 승인 통보(1차) 및 2차 신청 안내>***",
-        "url": "https://agrieco.cnu.ac.kr/agrieco/community/notice.do?mode=view&articleNo=574532&article.offset=0&articleLimit=10",
-        "dept": "농업경제학과",
-        "posted": "26.01.10",
-        "article_no": 574532
       },
       {
         "title": "게시물 게시 관련 안내",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "2026학년도 제2학기 휴학 및 복학 신청 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=591990&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.07.15",
+        "article_no": 591990
+      },
+      {
         "title": "2026학년도 2학기 교수학습지원센터 학습지원 프로그램 요구조사 실시 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=591926&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -882,13 +889,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.06.17",
         "article_no": 589687
-      },
-      {
-        "title": "2026학년도 하기방학기간「천원의 아침밥」변경 운영 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=589686&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.06.17",
-        "article_no": 589686
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -1305,6 +1305,13 @@
     ],
     "농업생명과학대학": [
       {
+        "title": "★ 2026학년도 2학기 휴학 및 복학 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591979&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.07.15",
+        "article_no": 591979
+      },
+      {
         "title": "※ 전과 지원 자격 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591744&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -1352,13 +1359,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.7.15",
         "article_no": 589200
-      },
-      {
-        "title": "2026학년도 2학기 국가장학금 1차 신청 안내",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=587610&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.05.22",
-        "article_no": 587610
       },
       {
         "title": "※ 농생명융합학부 학부 사무실 위치 및 전화번호 변경 안내 ※",
@@ -2198,6 +2198,48 @@
     ],
     "School of International Studie": [
       {
+        "title": "2026학년도 2학기 교수학습지원센터 학습지원 프로그램 요구조사 실시 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591976&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591976
+      },
+      {
+        "title": "[육성] 2026학년도 CNU 최애 강의 에세이 공모전 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591975&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591975
+      },
+      {
+        "title": "[충청권 국립대학 공동 교육혁신센터] 충청권/전북제주 국립대학 공동 교육혁신센터 비교과 프로그램 운영 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591974&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591974
+      },
+      {
+        "title": "2026학년도 제5차 CNU 알쓸교잡 실시 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591973&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591973
+      },
+      {
+        "title": "(일반선택 교양) [2026학년도 2학기 KT 연계 AI실무인재 양성 기초/심화교육] 수강신청 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591972&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591972
+      },
+      {
+        "title": "지역인재를 위한 AI 성장트랙 Campus AX-Ton 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591970&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.07.15",
+        "article_no": 591970
+      },
+      {
         "title": "2026년 1차 ODA 사업 기획 관리 전문가 인증 프로그램(CNU-PPM) 참여자 모집 안내",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591909&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2224,48 +2266,6 @@
         "dept": "School of International Studie",
         "posted": "26.07.09",
         "article_no": 591469
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591436&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.08",
-        "article_no": 591436
-      },
-      {
-        "title": "대학교 캠퍼스 범죄 안전 대학(원)생 인식 조사 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591313&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.07",
-        "article_no": 591313
-      },
-      {
-        "title": "글로컬대학사업 서포터즈 추가 모집 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591290&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.07",
-        "article_no": 591290
-      },
-      {
-        "title": "2026년 AI기반 해커톤 썸머 캠프 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591199&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.06",
-        "article_no": 591199
-      },
-      {
-        "title": "2026년 하계 CNU 취업캠프 참여자 모집",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591192&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.06",
-        "article_no": 591192
-      },
-      {
-        "title": "2026년도 제1기 국제협력센터 서포터즈(GLOVY) 모집 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=591191&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.07.06",
-        "article_no": 591191
       },
       {
         "title": "2026학년도 제2학기 등록금 납부 안내(Notice for payment of tuition fee for 2026-2 semester)",
@@ -2849,32 +2849,39 @@
     ],
     "경제학과": [
       {
-        "title": "[장학] 2026학년도 제1학기 교내 장학생 추가 선발 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591857&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 CNU 최애 강의 에세이 공모전 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592005&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591857
+        "posted": "26.07.15",
+        "article_no": 592005
       },
       {
-        "title": "[기타] 충남평생교육진흥원 2026학년도 재능키움 장학사업 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591809&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 2학기 교수학습지원센터 학습지원 프로그램 요구조사 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592004&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591809
+        "posted": "26.07.15",
+        "article_no": 592004
       },
       {
-        "title": "[장학] 가송재단 2026학년도 2학기 장학생 추천 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591808&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026 START UP-FIT 전공맞춤 창업특강 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592003&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591808
+        "posted": "26.07.15",
+        "article_no": 592003
       },
       {
-        "title": "[기타] 2026년 1차 ODA 사업 기획 관리 전문가 인증 프로그램(CNU-PPM)참여자 모집 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591807&article.offset=0&articleLimit=10",
+        "title": "[기타] 충청권 국립대학 공동 교육혁신센터 충청권 전북제주 국립대학 공동 교육혁신센터 비교과 프로그램 운영 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592002&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591807
+        "posted": "26.07.15",
+        "article_no": 592002
+      },
+      {
+        "title": "[기타] 2026학년도 제5차 CNU 알쓸교잡 실시 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592001&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.15",
+        "article_no": 592001
       },
       {
         "title": "[학적] 2026학년도 제2학기 휴학 및 복학 신청 안내",
@@ -2882,13 +2889,6 @@
         "dept": "경제학과",
         "posted": "26.07.14",
         "article_no": 591803
-      },
-      {
-        "title": "[기타] 지역인재를 위한 AI 성장트랙 Campus AX-Ton 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=591797&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.14",
-        "article_no": 591797
       },
       {
         "title": "[공지] 2026학년도 경제학과 학술대회 보고서 제출 관련 안내(표절검사 실시 등)",
@@ -4042,6 +4042,13 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
+        "title": "★ 2026학년도 2학기 휴학 및 복학 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591979&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.07.15",
+        "article_no": 591979
+      },
+      {
         "title": "※ 전과 지원 자격 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591744&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -4159,13 +4166,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.7.15",
         "article_no": 589200
-      },
-      {
-        "title": "2026학년도 2학기 국가장학금 1차 신청 안내",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=587610&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.05.22",
-        "article_no": 587610
       },
       {
         "title": "※ 농생명융합학부 학부 사무실 위치 및 전화번호 변경 안내 ※",
@@ -4874,6 +4874,13 @@
     ],
     "기계공학부": [
       {
+        "title": "2026.2학기 공학인증 이수포기 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591988&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.07.15",
+        "article_no": 591988
+      },
+      {
         "title": "[글로컬] ODA사업 기획관리 전문가 인증 프로그램 모집안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591861&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -4937,13 +4944,6 @@
         "article_no": 589327
       },
       {
-        "title": "2026-1학기 캡스톤디자인(심화종합설계) 결과보고서 제출 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=589179&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.06.12",
-        "article_no": 589179
-      },
-      {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=581913&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -4982,6 +4982,13 @@
       }
     ],
     "의과대학": [
+      {
+        "title": "대학원생 핵심역량진단도구 개발을 위한 예비조사 참여 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591984&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.15",
+        "article_no": 591984
+      },
       {
         "title": "[가송재단] 2026학년도 2학기 장학생 선발 안내[2026. 8. 5.(수) 17시까지 행정실(본관 206호)로 원본 제출]",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591880&article.offset=0&articleLimit=10",
@@ -5058,16 +5065,16 @@
         "dept": "의과대학",
         "posted": "26.07.02",
         "article_no": 590872
-      },
-      {
-        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.30",
-        "article_no": 590666
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
+      {
+        "title": "2026.2학기 공학인증 이수포기 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591988&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.07.15",
+        "article_no": 591988
+      },
       {
         "title": "[글로컬] ODA사업 기획관리 전문가 인증 프로그램 모집안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=591861&article.offset=0&articleLimit=10",
@@ -5202,13 +5209,6 @@
         "article_no": 589199
       },
       {
-        "title": "2026-1학기 캡스톤디자인(심화종합설계) 결과보고서 제출 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=589179&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.06.12",
-        "article_no": 589179
-      },
-      {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=581913&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -5260,6 +5260,13 @@
     ],
     "신소재공학과": [
       {
+        "title": "[장학]_가송재단 2026학년도 2학기 장학생 선발 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=591981&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.07.15",
+        "article_no": 591981
+      },
+      {
         "title": "2026학년도 제2학기 강의시간표(안) 재안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=591776&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5300,13 +5307,6 @@
         "dept": "신소재공학과",
         "posted": "26.07.07",
         "article_no": 591318
-      },
-      {
-        "title": "한국재료부식방식학회 제7회 부식 사례 포스터 공모전 안내",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=590919&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.07.02",
-        "article_no": 590919
       },
       {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
@@ -5674,6 +5674,13 @@
     ],
     "유기재료공학과": [
       {
+        "title": "[가송재단] 2026학년도 2학기 장학생 선발 안내 및 추천 요청(2026.7.23.(목)까지)",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=54",
+        "dept": "유기재료공학과",
+        "posted": "2026.7.23",
+        "article_no": 54
+      },
+      {
         "title": "2026년 1차 ODA 사업 기획 관리 전문가 인증 프로그램(CNU_PPM) 참여자 모집 안내",
         "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=53",
         "dept": "유기재료공학과",
@@ -5686,13 +5693,6 @@
         "dept": "유기재료공학과",
         "posted": null,
         "article_no": 52
-      },
-      {
-        "title": "2026학년도 제1학기 교내 장학생 추가 선발 요청(2026. 7. 13.(화)까지)",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=51",
-        "dept": "유기재료공학과",
-        "posted": null,
-        "article_no": 51
       },
       {
         "title": "2025학년도 후기 학부 졸업 본사정 실시 안내(2026.7.30.(목)까지)",
@@ -5760,6 +5760,13 @@
     ],
     "약학대학": [
       {
+        "title": "2026 START UP-FIT 전공맞춤 창업특강 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591989&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.07.15",
+        "article_no": 591989
+      },
+      {
         "title": "[가송재단] 2026학년도 2학기 장학생 안내",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591898&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5786,13 +5793,6 @@
         "dept": "약학대학",
         "posted": "26.07.13",
         "article_no": 591688
-      },
-      {
-        "title": "[의암손병희선생계승사업회] 2026학년도 의암 손병희 우수논문  장학생 선발 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=591687&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.13",
-        "article_no": 591687
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
@@ -6743,6 +6743,13 @@
     ],
     "수의과대학 / 의과대학": [
       {
+        "title": "대학원생 핵심역량진단도구 개발을 위한 예비조사 참여 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591984&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.07.15",
+        "article_no": 591984
+      },
+      {
         "title": "[가송재단] 2026학년도 2학기 장학생 선발 안내[2026. 8. 5.(수) 17시까지 행정실(본관 206호)로 원본 제출]",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591880&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6832,13 +6839,6 @@
         "dept": "의과대학",
         "posted": "26.07.02",
         "article_no": 590872
-      },
-      {
-        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.06.30",
-        "article_no": 590666
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
