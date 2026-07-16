@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16T00:00:15.408858",
+  "fetched_at": "2026-07-16T06:00:15.632846",
   "data": {
     "응용생물학과": [
       {
@@ -1712,6 +1712,13 @@
     ],
     "토목공학과": [
       {
+        "title": "2026학년도 제2학기 정기휴업에 따른 보충강의 지정일 안내",
+        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=592030&article.offset=0&articleLimit=10",
+        "dept": "토목공학과",
+        "posted": "26.07.16",
+        "article_no": 592030
+      },
+      {
         "title": "7·8학기 진입 전 심화과정 이수포기 신청 안내(2026.2학기)",
         "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=591785&article.offset=0&articleLimit=10",
         "dept": "토목공학과",
@@ -1738,13 +1745,6 @@
         "dept": "토목공학과",
         "posted": "26.06.23",
         "article_no": 590111
-      },
-      {
-        "title": "2026학년도 제2학기 등록금 납부 안내",
-        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=589207&article.offset=0&articleLimit=10",
-        "dept": "토목공학과",
-        "posted": "26.06.12",
-        "article_no": 589207
       },
       {
         "title": "★이수면제 교과목(화학개론실험,물리학실험2,기초통계입문,프로그래밍언어) 안내",
@@ -3707,6 +3707,34 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "2026학년도 제5차 CNU 알쓸교잡 실시 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592038&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.16",
+        "article_no": 592038
+      },
+      {
+        "title": "[가송재단] 2026학년도 2학기 장학생 추천",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592026&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.16",
+        "article_no": 592026
+      },
+      {
+        "title": "[충남평생교육진흥원] 2026학년도 재능키움 장학사업 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592025&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.16",
+        "article_no": 592025
+      },
+      {
+        "title": "2026년 1차 ODA 사업 기획 관리 전문가 인증 프로그램(CNU-PPM) 참여자 모집 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592024&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.16",
+        "article_no": 592024
+      },
+      {
         "title": "2026학년도 제2학기 휴·복학 신청",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591872&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3747,34 +3775,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.07.13",
         "article_no": 591714
-      },
-      {
-        "title": "[수당재단] 2026학년도 2학기 신규 장학생 추천",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591713&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.13",
-        "article_no": 591713
-      },
-      {
-        "title": "2026학년도 스피치 능력UP 집중 교육 과정(기초) 모집 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591588&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.10",
-        "article_no": 591588
-      },
-      {
-        "title": "2026학년도 9차 CNU Learning Together(52호) 실시 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591587&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.10",
-        "article_no": 591587
-      },
-      {
-        "title": "여름철 호우 등 자연재난 대비 안전관리 철저 요청",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=591583&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.10",
-        "article_no": 591583
       },
       {
         "title": "[예비군연대] 2026년 후반기 예비군 전입 신고 관련 안내",
@@ -5260,6 +5260,13 @@
     ],
     "신소재공학과": [
       {
+        "title": "[포스터]_2027년 2월 졸업예정자 포스터발표 일정 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=592031&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.07.16",
+        "article_no": 592031
+      },
+      {
         "title": "[장학]_가송재단 2026학년도 2학기 장학생 선발 안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=591981&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5300,13 +5307,6 @@
         "dept": "신소재공학과",
         "posted": "26.07.07",
         "article_no": 591321
-      },
-      {
-        "title": "[장학]_한국장애인개발원2026년도 쌍용곰두리장학생 추천 안내",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=591318&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.07.07",
-        "article_no": 591318
       },
       {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
