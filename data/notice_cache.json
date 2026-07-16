@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-16T12:00:15.846149",
+  "fetched_at": "2026-07-16T18:00:16.950945",
   "data": {
     "응용생물학과": [
       {
@@ -5018,13 +5018,6 @@
         "article_no": 591632
       },
       {
-        "title": "[한국장애인개발원] 2026년도 쌍용곰두리장학생 모집 안내[2026. 7. 16.(목) 17시 까지 행정실(본관206호) 원본 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591296&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.07",
-        "article_no": 591296
-      },
-      {
         "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금대출 관련분야(원금상환, 이자지원) 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591254&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5053,18 +5046,25 @@
         "article_no": 591035
       },
       {
-        "title": "[보건장학회] 2026학년도 2학기 학업지원 장학생 선발 안내[2026. 7. 16.(목) 13시 까지 이메일(jangwj@cnu.ac.kr)로 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590889&article.offset=0&articleLimit=10",
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.07.02",
-        "article_no": 590889
+        "posted": "26.06.30",
+        "article_no": 590666
       },
       {
-        "title": "[보건장학회] 2026학년도 2학기 다문화가정 장학생 선발 안내[2026. 7. 16.(목) 13시 까지 이메일(jangwj@cnu.ac.kr)로 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590872&article.offset=0&articleLimit=10",
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.07.02",
-        "article_no": 590872
+        "posted": "26.06.29",
+        "article_no": 590580
+      },
+      {
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.22",
+        "article_no": 589955
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6785,13 +6785,6 @@
         "article_no": 591632
       },
       {
-        "title": "[한국장애인개발원] 2026년도 쌍용곰두리장학생 모집 안내[2026. 7. 16.(목) 17시 까지 행정실(본관206호) 원본 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591296&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.07",
-        "article_no": 591296
-      },
-      {
         "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금대출 관련분야(원금상환, 이자지원) 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591254&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6827,18 +6820,25 @@
         "article_no": 591020
       },
       {
-        "title": "[보건장학회] 2026학년도 2학기 학업지원 장학생 선발 안내[2026. 7. 16.(목) 13시 까지 이메일(jangwj@cnu.ac.kr)로 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590889&article.offset=0&articleLimit=10",
+        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.07.02",
-        "article_no": 590889
+        "posted": "26.06.30",
+        "article_no": 590666
       },
       {
-        "title": "[보건장학회] 2026학년도 2학기 다문화가정 장학생 선발 안내[2026. 7. 16.(목) 13시 까지 이메일(jangwj@cnu.ac.kr)로 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590872&article.offset=0&articleLimit=10",
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.07.02",
-        "article_no": 590872
+        "posted": "26.06.29",
+        "article_no": 590580
+      },
+      {
+        "title": "2026년 후반기 예비군 전입 신고 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=589955&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.22",
+        "article_no": 589955
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
