@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-20T12:00:16.156163",
+  "fetched_at": "2026-07-20T18:00:16.331388",
   "data": {
     "응용생물학과": [
       {
@@ -2273,13 +2273,6 @@
         "dept": "School of International Studie",
         "posted": "26.06.15",
         "article_no": 589331
-      },
-      {
-        "title": "2026학년도 제1학기 영어능력인정 신청 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=578887&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.03.03",
-        "article_no": 578887
       }
     ],
     "컴퓨터인공지능학부": [
@@ -2759,13 +2752,6 @@
         "dept": "무용학과",
         "posted": "25.07.04",
         "article_no": 554626
-      },
-      {
-        "title": "2025년도 CNU 무용영재캠프 결과 발표",
-        "url": "https://dance.cnu.ac.kr/dance/community/notice.do?mode=view&articleNo=554625&article.offset=0&articleLimit=10",
-        "dept": "무용학과",
-        "posted": "25.07.04",
-        "article_no": 554625
       }
     ],
     "생명정보융합학과": [
@@ -5067,11 +5053,11 @@
         "article_no": 591035
       },
       {
-        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.06.30",
-        "article_no": 590666
+        "posted": "26.06.29",
+        "article_no": 590580
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6497,13 +6483,6 @@
         "dept": "정보통계학과",
         "posted": "2025.8.25",
         "article_no": 557598
-      },
-      {
-        "title": "[DS플러스]  <Data Science Challenge 2025 데이터로 여는 충청권의 미래 > 공모전 참가신청 접수 - 기한 연장 [2025.8.11.(월) ~ 8.17.(일)23:00 까지)]",
-        "url": "https://stat.cnu.ac.kr/stat/open/ds-notice.do?mode=view&articleNo=552389&article.offset=0&articleLimit=10",
-        "dept": "정보통계학과",
-        "posted": "2025.8.11",
-        "article_no": 552389
       }
     ],
     "사범대학 기술교육과 / 사범대학": [
@@ -6841,11 +6820,11 @@
         "article_no": 591020
       },
       {
-        "title": "[OK배·정장학재단] 제17기 OK배정장학생 선발 모집 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590666&article.offset=0&articleLimit=10",
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
         "dept": "의과대학",
-        "posted": "26.06.30",
-        "article_no": 590666
+        "posted": "26.06.29",
+        "article_no": 590580
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
