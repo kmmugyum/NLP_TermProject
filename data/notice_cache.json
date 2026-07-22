@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-22T12:00:16.103941",
+  "fetched_at": "2026-07-22T18:00:15.764786",
   "data": {
     "응용생물학과": [
       {
@@ -2766,13 +2766,6 @@
         "dept": "무용학과",
         "posted": "25.07.11",
         "article_no": 555347
-      },
-      {
-        "title": "2025년 CNU 무용영재캠프 추가 모집 (한국무용, 현대무용 부문)",
-        "url": "https://dance.cnu.ac.kr/dance/community/notice.do?mode=view&articleNo=554626&article.offset=0&articleLimit=10",
-        "dept": "무용학과",
-        "posted": "25.07.04",
-        "article_no": 554626
       }
     ],
     "생명정보융합학과": [
@@ -5011,13 +5004,6 @@
         "article_no": 592187
       },
       {
-        "title": "「2026년 학생성공 평화캠프(히로시마)」운영 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=592166&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.20",
-        "article_no": 592166
-      },
-      {
         "title": "2026학년도 대학생 청소년 AI 교육지원사업 장학생 모집[2026. 7.30.(목) 13시까지 이메일(jangwj@cnu.ac.kr)로 서류 제출]",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=592137&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5079,6 +5065,13 @@
         "dept": "의과대학",
         "posted": "26.07.03",
         "article_no": 591035
+      },
+      {
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.29",
+        "article_no": 590580
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6771,13 +6764,6 @@
         "article_no": 592187
       },
       {
-        "title": "「2026년 학생성공 평화캠프(히로시마)」운영 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=592166&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.20",
-        "article_no": 592166
-      },
-      {
         "title": "2026학년도 대학생 청소년 AI 교육지원사업 장학생 모집[2026. 7.30.(목) 13시까지 이메일(jangwj@cnu.ac.kr)로 서류 제출]",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=592137&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6853,6 +6839,13 @@
         "dept": "수의과대학",
         "posted": "26.07.03",
         "article_no": 591020
+      },
+      {
+        "title": "등록금 반환 신청 메뉴 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=590580&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.06.29",
+        "article_no": 590580
       },
       {
         "title": "2026년 하기방학 몽골 수의생명과학대학 학생 파견 신청 안내",
