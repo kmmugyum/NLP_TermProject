@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-23T06:00:17.752467",
+  "fetched_at": "2026-07-23T12:00:15.694931",
   "data": {
     "응용생물학과": [
       {
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "서울대학교 대학연대 지역인재양성 사업단 &lt;2026 초음속 풍동 실습 여름캠프홍보",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=592769&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.07.23",
+        "article_no": 592769
+      },
+      {
         "title": "2026년 여성공학인 재직자 맞춤형 커리어 지원 1차 공통_산업군별 교육신청 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=592687&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -896,16 +903,44 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.07.15",
         "article_no": 591926
-      },
-      {
-        "title": "[육성] 2026학년도 CNU 최애 강의 에세이 공모전 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=591925&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.07.15",
-        "article_no": 591925
       }
     ],
     "생물환경화학과 / 화학과": [
+      {
+        "title": "2026. 2학기 수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592796&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592796
+      },
+      {
+        "title": "2026. 2학기 예비수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592793&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592793
+      },
+      {
+        "title": "2026. 2학기 장애학생 우선수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592791&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592791
+      },
+      {
+        "title": "2027.1학기 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592790&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592790
+      },
+      {
+        "title": "2026-2학기 학과사무실 - 수강신청공지사항",
+        "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=592766&article.offset=0&articleLimit=10",
+        "dept": "생물환경화학과",
+        "posted": "26.07.23",
+        "article_no": 592766
+      },
       {
         "title": "Bio-QC HPLC 분석 실무캠프 모집 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592686&article.offset=0&articleLimit=10",
@@ -947,34 +982,6 @@
         "dept": "화학과",
         "posted": "26.07.14",
         "article_no": 591844
-      },
-      {
-        "title": "MALDI-TOF 질량분석기 도입 기념 무료 사용 이벤트",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591824&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.14",
-        "article_no": 591824
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591500&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591500
-      },
-      {
-        "title": "2026학년도 교직과정 이수예정자 선발 안내(2025입학)",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591470&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591470
-      },
-      {
-        "title": "[한국장애인개발원]   2026년도 쌍용곰두리장학생 모집 안내 및 장학생 선발 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591409&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.08",
-        "article_no": 591409
       },
       {
         "title": "2026년 후반기 예비군 전입 신고 공지",
@@ -1033,13 +1040,6 @@
         "article_no": 580532
       },
       {
-        "title": "2026학년도 제1학기 온라인 폭력예방교육 이수 안내",
-        "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=580016&article.offset=0&articleLimit=10",
-        "dept": "생물환경화학과",
-        "posted": "26.03.09",
-        "article_no": 580016
-      },
-      {
         "title": "장학게시판 안내(충남대 장학게시판 이용)",
         "url": "https://bec.cnu.ac.kr/bec/notice/notice01.do?mode=view&articleNo=579989&article.offset=0&articleLimit=10",
         "dept": "생물환경화학과",
@@ -1069,6 +1069,34 @@
       }
     ],
     "생화학과 / 화학과": [
+      {
+        "title": "2026. 2학기 수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592796&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592796
+      },
+      {
+        "title": "2026. 2학기 예비수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592793&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592793
+      },
+      {
+        "title": "2026. 2학기 장애학생 우선수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592791&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592791
+      },
+      {
+        "title": "2027.1학기 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592790&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592790
+      },
       {
         "title": "Bio-QC HPLC 분석 실무캠프 모집 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592686&article.offset=0&articleLimit=10",
@@ -1124,34 +1152,6 @@
         "dept": "화학과",
         "posted": "26.07.14",
         "article_no": 591844
-      },
-      {
-        "title": "MALDI-TOF 질량분석기 도입 기념 무료 사용 이벤트",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591824&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.14",
-        "article_no": 591824
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591500&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591500
-      },
-      {
-        "title": "2026학년도 교직과정 이수예정자 선발 안내(2025입학)",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591470&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591470
-      },
-      {
-        "title": "[한국장애인개발원]   2026년도 쌍용곰두리장학생 모집 안내 및 장학생 선발 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591409&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.08",
-        "article_no": 591409
       },
       {
         "title": "2026년도 우수 학부연구생 지원 안내(4학년 1학기 학부생 대상)",
@@ -1405,6 +1405,34 @@
     ],
     "응용화학공학과 / 화학과": [
       {
+        "title": "2026. 2학기 수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592796&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592796
+      },
+      {
+        "title": "2026. 2학기 예비수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592793&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592793
+      },
+      {
+        "title": "2026. 2학기 장애학생 우선수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592791&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592791
+      },
+      {
+        "title": "2027.1학기 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592790&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592790
+      },
+      {
         "title": "★2026학년도 2학기 수강신청 기본계획 안내 ★",
         "url": "https://ceac.cnu.ac.kr/ceac/under/notice.do?mode=view&articleNo=592762&article.offset=0&articleLimit=10",
         "dept": "응용화학공학과",
@@ -1480,34 +1508,6 @@
         "dept": "화학과",
         "posted": "26.07.14",
         "article_no": 591844
-      },
-      {
-        "title": "MALDI-TOF 질량분석기 도입 기념 무료 사용 이벤트",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591824&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.14",
-        "article_no": 591824
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591500&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591500
-      },
-      {
-        "title": "2026학년도 교직과정 이수예정자 선발 안내(2025입학)",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591470&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591470
-      },
-      {
-        "title": "[한국장애인개발원]   2026년도 쌍용곰두리장학생 모집 안내 및 장학생 선발 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591409&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.08",
-        "article_no": 591409
       },
       {
         "title": "출석인정(11호) 신설에 따른 출석 인정 기준 안내",
@@ -1647,6 +1647,34 @@
     ],
     "화학과": [
       {
+        "title": "2026. 2학기 수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592796&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592796
+      },
+      {
+        "title": "2026. 2학기 예비수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592793&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592793
+      },
+      {
+        "title": "2026. 2학기 장애학생 우선수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592791&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592791
+      },
+      {
+        "title": "2027.1학기 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592790&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592790
+      },
+      {
         "title": "Bio-QC HPLC 분석 실무캠프 모집 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592686&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -1687,34 +1715,6 @@
         "dept": "화학과",
         "posted": "26.07.14",
         "article_no": 591844
-      },
-      {
-        "title": "MALDI-TOF 질량분석기 도입 기념 무료 사용 이벤트",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591824&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.14",
-        "article_no": 591824
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591500&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591500
-      },
-      {
-        "title": "2026학년도 교직과정 이수예정자 선발 안내(2025입학)",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591470&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591470
-      },
-      {
-        "title": "[한국장애인개발원]   2026년도 쌍용곰두리장학생 모집 안내 및 장학생 선발 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591409&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.08",
-        "article_no": 591409
       },
       {
         "title": "[[2025.8월 및 2026.2월 졸업예정자 대상 안내]] 개인정보제공 및 활용동의서 수집 안내",
@@ -1898,6 +1898,13 @@
     ],
     "의류학과": [
       {
+        "title": "창의융합대학 뉴비(New飛)멘토링",
+        "url": "https://cloth.cnu.ac.kr/cloth/notice/undergrad.do?mode=view&articleNo=592832&article.offset=0&articleLimit=10",
+        "dept": "의류학과",
+        "posted": "26.07.23",
+        "article_no": 592832
+      },
+      {
         "title": "2026학년도 제2학기 수강신청 기본 계획 안내",
         "url": "https://cloth.cnu.ac.kr/cloth/notice/undergrad.do?mode=view&articleNo=592562&article.offset=0&articleLimit=10",
         "dept": "의류학과",
@@ -1931,13 +1938,6 @@
         "dept": "의류학과",
         "posted": "26.06.16",
         "article_no": 589542
-      },
-      {
-        "title": "2학기 디자인통합프로세스(종합설계) 수업, 졸업작품전 준비를 위한  여름방학 줌특강 안내",
-        "url": "https://cloth.cnu.ac.kr/cloth/notice/undergrad.do?mode=view&articleNo=586654&article.offset=0&articleLimit=10",
-        "dept": "의류학과",
-        "posted": "26.05.14",
-        "article_no": 586654
       },
       {
         "title": "2026.1학기 학생 출석인정 신청 및 학생 출석인정 신청 마감 안내",
@@ -2056,6 +2056,34 @@
     ],
     "사범대학 화학공학교육과 / 화학과": [
       {
+        "title": "2026. 2학기 수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592796&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592796
+      },
+      {
+        "title": "2026. 2학기 예비수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592793&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592793
+      },
+      {
+        "title": "2026. 2학기 장애학생 우선수강신청 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592791&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592791
+      },
+      {
+        "title": "2027.1학기 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592790&article.offset=0&articleLimit=10",
+        "dept": "화학과",
+        "posted": "26.07.23",
+        "article_no": 592790
+      },
+      {
         "title": "Bio-QC HPLC 분석 실무캠프 모집 안내",
         "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=592686&article.offset=0&articleLimit=10",
         "dept": "화학과",
@@ -2110,34 +2138,6 @@
         "dept": "화학과",
         "posted": "26.07.14",
         "article_no": 591844
-      },
-      {
-        "title": "MALDI-TOF 질량분석기 도입 기념 무료 사용 이벤트",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591824&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.14",
-        "article_no": 591824
-      },
-      {
-        "title": "2025학년도 후기 학사학위취득 유예 신청 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591500&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591500
-      },
-      {
-        "title": "2026학년도 교직과정 이수예정자 선발 안내(2025입학)",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591470&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.09",
-        "article_no": 591470
-      },
-      {
-        "title": "[한국장애인개발원]   2026년도 쌍용곰두리장학생 모집 안내 및 장학생 선발 안내",
-        "url": "https://chem.cnu.ac.kr/chem/undergrad/notice.do?mode=view&articleNo=591409&article.offset=0&articleLimit=10",
-        "dept": "화학과",
-        "posted": "26.07.08",
-        "article_no": 591409
       },
       {
         "title": "2025학년도 후기 졸업(학위수여)예정자 영문 성명 확인 안내",
@@ -2298,7 +2298,35 @@
     ],
     "컴퓨터인공지능학부": [
       {
-        "title": "[수강신청] 2026학년도 2학기 개설 전공교과목 및 필수교양의 우리학부 전용분반 주의사항 안내",
+        "title": "[수강신청] ★★★ 1학년 교과목 수강신청 안내 (본인이 직접 8.4.(화) 15:00~17:00 수강신청) ★★★",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592837&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.23",
+        "article_no": 592837
+      },
+      {
+        "title": "[수강신청] 2026-2학기 실무프로젝트랩2, 실무프로젝트랩3 (사업 연계) 교과목 수강신청 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592836&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.23",
+        "article_no": 592836
+      },
+      {
+        "title": "[수강신청] 2026-2학기 컴퓨터융합학부와 인공지능학과 합반과목 안내 및 타과 교과목 수강 유의사항",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592822&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.23",
+        "article_no": 592822
+      },
+      {
+        "title": "[수강신청] 2026-2학기 예비수강신청 안내('26. 7. 27.(월) 09:00 ~ 7.29.(수) 18:00)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592777&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.23",
+        "article_no": 592777
+      },
+      {
+        "title": "[수강신청] 2026-2학기 개설 전공교과목 및 필수교양의 우리학부 전용분반 주의사항 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592568&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
         "posted": "26.07.22",
@@ -2352,13 +2380,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.07.16",
         "article_no": 592071
-      },
-      {
-        "title": "[졸업] 2025학년도 후기(2026년8월) 학사학위취득 유예 신청 안내 (신청기간: '26.7.20.(월) 09:00~7.24.(금) 18:00)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=591358&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.7.20",
-        "article_no": 591358
       },
       {
         "title": "2026년 구글코리아 청년 AI 역량강화 프로그램(Google AI Professional Certificate) 신청 안내",
@@ -2429,30 +2450,16 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.06.03",
         "article_no": 588339
-      },
-      {
-        "title": "[교내우수장학선발 기준 변경 안내 :  영어 및 IT 자격증 가산점 폐지]",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=583440&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.04.08",
-        "article_no": 583440
-      },
-      {
-        "title": "★★[졸업요건'25.10.20. 수정] 2025 CNU 교양교육과정 개편 및 경과조치 안내 (시행: 2025년 9일) 및 학과 졸업요건표(개편 적용)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=562651&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "25.10.20",
-        "article_no": 562651
-      },
-      {
-        "title": "★★[졸업요건] 비교과 졸업요건: 프로젝트 교과목 및 트랙 이수 안내 및 제출 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=555194&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "25.07.09",
-        "article_no": 555194
       }
     ],
     "건설공학교육과": [
+      {
+        "title": "2026년 PC(Precast Concrete)기술경진대회 안내",
+        "url": "https://conedu.cnu.ac.kr/conedu/cummunity/notice.do?mode=view&articleNo=592813&article.offset=0&articleLimit=10",
+        "dept": "건설공학교육과",
+        "posted": "26.07.23",
+        "article_no": 592813
+      },
       {
         "title": "2026 콘크리트기술경연대회-학생경진대회 개최 안내",
         "url": "https://conedu.cnu.ac.kr/conedu/cummunity/notice.do?mode=view&articleNo=590246&article.offset=0&articleLimit=10",
@@ -2515,13 +2522,6 @@
         "dept": "건설공학교육과",
         "posted": "26.02.12",
         "article_no": 577611
-      },
-      {
-        "title": "2025학년도 제2학기 응급처치 및 심폐소생술 교육이수 결과 제출 안내",
-        "url": "https://conedu.cnu.ac.kr/conedu/cummunity/notice.do?mode=view&articleNo=569820&article.offset=0&articleLimit=10",
-        "dept": "건설공학교육과",
-        "posted": "25.11.21",
-        "article_no": 569820
       }
     ],
     "창의융합대학": [
@@ -3021,6 +3021,13 @@
     ],
     "사범대학 교육학과 / 사범대학": [
       {
+        "title": "[2027-1학기 파견] 해외 자매대학 교환 및 방문학생 모집 안내",
+        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=592820&article.offset=0&articleLimit=10",
+        "dept": "사범대학 교육학과",
+        "posted": "26.07.23",
+        "article_no": 592820
+      },
+      {
         "title": "2026학년도 2학기 초청 교환학생 BUDDY 선발 홍보",
         "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=592688&article.offset=0&articleLimit=10",
         "dept": "사범대학 교육학과",
@@ -3082,13 +3089,6 @@
         "dept": "사범대학 교육학과",
         "posted": "26.07.14",
         "article_no": 591825
-      },
-      {
-        "title": "2025학년도 후기 졸업예정자 교원자격 무시험검정 신청 서류 제출 안내(2026.8월 졸업예정자 해당)",
-        "url": "https://education.cnu.ac.kr/education/notice/notice.do?mode=view&articleNo=591549&article.offset=0&articleLimit=10",
-        "dept": "사범대학 교육학과",
-        "posted": "26.07.10",
-        "article_no": 591549
       },
       {
         "title": "2026학년도 융합교육 연구공동체 선정결과 발표 및 활동방법 안내",
@@ -3721,6 +3721,13 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "2026학년도 CNU Learning Together(53호) 실시 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592802&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.07.23",
+        "article_no": 592802
+      },
+      {
         "title": "2026학년도 2학기 초청 교환학생 BUDDY 선발",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592751&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3782,13 +3789,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.07.22",
         "article_no": 592479
-      },
-      {
-        "title": "[육성] 2026학년도 CRC(CNU Readers Club) 프로그램 2기 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=592477&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.07.22",
-        "article_no": 592477
       },
       {
         "title": "[예비군연대] 2026년 후반기 예비군 전입 신고 관련 안내",
@@ -4056,6 +4056,13 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
+        "title": "창의융합대학 뉴비(New飛)멘토링 모집 안내",
+        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=592812&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학 산림환경자원학과",
+        "posted": "26.07.23",
+        "article_no": 592812
+      },
+      {
         "title": "[CNU JOB FESTA] 2026 이공계열 대상 R&D 실무역량교육 안내",
         "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=592706&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학 산림환경자원학과",
@@ -4159,13 +4166,6 @@
         "dept": "농업생명과학대학 산림환경자원학과",
         "posted": "26.06.25",
         "article_no": 590295
-      },
-      {
-        "title": "[스마트팜운영자양성사업단] 2026년 1학기 하계방학 교육 프로그램 안내",
-        "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=590220&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학 산림환경자원학과",
-        "posted": "26.06.24",
-        "article_no": 590220
       },
       {
         "title": "2026학년도 제1학기 기말 강의평가 실시 안내(~7.3.(금) 23:00)",
@@ -4298,6 +4298,13 @@
     ],
     "Home": [
       {
+        "title": "[2027-1학기 파견] 해외 자매대학 교환 및 방문학생 모집",
+        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1166",
+        "dept": "Home",
+        "posted": "2026-07-23",
+        "article_no": null
+      },
+      {
         "title": "2026학년도 2학기 초청 교환학생 BUDDY 선발",
         "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1165",
         "dept": "Home",
@@ -4321,13 +4328,6 @@
       {
         "title": "2026. 2학기 휴학 및 복학신청 안내",
         "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1162",
-        "dept": "Home",
-        "posted": "2026-07-20",
-        "article_no": null
-      },
-      {
-        "title": "[지질환경과학과] 2026. 2학기 수강신청 안내",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1161",
         "dept": "Home",
         "posted": "2026-07-20",
         "article_no": null
@@ -5083,6 +5083,20 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "2026학년도 제2학기 수강신청 기본 계획 안내",
+        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=592816&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기계공학교육과",
+        "posted": "26.07.23",
+        "article_no": 592816
+      },
+      {
+        "title": "자퇴원 서식 변경 안내",
+        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=592799&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기계공학교육과",
+        "posted": "26.07.23",
+        "article_no": 592799
+      },
+      {
         "title": "2026학년도 2학기 장애학생 우선수강신청 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=592609&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -5207,20 +5221,6 @@
         "dept": "사범대학 기계공학교육과",
         "posted": "26.06.19",
         "article_no": 589896
-      },
-      {
-        "title": "2026학년도 제2학기 등록금 납부 안내",
-        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=589509&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기계공학교육과",
-        "posted": "26.06.16",
-        "article_no": 589509
-      },
-      {
-        "title": "2026학년도 하기방학특별학기[재학생] 수강신청 안내",
-        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=589378&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기계공학교육과",
-        "posted": "26.06.15",
-        "article_no": 589378
       },
       {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
@@ -5688,11 +5688,11 @@
     ],
     "유기재료공학과": [
       {
-        "title": "2026학년도 제1학기 성적경고자 본인확인 서명 및 학업증진계획서 제출 안내",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=59",
+        "title": "2026학년도 2학기 신입생 수강신청 안내(2026. 8. 3.(월) ~ 8. 7.(금))",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=60",
         "dept": "유기재료공학과",
         "posted": null,
-        "article_no": 59
+        "article_no": 60
       },
       {
         "title": "2026학년도 제2학기 수강신청 기본 계획 안내(2026. 8. 3.(월) ~ 8. 7.(금))",
@@ -5774,39 +5774,39 @@
     ],
     "약학대학": [
       {
-        "title": "2026년 화성시인재육성재단소상공인 장학금」사업 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592534&article.offset=0&articleLimit=10",
+        "title": "2026학년도 대학원생 연구성과 역량증진사업(1차) 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592830&article.offset=0&articleLimit=10",
         "dept": "약학대학",
-        "posted": "26.07.22",
-        "article_no": 592534
+        "posted": "26.07.23",
+        "article_no": 592830
       },
       {
-        "title": "2026학년도 대학생 청소년 AI 교육지원사업 장학생 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592532&article.offset=0&articleLimit=10",
+        "title": "[6학년] 2026-2학기 필수실무실습 수강신청 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592814&article.offset=0&articleLimit=10",
         "dept": "약학대학",
-        "posted": "26.07.22",
-        "article_no": 592532
+        "posted": "26.07.23",
+        "article_no": 592814
       },
       {
-        "title": "2026학년도 연구메이트 지원 사업 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592409&article.offset=0&articleLimit=10",
+        "title": "2026-2학기 학부 및 대학원 수강신청 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592808&article.offset=0&articleLimit=10",
         "dept": "약학대학",
-        "posted": "26.07.21",
-        "article_no": 592409
+        "posted": "26.07.23",
+        "article_no": 592808
       },
       {
-        "title": "2026학년도 제5차 CNU 알쓸교잡 실시 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592189&article.offset=0&articleLimit=10",
+        "title": "[대학원 신입생] 교과목 이수 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592798&article.offset=0&articleLimit=10",
         "dept": "약학대학",
-        "posted": "26.07.20",
-        "article_no": 592189
+        "posted": "26.07.23",
+        "article_no": 592798
       },
       {
-        "title": "2026학년도 CNU 최애 강의 에세이 공모전 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592183&article.offset=0&articleLimit=10",
+        "title": "2026학년도 제2학기 장애학생 우선수강신청 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=592794&article.offset=0&articleLimit=10",
         "dept": "약학대학",
-        "posted": "26.07.20",
-        "article_no": 592183
+        "posted": "26.07.23",
+        "article_no": 592794
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
@@ -6671,6 +6671,34 @@
     ],
     "무역학과": [
       {
+        "title": "[수강신청] 2026학년도 제2학기 수강신청 기본 계획 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592805&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.23",
+        "article_no": 592805
+      },
+      {
+        "title": "[수강신청] 2026학년도 제2학기 예비수강신청 계획 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592797&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.23",
+        "article_no": 592797
+      },
+      {
+        "title": "[안내] 2026학년도 2학기 학부 외국인 예비신입생 수강신청 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592781&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.23",
+        "article_no": 592781
+      },
+      {
+        "title": "[안내] 2026학년도 2학기 초청 교환학생 BUDDY 선발",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592779&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.07.23",
+        "article_no": 592779
+      },
+      {
         "title": "[안내] 인재개발원 7월 4주차 우수인재 추천 안내",
         "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592606&article.offset=0&articleLimit=10",
         "dept": "무역학과",
@@ -6690,34 +6718,6 @@
         "dept": "무역학과",
         "posted": "26.07.22",
         "article_no": 592604
-      },
-      {
-        "title": "[안내] 2026학년도 2학기 사회봉사(2) 교과목 수강신청 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592603&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.22",
-        "article_no": 592603
-      },
-      {
-        "title": "[장학] 2026년 화성시인재육성재단「소상공인 장학금」사업 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=592601&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.22",
-        "article_no": 592601
-      },
-      {
-        "title": "[장학] 2026학년도 정읍시민장학재단 우수인재 장학금 장학생 선발 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=591864&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.14",
-        "article_no": 591864
-      },
-      {
-        "title": "[안내] 2026년도 인권지킴이 서포터즈 모집",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=591863&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.07.14",
-        "article_no": 591863
       },
       {
         "title": "[미래설계] 미래설계상담 지도교수님 확인 방법 안내",
