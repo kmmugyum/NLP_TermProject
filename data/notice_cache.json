@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-28T00:00:16.023408",
+  "fetched_at": "2026-07-28T06:00:15.772026",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 졸업생 취업 특화 AX 인재 온보딩 교육 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=593169&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.28",
+        "article_no": 593169
+      },
+      {
         "title": "[장학] 해성문화재단 2026학년도 2학기 장학생 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=593105&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -266,13 +273,6 @@
         "dept": "경제학과",
         "posted": "26.07.24",
         "article_no": 592907
-      },
-      {
-        "title": "[학적]2026학년도 제1학기 성적경고자 본인 확인 및 지도교수와 상담 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592891&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.24",
-        "article_no": 592891
       },
       {
         "title": "[학사] 2025학년도 후기 졸업 사정 결과 온라인 본인 확인 및 합격자 학과 졸업식 참석 여부 회신",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "도서관 음악회 '충남대 도서관과 함께하는 시티콘서트' 개최 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=593142&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.07.28",
+        "article_no": 593142
+      },
+      {
         "title": "2026학년도 연구성과 역량증진 사업(1차) 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=592859&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -896,13 +903,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.07.16",
         "article_no": 592084
-      },
-      {
-        "title": "2026학년도 제2학기 휴학 및 복학 신청 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=591990&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.07.15",
-        "article_no": 591990
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -1319,10 +1319,10 @@
     ],
     "농업생명과학대학": [
       {
-        "title": "★(26.7.27.수정) 2026학년도 제2학기 예비수강신청 계획 안내",
+        "title": "★(26.7.28.수정) 2026학년도 제2학기 예비수강신청 계획 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=592985&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
-        "posted": "26.7.27",
+        "posted": "26.7.28",
         "article_no": 592985
       },
       {
@@ -1333,10 +1333,10 @@
         "article_no": 592414
       },
       {
-        "title": "★(26.7.24. 16:00 수정) 2026학년도 2학기 농생명융합학부 시간표 및 수강인원 안내",
+        "title": "★(26.7.28. 수정) 2026학년도 2학기 농생명융합학부 시간표 및 수강인원 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=592094&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
-        "posted": "26.7.24",
+        "posted": "26.7.28",
         "article_no": 592094
       },
       {
@@ -2298,6 +2298,41 @@
     ],
     "컴퓨터인공지능학부": [
       {
+        "title": "2026학년도 2학기 해성문화재단 장학생 신청(7.29(수)18시까지 메일로 신청)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593175&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.28",
+        "article_no": 593175
+      },
+      {
+        "title": "2026학년도 2학기 휴학 및 복학 신청 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593172&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.28",
+        "article_no": 593172
+      },
+      {
+        "title": "2026년도 후반기 예비군 훈련 안내(9.4(목))",
+        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=593171&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.28",
+        "article_no": 593171
+      },
+      {
+        "title": "2026 2학기 등록금 납부 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593167&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.28",
+        "article_no": 593167
+      },
+      {
+        "title": "[2026.2학기] 장학 신청(복지, 특별장학)은 학과로 신청 바랍니다.(공문은 추후 안내)  8.3(월)~8.10(월) 예정",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593166&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.28",
+        "article_no": 593166
+      },
+      {
         "title": "[교육과정, 졸업요건, 수강신청] 042-821-7456 / 상담 시간 및 방법 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592843&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2352,20 +2387,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.07.21",
         "article_no": 592435
-      },
-      {
-        "title": "[수강신청] 2026학년도 2학기 수강신청 관련 주요 일정 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592080&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.07.16",
-        "article_no": 592080
-      },
-      {
-        "title": "[졸업] 2025학년도 후기 학부 졸업 본사정 실시 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=592071&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.07.16",
-        "article_no": 592071
       },
       {
         "title": "2026년 구글코리아 청년 AI 역량강화 프로그램(Google AI Professional Certificate) 신청 안내",
@@ -2429,27 +2450,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.06.03",
         "article_no": 588340
-      },
-      {
-        "title": "[학부연구생대상:지도교수님과 상의필수]2026년도 학부생 미니 연구 프로젝트 지원사업 실행 계획 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=588339&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.06.03",
-        "article_no": 588339
-      },
-      {
-        "title": "[교내우수장학선발 기준 변경 안내 :  영어 및 IT 자격증 가산점 폐지]",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=583440&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.04.08",
-        "article_no": 583440
-      },
-      {
-        "title": "★★[졸업요건'25.10.20. 수정] 2025 CNU 교양교육과정 개편 및 경과조치 안내 (시행: 2025년 9일) 및 학과 졸업요건표(개편 적용)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=562651&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "25.10.20",
-        "article_no": 562651
       }
     ],
     "건설공학교육과": [
@@ -2856,6 +2856,13 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 졸업생 취업 특화 AX 인재 온보딩 교육 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=593169&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.07.28",
+        "article_no": 593169
+      },
+      {
         "title": "[장학] 해성문화재단 2026학년도 2학기 장학생 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=593105&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2882,13 +2889,6 @@
         "dept": "경제학과",
         "posted": "26.07.24",
         "article_no": 592907
-      },
-      {
-        "title": "[학적]2026학년도 제1학기 성적경고자 본인 확인 및 지도교수와 상담 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=592891&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.07.24",
-        "article_no": 592891
       },
       {
         "title": "[학사] 2025학년도 후기 졸업 사정 결과 온라인 본인 확인 및 합격자 학과 졸업식 참석 여부 회신",
@@ -3398,6 +3398,13 @@
     ],
     "전기공학과": [
       {
+        "title": "2026학년도 충남대학교 구성원 교보문고 오프라인 매장 할인 혜택 안내",
+        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=593176&article.offset=0&articleLimit=10",
+        "dept": "전기공학과",
+        "posted": "26.07.28",
+        "article_no": 593176
+      },
+      {
         "title": "2026.2학기 수강신청 학과 안내사항",
         "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=592947&article.offset=0&articleLimit=10",
         "dept": "전기공학과",
@@ -3452,13 +3459,6 @@
         "dept": "전기공학과",
         "posted": "26.07.02",
         "article_no": 590856
-      },
-      {
-        "title": "2026학년도 하기 계절학기 대전교통공사 오픈캠퍼스 참여자 모집 안내",
-        "url": "https://elec.cnu.ac.kr/elec/notice/notice-under.do?mode=view&articleNo=590553&article.offset=0&articleLimit=10",
-        "dept": "전기공학과",
-        "posted": "26.06.29",
-        "article_no": 590553
       },
       {
         "title": "★★전기공학과 교육과정 졸업요건 안내 ★★",
@@ -4049,10 +4049,10 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
-        "title": "★(26.7.27.수정) 2026학년도 제2학기 예비수강신청 계획 안내",
+        "title": "★(26.7.28.수정) 2026학년도 제2학기 예비수강신청 계획 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=592985&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
-        "posted": "26.7.27",
+        "posted": "26.7.28",
         "article_no": 592985
       },
       {
@@ -4119,10 +4119,10 @@
         "article_no": 592150
       },
       {
-        "title": "★(26.7.24. 16:00 수정) 2026학년도 2학기 농생명융합학부 시간표 및 수강인원 안내",
+        "title": "★(26.7.28. 수정) 2026학년도 2학기 농생명융합학부 시간표 및 수강인원 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=592094&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
-        "posted": "26.7.24",
+        "posted": "26.7.28",
         "article_no": 592094
       },
       {
@@ -6515,18 +6515,18 @@
     ],
     "사범대학 기술교육과 / 사범대학": [
       {
+        "title": "[장학]_2026학년도 2학기 해성문화재단 장학생 선발 안내",
+        "url": "https://techedu.cnu.ac.kr/techedu/notice/notice.do?mode=view&articleNo=593134&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기술교육과",
+        "posted": "26.07.28",
+        "article_no": 593134
+      },
+      {
         "title": "[교육] 도서관 이용자 교육 프로그램 안내",
         "url": "https://techedu.cnu.ac.kr/techedu/notice/notice.do?mode=view&articleNo=593007&article.offset=0&articleLimit=10",
         "dept": "사범대학 기술교육과",
         "posted": "26.07.27",
         "article_no": 593007
-      },
-      {
-        "title": "[교직] 2026학년도 2학기 성인지교과목 수강신청 안내",
-        "url": "https://techedu.cnu.ac.kr/techedu/notice/notice.do?mode=view&articleNo=593005&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기술교육과",
-        "posted": "26.07.27",
-        "article_no": 593005
       },
       {
         "title": "2026학년도 융합교육 연구공동체 선정결과 발표 및 활동방법 안내",
