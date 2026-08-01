@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-01T12:00:15.648830",
+  "fetched_at": "2026-08-01T18:00:15.252570",
   "data": {
     "응용생물학과": [
       {
@@ -1503,13 +1503,6 @@
         "article_no": 582540
       },
       {
-        "title": "학과사무실 이전(학생생활관 4동 326호) 안내(~ 공과대학1호관 공사종료시 까지)",
-        "url": "https://ceac.cnu.ac.kr/ceac/under/notice.do?mode=view&articleNo=567141&article.offset=0&articleLimit=10",
-        "dept": "응용화학공학과",
-        "posted": "25.10.27",
-        "article_no": 567141
-      },
-      {
         "title": "폐지 전공 교과목에 대한 동일 과목 지정 안내",
         "url": "https://ceac.cnu.ac.kr/ceac/under/notice.do?mode=view&articleNo=555405&article.offset=0&articleLimit=10",
         "dept": "응용화학공학과",
@@ -1543,6 +1536,13 @@
         "dept": "응용화학공학과",
         "posted": "18.10.25",
         "article_no": 126146
+      },
+      {
+        "title": "복수전공, 부전공 학생 이수 안내",
+        "url": "https://ceac.cnu.ac.kr/ceac/under/notice.do?mode=view&articleNo=126093&article.offset=0&articleLimit=10",
+        "dept": "응용화학공학과",
+        "posted": "17.02.01",
+        "article_no": 126093
       }
     ],
     "경상대학": [
