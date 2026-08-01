@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-01T00:00:15.730594",
+  "fetched_at": "2026-08-01T06:00:15.391662",
   "data": {
     "응용생물학과": [
       {
@@ -2270,7 +2270,7 @@
         "article_no": 593537
       },
       {
-        "title": "[수강신청] 2026학년도 2학기 예비수강신청 결과(우선확정 포함) 안내",
+        "title": "[수강신청] (8.1. 전체교과목 반영 안내) 12026학년도 2학기 예비수강신청 결과 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593521&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
         "posted": "26.07.31",
@@ -6385,6 +6385,13 @@
     ],
     "체육교육과": [
       {
+        "title": "2026년도 연수 오리엔테이션 자료 안내",
+        "url": "https://sportsedu.cnu.ac.kr/sportsedu/board/notice-sports.do?mode=view&articleNo=593584&article.offset=0&articleLimit=10",
+        "dept": "체육교육과",
+        "posted": "26.08.01",
+        "article_no": 593584
+      },
+      {
         "title": "[필독] 8월 1일(토) 충남대 2급전문스포츠지도사 연수 시작 안내",
         "url": "https://sportsedu.cnu.ac.kr/sportsedu/board/notice-sports.do?mode=view&articleNo=593436&article.offset=0&articleLimit=10",
         "dept": "체육교육과",
@@ -6392,7 +6399,7 @@
         "article_no": 593436
       },
       {
-        "title": "2026년도 2급 전문스포츠지도사 연수 \"현장실습 서식\" 안내",
+        "title": "2026년도 2급 전문스포츠지도사 연수 \"현장실습 서식\" 및 작성 방법 안내",
         "url": "https://sportsedu.cnu.ac.kr/sportsedu/board/notice-sports.do?mode=view&articleNo=593408&article.offset=0&articleLimit=10",
         "dept": "체육교육과",
         "posted": "26.07.30",
