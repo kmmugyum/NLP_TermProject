@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-04T18:00:17.434822",
+  "fetched_at": "2026-08-05T00:00:21.826855",
   "data": {
     "응용생물학과": [
       {
@@ -5767,6 +5767,27 @@
     ],
     "약학대학": [
       {
+        "title": "[518기념재단] 2026학년도 518 희망장학생 모집 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593868&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.08.05",
+        "article_no": 593868
+      },
+      {
+        "title": "[서울미래인재재단] 2026학년도 하반기 서울인재대학장학금 장학생  선발 관련 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593867&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.08.05",
+        "article_no": 593867
+      },
+      {
+        "title": "2026학년도 제2학기 2차 국가근로장학사업 학생 신청기간 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593866&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.08.05",
+        "article_no": 593866
+      },
+      {
         "title": "[한국바이오의약품협회] 2026년 글로벌 바이오 콘퍼런스 안",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593676&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5779,27 +5800,6 @@
         "dept": "약학대학",
         "posted": "26.08.03",
         "article_no": 593616
-      },
-      {
-        "title": "대학원 신입학 주차 등록 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593523&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.31",
-        "article_no": 593523
-      },
-      {
-        "title": "「우리동네 청일강소 기업분석 기반 입사지원서 공모전」",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593500&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.31",
-        "article_no": 593500
-      },
-      {
-        "title": "[서울미래인재재단] 2026학년도 하반기 서울인재대학장학금 장학생 선발",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=593497&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.07.31",
-        "article_no": 593497
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
@@ -5925,6 +5925,13 @@
     ],
     "정보통신융합학부 ( 전파정보통신공학과 )": [
       {
+        "title": "2026학년도 2학기 물리학2, 미적분학2 수강 신청  안내",
+        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=593865&article.offset=0&articleLimit=10",
+        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
+        "posted": "26.08.05",
+        "article_no": 593865
+      },
+      {
         "title": "2026학년도 2학기 교내 장학생 선발 안내",
         "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=593824&article.offset=0&articleLimit=10",
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
@@ -5993,13 +6000,6 @@
         "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
         "posted": "26.06.18",
         "article_no": 589728
-      },
-      {
-        "title": "2026학년도 하기방학기간「천원의 아침밥」변경 운영 안내",
-        "url": "https://rice.cnu.ac.kr/rice/community/notice01.do?mode=view&articleNo=589656&article.offset=0&articleLimit=10",
-        "dept": "정보통신융합학부 ( 전파정보통신공학과 )",
-        "posted": "26.06.17",
-        "article_no": 589656
       }
     ],
     "예술대학 조소과 / 예술대학": [
