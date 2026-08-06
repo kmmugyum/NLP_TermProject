@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-06T12:00:16.150502",
+  "fetched_at": "2026-08-06T18:00:17.039272",
   "data": {
     "응용생물학과": [
       {
@@ -3242,13 +3242,6 @@
     ],
     "사범대학 전기 / 사범대학": [
       {
-        "title": "2026-2학기 외국어성적우수/영탑/보훈/새터민 장학금 신청 안내",
-        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=593973&article.offset=0&articleLimit=10",
-        "dept": "사범대학 전기",
-        "posted": "26.08.05",
-        "article_no": 593973
-      },
-      {
         "title": "재·편입학생 일반휴학 통합정보시스템(온라인) 신청 가능 안내",
         "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=593938&article.offset=0&articleLimit=10",
         "dept": "사범대학 전기",
@@ -3394,6 +3387,13 @@
         "dept": "사범대학 전기",
         "posted": "24.03.21",
         "article_no": 509587
+      },
+      {
+        "title": "★⑤★ 사이버캠퍼스(LMS) 매뉴얼(동영상 포함) 안내",
+        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=506019&article.offset=0&articleLimit=10",
+        "dept": "사범대학 전기",
+        "posted": "24.02.16",
+        "article_no": 506019
       }
     ],
     "전기공학과": [
