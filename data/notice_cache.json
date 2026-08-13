@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-13T12:00:14.863782",
+  "fetched_at": "2026-08-13T18:00:14.165593",
   "data": {
     "응용생물학과": [
       {
@@ -5018,13 +5018,6 @@
     ],
     "의과대학": [
       {
-        "title": "의과대학 2025학년도 후기 학위수여식 일정 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=594432&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.08.12",
-        "article_no": 594432
-      },
-      {
         "title": "2026학년도 2학기 국가장학금 2차 신청 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=594290&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5100,6 +5093,13 @@
         "dept": "의과대학",
         "posted": "26.05.11",
         "article_no": 586328
+      },
+      {
+        "title": "2026년도 충남 대학교(대학원) 예비군훈련 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=580549&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.12",
+        "article_no": 580549
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6827,13 +6827,6 @@
     ],
     "수의과대학 / 의과대학": [
       {
-        "title": "의과대학 2025학년도 후기 학위수여식 일정 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=594432&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.08.12",
-        "article_no": 594432
-      },
-      {
         "title": "2026학년도 2학기 국가장학금 2차 신청 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=594290&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6979,6 +6972,13 @@
         "dept": "수의과대학",
         "posted": "26.03.12",
         "article_no": 580613
+      },
+      {
+        "title": "2026년도 충남 대학교(대학원) 예비군훈련 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=580549&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.12",
+        "article_no": 580549
       }
     ],
     "환경소재공학과": [
