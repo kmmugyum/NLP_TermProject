@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T12:00:14.411254",
+  "fetched_at": "2026-08-14T18:00:16.565177",
   "data": {
     "응용생물학과": [
       {
@@ -2375,6 +2375,13 @@
         "article_no": 593537
       },
       {
+        "title": "[수강신청] (8.1. 전체교과목 반영 안내) 12026학년도 2학기 예비수강신청 결과 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593521&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.07.31",
+        "article_no": 593521
+      },
+      {
         "title": "2026학년도 2학기 휴학 및 복학 신청 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593172&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2394,13 +2401,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.07.28",
         "article_no": 593167
-      },
-      {
-        "title": "[2026.2학기] 장학 신청(복지, 특별장학)은 학과로 신청 바랍니다.(공문은 추후 안내)  8.3(월)~8.07.(금)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593166&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.07.28",
-        "article_no": 593166
       },
       {
         "title": "2026년 구글코리아 청년 AI 역량강화 프로그램(Google AI Professional Certificate) 신청 안내",
@@ -3284,13 +3284,6 @@
         "article_no": 593938
       },
       {
-        "title": "성인지교육 설문조사 안내(~8/14)",
-        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=593883&article.offset=0&articleLimit=10",
-        "dept": "사범대학 전기",
-        "posted": "26.08.05",
-        "article_no": 593883
-      },
-      {
         "title": "2026학년도 산업체 현장실습 결과 서류 제출 안내",
         "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=593852&article.offset=0&articleLimit=10",
         "dept": "사범대학 전기",
@@ -3422,6 +3415,13 @@
         "dept": "사범대학 전기",
         "posted": "24.01.31",
         "article_no": 504570
+      },
+      {
+        "title": "★④★ 학과 카카오톡 오픈채팅방 참여 안내",
+        "url": "https://eedu.cnu.ac.kr/eedu/notice/notice-department.do?mode=view&articleNo=504283&article.offset=0&articleLimit=10",
+        "dept": "사범대학 전기",
+        "posted": "24.01.30",
+        "article_no": 504283
       }
     ],
     "전기공학과": [
@@ -5025,13 +5025,6 @@
         "article_no": 594290
       },
       {
-        "title": "2026학년도 대학생 청소년 AI 교육지원사업 장학생 모집(2차)[2026. 8. 14. 15시까지 행정실로 서류 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=593993&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.08.06",
-        "article_no": 593993
-      },
-      {
         "title": "2026학년도 제2학기 2차 국가근로장학사업 학생 신청기간 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=593640&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5044,13 +5037,6 @@
         "dept": "의과대학",
         "posted": "26.07.20",
         "article_no": 592187
-      },
-      {
-        "title": "의학한림원「의사과학자상」수상후보자 공모 안내(~8.14.(금))",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591734&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.13",
-        "article_no": 591734
       },
       {
         "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금대출 관련분야(원금상환, 이자지원) 안내",
@@ -5100,6 +5086,20 @@
         "dept": "의과대학",
         "posted": "26.03.12",
         "article_no": 580549
+      },
+      {
+        "title": "충남대학교  \"자주찾는행정부서\" 연락처 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=580151&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.10",
+        "article_no": 580151
+      },
+      {
+        "title": "2026학년도「천원의 아침밥」운영 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=579787&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.07",
+        "article_no": 579787
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6834,13 +6834,6 @@
         "article_no": 594290
       },
       {
-        "title": "2026학년도 대학생 청소년 AI 교육지원사업 장학생 모집(2차)[2026. 8. 14. 15시까지 행정실로 서류 제출]",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=593993&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.08.06",
-        "article_no": 593993
-      },
-      {
         "title": "2026학년도 2학기 CNU GUGU(어학과정 및 단기연수)프로그램 참가자 모집",
         "url": "https://vetmed.cnu.ac.kr/vetmed/community/notice.do?mode=view&articleNo=593992&article.offset=0&articleLimit=10",
         "dept": "수의과대학",
@@ -6881,13 +6874,6 @@
         "dept": "수의과대학",
         "posted": "26.07.14",
         "article_no": 591764
-      },
-      {
-        "title": "의학한림원「의사과학자상」수상후보자 공모 안내(~8.14.(금))",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591734&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.13",
-        "article_no": 591734
       },
       {
         "title": "세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금대출 관련분야(원금상환, 이자지원) 안내",
@@ -6979,6 +6965,20 @@
         "dept": "의과대학",
         "posted": "26.03.12",
         "article_no": 580549
+      },
+      {
+        "title": "충남대학교  \"자주찾는행정부서\" 연락처 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=580151&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.10",
+        "article_no": 580151
+      },
+      {
+        "title": "2026학년도「천원의 아침밥」운영 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=579787&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.03.07",
+        "article_no": 579787
       }
     ],
     "환경소재공학과": [
