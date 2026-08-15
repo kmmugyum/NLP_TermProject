@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-15T06:00:15.015683",
+  "fetched_at": "2026-08-15T12:00:14.930010",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "2027학년도 과학영재교육원 신입생 선발 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594650&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.15",
+        "article_no": 594650
+      },
+      {
         "title": "2026학년도 2학기 친구상담위원 추가 모집",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594604&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -273,13 +280,6 @@
         "dept": "경제학과",
         "posted": "26.08.13",
         "article_no": 594512
-      },
-      {
-        "title": "2026년 DSC 공유대학×KT AI 활용 지역문제 해결 캠프",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594477&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.13",
-        "article_no": 594477
       },
       {
         "title": "***<2025학년도 후기 학사학위취득유예 신청 안내>***",
@@ -2884,6 +2884,13 @@
     ],
     "경제학과": [
       {
+        "title": "2027학년도 과학영재교육원 신입생 선발 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594650&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.15",
+        "article_no": 594650
+      },
+      {
         "title": "2026학년도 2학기 친구상담위원 추가 모집",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594604&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2917,13 +2924,6 @@
         "dept": "경제학과",
         "posted": "26.08.13",
         "article_no": 594512
-      },
-      {
-        "title": "2026년 DSC 공유대학×KT AI 활용 지역문제 해결 캠프",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594477&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.13",
-        "article_no": 594477
       },
       {
         "title": "[학적] 2026학년도 제2학기 휴학 및 복학 신청 안내",
