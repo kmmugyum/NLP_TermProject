@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-20T00:00:14.804064",
+  "fetched_at": "2026-08-20T06:00:14.122701",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,20 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[국제교류] 2027-1학기 파견 해외 자매대학 교환학생 2차 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594994&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.20",
+        "article_no": 594994
+      },
+      {
+        "title": "[국제교류] 2027학년도 1학기 국외 자매대학 파견 복수학위 참가자 추가 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594993&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.20",
+        "article_no": 594993
+      },
+      {
         "title": "[장학] 경원장학재단 2026년도 제7기 경원 장학생 선발 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594911&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -261,25 +275,11 @@
         "article_no": 594908
       },
       {
-        "title": "[기타] 2026학년도 제4차 CNU Dream Story 졸업생 전문가 초청 특강 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594907&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.19",
-        "article_no": 594907
-      },
-      {
         "title": "[공지] 경제학과 2025학년도 후기 학위수여식 행사 개최 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594903&article.offset=0&articleLimit=10",
         "dept": "경제학과",
         "posted": "26.08.19",
         "article_no": 594903
-      },
-      {
-        "title": "[기타] 현대홈쇼핑과 함께하는 부트캠프 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594746&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.18",
-        "article_no": 594746
       },
       {
         "title": "***<2025학년도 후기 학사학위취득유예 신청 안내>***",
@@ -821,6 +821,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "2026학년도 2학기 친구상담위원 추가 모집(연장) 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=594976&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.08.20",
+        "article_no": 594976
+      },
+      {
         "title": "2026학년도 2학기 학생생활관 보결 모집 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=594734&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -896,13 +903,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.07.28",
         "article_no": 593142
-      },
-      {
-        "title": "2026학년도 연구성과 역량증진 사업(1차) 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=592859&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.07.24",
-        "article_no": 592859
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -1333,6 +1333,13 @@
     ],
     "농업생명과학대학": [
       {
+        "title": "★ 2026학년도 2학기 학생샐활관 보결 모집 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=594942&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.08.20",
+        "article_no": 594942
+      },
+      {
         "title": "★ 2026학년도 제2학기 교내 장학생(재학생) 선발 계획 안내",
         "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=593949&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학",
@@ -1373,13 +1380,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.07.13",
         "article_no": 591744
-      },
-      {
-        "title": "통합정보시스템 등록금 반환 신청 메뉴 개설 안내",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591494&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.07.09",
-        "article_no": 591494
       },
       {
         "title": "★2026학년도 농생명융합학부 전공 배정 세부시행 계획 안내(충남대학교 전공자율선택제 학생의 학과(부) 선택 및 배정 지침에 따른)★",
@@ -2247,6 +2247,20 @@
     ],
     "School of International Studie": [
       {
+        "title": "2026년 K-디지털 트레이닝 AI AGENT 부트캠프 설명회 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=594937&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.08.20",
+        "article_no": 594937
+      },
+      {
+        "title": "[2027-1학기 파견] 해외 자매대학 교환학생 2차 모집 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=594934&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.08.20",
+        "article_no": 594934
+      },
+      {
         "title": "2026학년도 2학기 학생생활관 보결 모집 안내",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=594835&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2301,20 +2315,6 @@
         "dept": "School of International Studie",
         "posted": "26.08.11",
         "article_no": 594300
-      },
-      {
-        "title": "2027학년도 1학기 국외 자매대학 파견 복수학위 참가자 모집 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=594274&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.08.11",
-        "article_no": 594274
-      },
-      {
-        "title": "교내 성적장학금 선발관련 휴학생(휴학예정자) 주의사항 안내 / Important Rules Regarding GPA-Based Scholarships for Students Taking a Leave of Absen",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=594185&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.08.07",
-        "article_no": 594185
       },
       {
         "title": "2026학년도 제2학기 등록금 납부 안내(Notice for payment of tuition fee for 2026-2 semester)",
@@ -2884,6 +2884,20 @@
     ],
     "경제학과": [
       {
+        "title": "[국제교류] 2027-1학기 파견 해외 자매대학 교환학생 2차 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594994&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.20",
+        "article_no": 594994
+      },
+      {
+        "title": "[국제교류] 2027학년도 1학기 국외 자매대학 파견 복수학위 참가자 추가 모집 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594993&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.08.20",
+        "article_no": 594993
+      },
+      {
         "title": "[장학] 경원장학재단 2026년도 제7기 경원 장학생 선발 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594911&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2905,25 +2919,11 @@
         "article_no": 594908
       },
       {
-        "title": "[기타] 2026학년도 제4차 CNU Dream Story 졸업생 전문가 초청 특강 실시 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594907&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.19",
-        "article_no": 594907
-      },
-      {
         "title": "[공지] 경제학과 2025학년도 후기 학위수여식 행사 개최 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594903&article.offset=0&articleLimit=10",
         "dept": "경제학과",
         "posted": "26.08.19",
         "article_no": 594903
-      },
-      {
-        "title": "[기타] 현대홈쇼핑과 함께하는 부트캠프 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=594746&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.08.18",
-        "article_no": 594746
       },
       {
         "title": "[학적] 2026학년도 제2학기 휴학 및 복학 신청 안내",
@@ -4077,6 +4077,13 @@
     ],
     "농업생명과학대학 산림환경자원학과 / 농업생명과학대학": [
       {
+        "title": "★ 2026학년도 2학기 학생샐활관 보결 모집 안내",
+        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=594942&article.offset=0&articleLimit=10",
+        "dept": "농업생명과학대학",
+        "posted": "26.08.20",
+        "article_no": 594942
+      },
+      {
         "title": "2026년 CNU JOB FESTA 안내",
         "url": "https://forestry.cnu.ac.kr/forestry/community/notice.do?mode=view&articleNo=594630&article.offset=0&articleLimit=10",
         "dept": "농업생명과학대학 산림환경자원학과",
@@ -4187,13 +4194,6 @@
         "dept": "농업생명과학대학",
         "posted": "26.07.13",
         "article_no": 591744
-      },
-      {
-        "title": "통합정보시스템 등록금 반환 신청 메뉴 개설 안내",
-        "url": "https://cals.cnu.ac.kr/cals/community/1_notice.do?mode=view&articleNo=591494&article.offset=0&articleLimit=10",
-        "dept": "농업생명과학대학",
-        "posted": "26.07.09",
-        "article_no": 591494
       },
       {
         "title": "★2026학년도 농생명융합학부 전공 배정 세부시행 계획 안내(충남대학교 전공자율선택제 학생의 학과(부) 선택 및 배정 지침에 따른)★",
@@ -5788,6 +5788,20 @@
     ],
     "약학대학": [
       {
+        "title": "[2027-1학기 파견]해외 자매대학 교환학생 2차 모집 홍보",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=594959&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.08.20",
+        "article_no": 594959
+      },
+      {
+        "title": "2026학년도 이공 우수인재 성장경로 지원 계획 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=594958&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.08.20",
+        "article_no": 594958
+      },
+      {
         "title": "2026학년도 제2학기 장애학생 개인별 교육지원계획 수립 신청",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=594836&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5807,20 +5821,6 @@
         "dept": "약학대학",
         "posted": "26.08.19",
         "article_no": 594829
-      },
-      {
-        "title": "2026학년도 2학기 친구상담위원 추가 모집",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=594616&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.08.14",
-        "article_no": 594616
-      },
-      {
-        "title": "「2026년 CNU JOB FESTA」홍보",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=594615&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.08.14",
-        "article_no": 594615
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
