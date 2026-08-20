@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-19T18:00:15.394996",
+  "fetched_at": "2026-08-20T00:00:14.804064",
   "data": {
     "응용생물학과": [
       {
@@ -2326,6 +2326,20 @@
     ],
     "컴퓨터인공지능학부": [
       {
+        "title": "2026학년도 2학기 친구상담위원 추가 모집 안내(8.26.(수)까지)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=594926&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.08.20",
+        "article_no": 594926
+      },
+      {
+        "title": "[경원장학재단]2026년도 제7기 경원 장학생 선발 안내",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=594925&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.08.20",
+        "article_no": 594925
+      },
+      {
         "title": "2026. 2학기 미래설계상담 수강신청 안내(이수학기 부족 시, 졸업 불가)",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=594892&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2389,13 +2403,6 @@
         "article_no": 593981
       },
       {
-        "title": "[장학선발예정:특별한 사유가 없는 한 휴학하지 마세요]",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593671&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.08.03",
-        "article_no": 593671
-      },
-      {
         "title": "2026학년도 2학기 휴학 및 복학 신청 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=593172&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2457,13 +2464,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.06.03",
         "article_no": 588343
-      },
-      {
-        "title": "대전국제개발협력센터의 2026년도 대학생 해외봉사단 모집",
-        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=588342&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.06.03",
-        "article_no": 588342
       },
       {
         "title": "[교내우수장학선발 기준 변경 안내 :  영어 및 IT 자격증 가산점 폐지]",
@@ -4909,6 +4909,13 @@
     ],
     "기계공학부": [
       {
+        "title": "2026-2 친구상담위원 추가 모집 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=594927&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.08.20",
+        "article_no": 594927
+      },
+      {
         "title": "2026-2학기 공학인증 대상 추가 수강 신청 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=594888&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -4970,13 +4977,6 @@
         "dept": "기계공학부",
         "posted": "26.08.07",
         "article_no": 594082
-      },
-      {
-        "title": "2026-2학기 교내 장학생 선발 계획 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=593805&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.08.04",
-        "article_no": 593805
       },
       {
         "title": "2026학년도 제1학기 학생 출석인정 신청 변경 사항 안내",
@@ -5104,6 +5104,13 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "2026-2 친구상담위원 추가 모집 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=594927&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.08.20",
+        "article_no": 594927
+      },
+      {
         "title": "「2026학년도 제2학기 장애학생 개인별 교육지원계획」수립 신청 안내",
         "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=594901&article.offset=0&articleLimit=10",
         "dept": "사범대학 기계공학교육과",
@@ -5193,13 +5200,6 @@
         "dept": "사범대학 기계공학교육과",
         "posted": "26.08.05",
         "article_no": 593988
-      },
-      {
-        "title": "2026-2학기 교내 장학생 선발 계획 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=593805&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.08.04",
-        "article_no": 593805
       },
       {
         "title": "2026학년도「하계방학 기간 학생 대상 온라인 폭력예방교육」이수 안내",
