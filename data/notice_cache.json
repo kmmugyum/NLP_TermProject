@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-09T12:00:20.351439",
+  "fetched_at": "2026-11-09T18:00:18.480947",
   "data": {
     "응용생물학과": [
       {
@@ -5067,13 +5067,6 @@
         "article_no": 602699
       },
       {
-        "title": "2026년도 하반기 강화군 대학생 등록금 지원사업 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602091&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.10.28",
-        "article_no": 602091
-      },
-      {
         "title": "2026학년도 2학기 거창군 지역출신 대학생 등록금 지원사업 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=601596&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5135,6 +5128,13 @@
         "dept": "의과대학",
         "posted": "26.03.07",
         "article_no": 579787
+      },
+      {
+        "title": "2026학년도 충남대학교 셔틀버스 운영 계획 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=578197&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.02.24",
+        "article_no": 578197
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6897,13 +6897,6 @@
         "article_no": 602699
       },
       {
-        "title": "2026년도 하반기 강화군 대학생 등록금 지원사업 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602091&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.10.28",
-        "article_no": 602091
-      },
-      {
         "title": "2026학년도 2학기 거창군 지역출신 대학생 등록금 지원사업 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=601596&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -7028,6 +7021,13 @@
         "dept": "의과대학",
         "posted": "26.03.07",
         "article_no": 579787
+      },
+      {
+        "title": "2026학년도 충남대학교 셔틀버스 운영 계획 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=578197&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.02.24",
+        "article_no": 578197
       }
     ],
     "환경소재공학과": [
