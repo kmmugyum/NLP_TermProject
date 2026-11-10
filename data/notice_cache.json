@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10T06:00:24.341481",
+  "fetched_at": "2026-11-10T12:00:18.822489",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,20 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 2026년 K-뉴딜 아카데미 인턴 AI for X 실무 프로젝트 3기 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603223&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.10",
+        "article_no": 603223
+      },
+      {
+        "title": "[기타] 2026년 K-디지털 트레이닝 생성형 AI 활용 실무 개발과정 설명회 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603213&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.10",
+        "article_no": 603213
+      },
+      {
         "title": "[기타] 2026년 2학기 영화와 함께하는 자기성장 프로그램 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603040&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -252,20 +266,6 @@
         "dept": "경제학과",
         "posted": "26.11.09",
         "article_no": 603030
-      },
-      {
-        "title": "[기타] 2026년 충남대학교 진로취업 서비스 향상을 위한 조사",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603029&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.09",
-        "article_no": 603029
-      },
-      {
-        "title": "[교직이수] 2026학년도 2학기 응급처치 및 심폐소생술 교육이수 결과 제출 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=602984&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.06",
-        "article_no": 602984
       },
       {
         "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
@@ -835,6 +835,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "2027학년도 대학수학능력시험 시행일 등교 및 수업시간 조정 안내",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603237&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.11.10",
+        "article_no": 603237
+      },
+      {
         "title": "겨울철 한파 대비 국민행동요령",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603102&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -903,13 +910,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.10.26",
         "article_no": 601851
-      },
-      {
-        "title": "「도로·광장·공원 다중운집인파재난」 위기경보 '주의' 단계 발령 알림",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=601735&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.10.23",
-        "article_no": 601735
       },
       {
         "title": "2026학년도 2학기 지도교수 배정결과 안내 및 졸업논문 일정 안내",
@@ -2347,6 +2347,13 @@
     ],
     "컴퓨터인공지능학부": [
       {
+        "title": "[접수결과확인]2026 CNU 창의SW/AI축전 시니어 심사 분류 결과",
+        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=603208&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.11.10",
+        "article_no": 603208
+      },
+      {
         "title": "[졸업요건] 6,7학기 등록자 교과 이수 상담 시간 안내 (기간 11.10.(화)~11.20.(금))",
         "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=603063&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2478,13 +2485,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.09.10",
         "article_no": 598013
-      },
-      {
-        "title": "2027학년도 전기 대학원 컴퓨터공학과 입학설명회",
-        "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=597428&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.09.07",
-        "article_no": 597428
       },
       {
         "title": "2026학년도 제2학기 영어능력인정 신청 안내(기간: '26.9.2.(화) ~ 12.18.(금) 18:00까지 엄수, 승인명단 게시 12.22.(화)정오까지)",
@@ -2905,6 +2905,20 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 2026년 K-뉴딜 아카데미 인턴 AI for X 실무 프로젝트 3기 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603223&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.10",
+        "article_no": 603223
+      },
+      {
+        "title": "[기타] 2026년 K-디지털 트레이닝 생성형 AI 활용 실무 개발과정 설명회 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603213&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.10",
+        "article_no": 603213
+      },
+      {
         "title": "[기타] 2026년 2학기 영화와 함께하는 자기성장 프로그램 안내",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603040&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2917,20 +2931,6 @@
         "dept": "경제학과",
         "posted": "26.11.09",
         "article_no": 603030
-      },
-      {
-        "title": "[기타] 2026년 충남대학교 진로취업 서비스 향상을 위한 조사",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603029&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.09",
-        "article_no": 603029
-      },
-      {
-        "title": "[교직이수] 2026학년도 2학기 응급처치 및 심폐소생술 교육이수 결과 제출 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=602984&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.06",
-        "article_no": 602984
       },
       {
         "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
@@ -3763,6 +3763,55 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "[2026년 K-뉴딜 아카데미]「인텔 AI for X 실무 프로젝트 3기」안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603255&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603255
+      },
+      {
+        "title": "「2026년 K-디지털 트레이닝 생성형 AI 활용 실무 개발과정 설명회」안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603253&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603253
+      },
+      {
+        "title": "2027학년도 대학수학능력시험 시행일 출근시간 조정 협조 요청",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603252&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603252
+      },
+      {
+        "title": "한파 대비 안전관리 철저 요청",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603250&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603250
+      },
+      {
+        "title": "온천교 교통 부분 통제 안내(2026. 11. 16. ~ 2028. 6. 30.예정)",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603210&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603210
+      },
+      {
+        "title": "2026년 2학기 영화와 함께하는 자기성장 프로그램 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603209&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603209
+      },
+      {
+        "title": "「2027 충청 유니버시아드대회」성화봉송 주자 공개모집",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603206&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.10",
+        "article_no": 603206
+      },
+      {
         "title": "2027학년도 충남대학교 학사일정 안내(학부, 대학원)",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602855&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3784,60 +3833,11 @@
         "article_no": 602761
       },
       {
-        "title": "2026학년도 2학기 학교셔틀버스 임시 휴차 알림",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602760&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.04",
-        "article_no": 602760
-      },
-      {
-        "title": "(육성) 2026년(3기)「경진대회 지원」교외경진대회 참가학생 지원 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602759&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.04",
-        "article_no": 602759
-      },
-      {
-        "title": "(육성) 2026년(3기) 「학부생 연구력 증진」 학부생 학회 활동 지원 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602758&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.04",
-        "article_no": 602758
-      },
-      {
-        "title": "2026년 2학기 진로학업 집단상담 프로그램 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602586&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.03",
-        "article_no": 602586
-      },
-      {
-        "title": "「2026 공학페스티벌」 청년뉴턴(NEW_TURN) 개최 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602585&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.03",
-        "article_no": 602585
-      },
-      {
-        "title": "2026학년도 동기 계절학기 수강신청 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602579&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.03",
-        "article_no": 602579
-      },
-      {
         "title": "필전 2026-조선 백일장",
         "url": "https://eng.cnu.ac.kr/eng/information/notice.do?mode=view&articleNo=602501&article.offset=0&articleLimit=10",
         "dept": "공과대학",
         "posted": "26.11.02",
         "article_no": 602501
-      },
-      {
-        "title": "산업대학원 산업최고경영자과정 명사 초청 특강 안내(서경석)",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602386&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.10.30",
-        "article_no": 602386
       },
       {
         "title": "[병무청] 병역기피자 인적사항 등 공개제도 리플렛 게시",
@@ -4944,6 +4944,13 @@
     ],
     "기계공학부": [
       {
+        "title": "2026-2학기 6-7학기 교과이수지도 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=603231&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.11.10",
+        "article_no": 603231
+      },
+      {
         "title": "2026-2학기 미래설계상담 2차 상담 일정 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=602866&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -5005,13 +5012,6 @@
         "dept": "기계공학부",
         "posted": "26.10.30",
         "article_no": 602380
-      },
-      {
-        "title": "2026년 공대생 인문도서 감상문 경진대회 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=602347&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.10.30",
-        "article_no": 602347
       },
       {
         "title": "2026학년도 제2학기 학생 출석인정 신청  안내",
@@ -5139,6 +5139,13 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "2026-2학기 6-7학기 교과이수지도 안내",
+        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=603231&article.offset=0&articleLimit=10",
+        "dept": "기계공학부",
+        "posted": "26.11.10",
+        "article_no": 603231
+      },
+      {
         "title": "2026학년도 2학기 교육봉사활동 결과 보고서 제출 안내 (기한 : 2026. 12. 10.(목) 까지)",
         "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=603078&article.offset=0&articleLimit=10",
         "dept": "사범대학 기계공학교육과",
@@ -5221,13 +5228,6 @@
         "dept": "기계공학부",
         "posted": "26.10.30",
         "article_no": 602380
-      },
-      {
-        "title": "2026년 공대생 인문도서 감상문 경진대회 안내",
-        "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=602347&article.offset=0&articleLimit=10",
-        "dept": "기계공학부",
-        "posted": "26.10.30",
-        "article_no": 602347
       },
       {
         "title": "「2026학년도 겨울 계절학기 현장실습(백마인턴십)」운영 안내",
