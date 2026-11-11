@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-11T12:00:19.252698",
+  "fetched_at": "2026-11-11T18:00:22.295609",
   "data": {
     "응용생물학과": [
       {
@@ -3763,6 +3763,27 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "창의융합대학 뉴비(New飛) 전공박람회 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603361&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.11",
+        "article_no": 603361
+      },
+      {
+        "title": "[육성] 2026학년도 2학기 학습컨설팅 실시 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603360&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.11",
+        "article_no": 603360
+      },
+      {
+        "title": "「2026 지역사회 문제해결 프로젝트」안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603359&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.11",
+        "article_no": 603359
+      },
+      {
         "title": "[2026년 K-뉴딜 아카데미]「인텔 AI for X 실무 프로젝트 3기」안내",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603255&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3810,27 +3831,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.11.10",
         "article_no": 603206
-      },
-      {
-        "title": "2027학년도 충남대학교 학사일정 안내(학부, 대학원)",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602855&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.05",
-        "article_no": 602855
-      },
-      {
-        "title": "2026학년도 2학기 6·7학기 등록자 교과이수지도 실시 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602852&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.05",
-        "article_no": 602852
-      },
-      {
-        "title": "2026학년도 국가근로 동계방학 집중근로 희망근로지 신청 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=602761&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.04",
-        "article_no": 602761
       },
       {
         "title": "필전 2026-조선 백일장",
@@ -5088,13 +5088,6 @@
         "article_no": 601310
       },
       {
-        "title": "[대산농촌재단] 2027년도 대산농촌재단 장학생 선발 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=600556&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.10.12",
-        "article_no": 600556
-      },
-      {
         "title": "2026학년도 2학기 학자금대출 기본계획 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591035&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5135,6 +5128,13 @@
         "dept": "의과대학",
         "posted": "26.02.24",
         "article_no": 578197
+      },
+      {
+        "title": "2026학년도 전기 대학원 외국인전형(CNU-ASIA 포함) 합격 확인 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=573235&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "25.12.30",
+        "article_no": 573235
       }
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
@@ -6925,13 +6925,6 @@
         "article_no": 600851
       },
       {
-        "title": "[대산농촌재단] 2027년도 대산농촌재단 장학생 선발 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=600556&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.10.12",
-        "article_no": 600556
-      },
-      {
         "title": "2026학년도 2학기 자기주도형 차차 프로그램 안내",
         "url": "https://vetmed.cnu.ac.kr/vetmed/community/notice.do?mode=view&articleNo=595249&article.offset=0&articleLimit=10",
         "dept": "수의과대학",
@@ -7028,6 +7021,13 @@
         "dept": "의과대학",
         "posted": "26.02.24",
         "article_no": 578197
+      },
+      {
+        "title": "2026학년도 전기 대학원 외국인전형(CNU-ASIA 포함) 합격 확인 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=573235&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "25.12.30",
+        "article_no": 573235
       }
     ],
     "환경소재공학과": [
