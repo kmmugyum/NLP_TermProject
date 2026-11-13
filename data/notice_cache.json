@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-12T18:00:18.982566",
+  "fetched_at": "2026-11-13T00:00:20.133575",
   "data": {
     "응용생물학과": [
       {
@@ -5837,6 +5837,13 @@
     ],
     "약학대학": [
       {
+        "title": "2026학년도 충남대학교 백마봉사단「사회 재환원 장학금」신청 안내",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=603442&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.11.13",
+        "article_no": 603442
+      },
+      {
         "title": "2026학년도 전기 학위청구논문 논문심사료 반환 안내",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=603152&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5856,13 +5863,6 @@
         "dept": "약학대학",
         "posted": "26.11.09",
         "article_no": 603134
-      },
-      {
-        "title": "[육성] CNU 공감·소통·인성 프로그램 2차 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=603133&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.11.09",
-        "article_no": 603133
       },
       {
         "title": "2027년도 한독제석재단 장학생 신청 안내",
