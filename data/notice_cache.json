@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-13T06:00:17.818444",
+  "fetched_at": "2026-11-13T12:00:17.784150",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 도서관 열람실 대관에 따른 운영시간 변경 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603531&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.13",
+        "article_no": 603531
+      },
+      {
         "title": "[기타] 2026학년도 충남대학교 백마봉사단 사회 재환원 장학금 대상자 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603483&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -259,13 +266,6 @@
         "dept": "경제학과",
         "posted": "26.11.12",
         "article_no": 603392
-      },
-      {
-        "title": "[기타] 2026학년도 학생 AI 리터러시 특강 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603389&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.12",
-        "article_no": 603389
       },
       {
         "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
@@ -2905,6 +2905,13 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 도서관 열람실 대관에 따른 운영시간 변경 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603531&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.13",
+        "article_no": 603531
+      },
+      {
         "title": "[기타] 2026학년도 충남대학교 백마봉사단 사회 재환원 장학금 대상자 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603483&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2924,13 +2931,6 @@
         "dept": "경제학과",
         "posted": "26.11.12",
         "article_no": 603392
-      },
-      {
-        "title": "[기타] 2026학년도 학생 AI 리터러시 특강 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603389&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.12",
-        "article_no": 603389
       },
       {
         "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
@@ -3605,7 +3605,7 @@
     ],
     "에너지공학과": [
       {
-        "title": "2026년 한국에너지기술연구원(KIER) 현장견학 프로그램 안내",
+        "title": "[긴급][출발 08:30] 2026년 한국에너지기술연구원(KIER) 현장견학 프로그램 안내",
         "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=603124&article.offset=0&articleLimit=10",
         "dept": "에너지공학과",
         "posted": "26.11.09",
@@ -5139,6 +5139,13 @@
     ],
     "사범대학 기계공학교육과 / 기계공학부": [
       {
+        "title": "2026학년도 동기 계절학기 수강료 납부 안내",
+        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=603533&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기계공학교육과",
+        "posted": "26.11.13",
+        "article_no": 603533
+      },
+      {
         "title": "2026-2학기 6-7학기 교과이수지도 안내",
         "url": "https://me.cnu.ac.kr/me/news/notice01.do?mode=view&articleNo=603231&article.offset=0&articleLimit=10",
         "dept": "기계공학부",
@@ -5270,13 +5277,6 @@
         "dept": "사범대학 기계공학교육과",
         "posted": "26.09.30",
         "article_no": 599791
-      },
-      {
-        "title": "2026학년도 2학기 학생생활관 보결 3차 모집 안내",
-        "url": "https://mmee.cnu.ac.kr/mmee/notice/notice.do?mode=view&articleNo=599438&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기계공학교육과",
-        "posted": "26.09.23",
-        "article_no": 599438
       },
       {
         "title": "[복수전공] 기술교육과 2027학년도 전기 졸업예정자 졸업논문 시행계획",
@@ -5581,6 +5581,20 @@
     ],
     "해양환경과학과": [
       {
+        "title": "[교직과정] 2026학년도 2학기 응급처치 및 심폐소생술 교육이수 결과 제출 안내",
+        "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=603532&article.offset=0&articleLimit=10",
+        "dept": "해양환경과학과",
+        "posted": "26.11.13",
+        "article_no": 603532
+      },
+      {
+        "title": "2027학년도 특별학기 운영 안내",
+        "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=603517&article.offset=0&articleLimit=10",
+        "dept": "해양환경과학과",
+        "posted": "26.11.13",
+        "article_no": 603517
+      },
+      {
         "title": "2026학년도 동기 계절학기 수강료 납부 안내",
         "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=603478&article.offset=0&articleLimit=10",
         "dept": "해양환경과학과",
@@ -5686,20 +5700,6 @@
         "article_no": 600166
       },
       {
-        "title": "2026학년도 겨울 계절학기 현장실습(백마인턴십) 운영 안내",
-        "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=599835&article.offset=0&articleLimit=10",
-        "dept": "해양환경과학과",
-        "posted": "26.09.30",
-        "article_no": 599835
-      },
-      {
-        "title": "2026학년도 제2학기 중간 강의평가 실시 안내",
-        "url": "https://ocean.cnu.ac.kr/ocean/community/bachelor.do?mode=view&articleNo=599778&article.offset=0&articleLimit=10",
-        "dept": "해양환경과학과",
-        "posted": "26.09.30",
-        "article_no": 599778
-      },
-      {
         "title": "[홍보]  [DSC공유대학(대전형) 비교과 프로그램] 참여학생 모집 안내 (심폐소생술 경연대회)",
         "url": "https://ocean.cnu.ac.kr/ocean/community/notice.do?mode=view&articleNo=599293&article.offset=0&articleLimit=10",
         "dept": "해양환경과학과",
@@ -5751,25 +5751,18 @@
     ],
     "유기재료공학과": [
       {
-        "title": "2026학년도 포스터 발표회 안내(2026. 11. 13.(금))",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=126",
+        "title": "2026학년도 충남대학교 백마봉사단「사회 재환원 장학금」대상자 추천 요청(학과사무실 제출일: 2026.11.…",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=128",
         "dept": "유기재료공학과",
         "posted": null,
-        "article_no": 126
+        "article_no": 128
       },
       {
-        "title": "[2]2026학년도 논문지도교수 신청을 위한 실험실 소개자료 안내",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=123",
+        "title": "2026학년도 2학기 6·7학기 등록자 교과이수지도 실시 안내(2026. 11. 06.(금) - 11. 10…",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=127",
         "dept": "유기재료공학과",
         "posted": null,
-        "article_no": 123
-      },
-      {
-        "title": "[1]2026학년도 논문지도교수 신청을 위한 실험실 소개자료 안내",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=122",
-        "dept": "유기재료공학과",
-        "posted": null,
-        "article_no": 122
+        "article_no": 127
       },
       {
         "title": "2026학년도 제2학기 학생 출석인정 관련 안내",
@@ -5784,13 +5777,6 @@
         "dept": "유기재료공학과",
         "posted": null,
         "article_no": 99
-      },
-      {
-        "title": "2026학년도 논문지도교수 신청 및 실험실 오픈랩 개최 안내(2026.11.6.(금), 13:20~, 244…",
-        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=98",
-        "dept": "유기재료공학과",
-        "posted": "2026.11.6",
-        "article_no": 98
       },
       {
         "title": "2026학년도 제2학기 「미래설계상담 2, 4, 6, 8」교과목 운영 안내",
@@ -5833,6 +5819,20 @@
         "dept": "유기재료공학과",
         "posted": null,
         "article_no": 46
+      },
+      {
+        "title": "등록금 반환 신청 메뉴 개설 안내",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=38",
+        "dept": "유기재료공학과",
+        "posted": null,
+        "article_no": 38
+      },
+      {
+        "title": "2026.4.15.자 이전 학과 공지 게시글",
+        "url": "https://omecnu.co.kr/bbs/board.php?bo_table=notice1&wr_id=6",
+        "dept": "유기재료공학과",
+        "posted": "2026.4.15",
+        "article_no": 6
       }
     ],
     "약학대학": [
