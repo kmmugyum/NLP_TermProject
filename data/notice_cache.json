@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T12:00:18.624376",
+  "fetched_at": "2026-11-14T18:00:19.471716",
   "data": {
     "응용생물학과": [
       {
@@ -6662,6 +6662,13 @@
         "article_no": 602682
       },
       {
+        "title": "[교직부] 2026학년도 2학기 교직 인적성검사 실시를 위한 신청 안내(10/26~30)",
+        "url": "https://techedu.cnu.ac.kr/techedu/notice/notice.do?mode=view&articleNo=601527&article.offset=0&articleLimit=10",
+        "dept": "사범대학 기술교육과",
+        "posted": "26.10.22",
+        "article_no": 601527
+      },
+      {
         "title": "2026학년도 예비교사 수업 설계 및 운영대회 / 융합교육 교수 콘텐츠 개발 전시회 본선 진출팀 안내",
         "url": "https://edu.cnu.ac.kr/edu/board/notice.do?mode=view&articleNo=600737&article.offset=0&articleLimit=10",
         "dept": "사범대학",
@@ -6751,13 +6758,6 @@
         "dept": "사범대학 기술교육과",
         "posted": "25.01.22",
         "article_no": 537010
-      },
-      {
-        "title": "[필독] 교직소양과목 이수관련 유의(변경) 사항 안내",
-        "url": "https://techedu.cnu.ac.kr/techedu/notice/notice.do?mode=view&articleNo=531224&article.offset=0&articleLimit=10",
-        "dept": "사범대학 기술교육과",
-        "posted": "24.11.14",
-        "article_no": 531224
       },
       {
         "title": "☻   [공지] 교직소양과목 이수관련 유의(변경) 사항 안내 ☺",
