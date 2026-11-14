@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T06:00:18.424301",
+  "fetched_at": "2026-11-14T12:00:18.624376",
   "data": {
     "응용생물학과": [
       {
@@ -3605,25 +3605,25 @@
     ],
     "에너지공학과": [
       {
+        "title": "[11/19 해외석학 초청강연] 옥스퍼드대 Henry J. Snaith 교수 초청 강연 안내(10시,  DSC Hall)",
+        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=603543&article.offset=0&articleLimit=10",
+        "dept": "에너지공학과",
+        "posted": "26.11.14",
+        "article_no": 603543
+      },
+      {
+        "title": "[11/16  세미나] 옥스퍼드대 David P. McMeekin 박사(15시, 산학연603호)",
+        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=603542&article.offset=0&articleLimit=10",
+        "dept": "에너지공학과",
+        "posted": "26.11.14",
+        "article_no": 603542
+      },
+      {
         "title": "[긴급][출발 08:30] 2026년 한국에너지기술연구원(KIER) 현장견학 프로그램 안내",
         "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=603124&article.offset=0&articleLimit=10",
         "dept": "에너지공학과",
         "posted": "26.11.09",
         "article_no": 603124
-      },
-      {
-        "title": "에너지공학과 원전산업 맞춤형 취업특강 안내(11.19(목), 14시, 산학연 603)",
-        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=601740&article.offset=0&articleLimit=10",
-        "dept": "에너지공학과",
-        "posted": "26.10.23",
-        "article_no": 601740
-      },
-      {
-        "title": "2026학년도 겨울 계절학기 현장실습(백마인턴십)(10.22~11.3)",
-        "url": "https://energy.cnu.ac.kr/energy/notice/notice.do?mode=view&articleNo=601517&article.offset=0&articleLimit=10",
-        "dept": "에너지공학과",
-        "posted": "26.10.22",
-        "article_no": 601517
       },
       {
         "title": "2026년도 2학기 콜로키움 (9.8~11.24 매주 화요일, 산학연 603호)",
