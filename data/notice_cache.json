@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T12:00:18.234224",
+  "fetched_at": "2026-11-15T18:00:19.025082",
   "data": {
     "응용생물학과": [
       {
@@ -268,11 +268,11 @@
         "article_no": 603392
       },
       {
-        "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=602867&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 학생 AI 리터러시 특강 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603389&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.11.05",
-        "article_no": 602867
+        "posted": "26.11.12",
+        "article_no": 603389
       },
       {
         "title": "< 2026학년도 전기 졸업논문 계획서 제출 >",
@@ -2403,6 +2403,13 @@
         "article_no": 602526
       },
       {
+        "title": "[★★ 2027.2월 졸업 예비사정 결과 온라인 확인 안내: '26.10.29.(목)~10.30.(금)18:00까지",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=602238&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.10.29",
+        "article_no": 602238
+      },
+      {
         "title": "국내 학점교류(OUT_본교→타교) 안내문 조회 페이지 신설 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=601376&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2471,13 +2478,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.09.14",
         "article_no": 598254
-      },
-      {
-        "title": "[사전안내]2026  하반기 DevDay 개최 일정 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=598245&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.09.14",
-        "article_no": 598245
       },
       {
         "title": "[사전안내]2026  CNU SW/AI 창의축전  및 SW중심대학 취업박람회 개최 일정 안내",
@@ -2933,11 +2933,11 @@
         "article_no": 603392
       },
       {
-        "title": "[국립대학육성사업] 2026학년도 경제학과 글로벌현장학습 안내(모집기간: ~ 11.15.(일) 23:59, 구글폼 및 조교 이메일 제출, 첨부파일 필독)",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=602867&article.offset=0&articleLimit=10",
+        "title": "[기타] 2026학년도 학생 AI 리터러시 특강 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603389&article.offset=0&articleLimit=10",
         "dept": "경제학과",
-        "posted": "26.11.05",
-        "article_no": 602867
+        "posted": "26.11.12",
+        "article_no": 603389
       },
       {
         "title": "[수업] 2026학년도 제2학기 학생 출석인정 안내",
