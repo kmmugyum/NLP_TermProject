@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-16T18:00:18.212631",
+  "fetched_at": "2026-11-17T00:00:17.918001",
   "data": {
     "응용생물학과": [
       {
@@ -2347,6 +2347,13 @@
     ],
     "컴퓨터인공지능학부": [
       {
+        "title": "[긴급:장학신청:3학년만:17일(화) 까지]2026년 국가우수장학금(이공계)장학금 한 학기 지원 유형 장학생 추천(학과 1명)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=603672&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.11.17",
+        "article_no": 603672
+      },
+      {
         "title": "[재학생] 2026학년도 AI 역량 증진 학습법 특강 안내('26.11.24.(화) zoom실시간 비대면)",
         "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=603576&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2408,13 +2415,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.11.09",
         "article_no": 602526
-      },
-      {
-        "title": "[★★ 2027.2월 졸업 예비사정 결과 온라인 확인 안내: '26.10.29.(목)~10.30.(금)18:00까지",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=602238&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.10.29",
-        "article_no": 602238
       },
       {
         "title": "국내 학점교류(OUT_본교→타교) 안내문 조회 페이지 신설 안내",
