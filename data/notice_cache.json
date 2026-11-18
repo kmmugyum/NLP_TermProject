@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17T18:00:18.453511",
+  "fetched_at": "2026-11-18T00:00:18.497844",
   "data": {
     "응용생물학과": [
       {
@@ -2268,6 +2268,13 @@
     ],
     "School of International Studie": [
       {
+        "title": "2027학년도 대학수학능력시험 시행일 등교 및 수업시간 조정 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=603777&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.11.18",
+        "article_no": 603777
+      },
+      {
         "title": "2026학년도 동기 계절학기 한국수자원공사 오픈캠퍼스 참여자 모집 안내",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=603634&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2329,13 +2336,6 @@
         "dept": "School of International Studie",
         "posted": "26.10.28",
         "article_no": 602095
-      },
-      {
-        "title": "[2026 대전지역혁신포럼 참여기관 합동 커리어 밋업] 개최 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=602094&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.10.28",
-        "article_no": 602094
       },
       {
         "title": "2026학년도 제2학기 영어능력인정 신청 안내(2nd Semester of 2026 English Proficiency Recognition)",
@@ -3763,6 +3763,27 @@
     ],
     "공과대학 환경공학과 / 공과대학": [
       {
+        "title": "「희망2027나눔캠페인」성금모금 등 협조 요청",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603785&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.18",
+        "article_no": 603785
+      },
+      {
+        "title": "2026학년도 동계방학 학생생활관 입주 신청 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603784&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.18",
+        "article_no": 603784
+      },
+      {
+        "title": "2027년도 관정재단 국내대학 장학생 선발 공고 안내",
+        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603780&article.offset=0&articleLimit=10",
+        "dept": "공과대학 환경공학과",
+        "posted": "26.11.18",
+        "article_no": 603780
+      },
+      {
         "title": "2026학년도 제6차 「CNU Dream Story」 졸업생 전문가 초청 특강 실시 안내",
         "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603648&article.offset=0&articleLimit=10",
         "dept": "공과대학 환경공학과",
@@ -3810,27 +3831,6 @@
         "dept": "공과대학 환경공학과",
         "posted": "26.11.16",
         "article_no": 603567
-      },
-      {
-        "title": "2026학년도 동기 계절학기 1차 폐강 대상 강좌 알림",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603566&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.16",
-        "article_no": 603566
-      },
-      {
-        "title": "2026학년도 충남대학교 백마봉사단「사회 재환원 장학금」대상자 추천 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603564&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.16",
-        "article_no": 603564
-      },
-      {
-        "title": "2026학년도 동기 계절학기 수강료 납부 안내",
-        "url": "https://envi.cnu.ac.kr/envi/board/notice.do?mode=view&articleNo=603552&article.offset=0&articleLimit=10",
-        "dept": "공과대학 환경공학과",
-        "posted": "26.11.16",
-        "article_no": 603552
       },
       {
         "title": "필전 2026-조선 백일장",
