@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T12:00:18.550528",
+  "fetched_at": "2026-11-19T18:00:44.963849",
   "data": {
     "응용생물학과": [
       {
@@ -4352,43 +4352,6 @@
         "article_no": 546824
       }
     ],
-    "Home": [
-      {
-        "title": "2026년 국가우수장학금(이공계) 장학금 한 학기 지원 유형 장학생 추천...",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1265",
-        "dept": "Home",
-        "posted": "2026-11-17",
-        "article_no": null
-      },
-      {
-        "title": "2027년도 관정재단 국내대학 장학생 선발 공고 안내",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1264",
-        "dept": "Home",
-        "posted": "2026-11-17",
-        "article_no": null
-      },
-      {
-        "title": "2026학년도 동기 계절학기 한국수자원공사 오픈캠퍼스 참여자 모집",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1263",
-        "dept": "Home",
-        "posted": "2026-11-16",
-        "article_no": null
-      },
-      {
-        "title": "2026학년도 충남대학교 백마봉사단「사회 재환원 장학금」대상자 추천",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1262",
-        "dept": "Home",
-        "posted": "2026-11-13",
-        "article_no": null
-      },
-      {
-        "title": "[학부] 지질환경과학과 전공 트랙과정 운영 안내",
-        "url": "https://geo.cnu.ac.kr/notice/?mode=view&board_pid=1261",
-        "dept": "Home",
-        "posted": "2026-11-12",
-        "article_no": null
-      }
-    ],
     "생활과학대학": [
       {
         "title": "2026학년도 봄학기 국제언어교육센터 한국어 연수생(외국인) 도우미 모집 공고(안",
@@ -4716,13 +4679,6 @@
     ],
     "수학과": [
       {
-        "title": "2027학년도 대학수학능력시험 시행일 수업 시간 조정 안내",
-        "url": "https://math.cnu.ac.kr/math/community/notice.do?mode=view&articleNo=603394&article.offset=0&articleLimit=10",
-        "dept": "수학과",
-        "posted": "26.11.12",
-        "article_no": 603394
-      },
-      {
         "title": "[충남대학교 영재교육원 수학 조교 모집 안내]",
         "url": "https://math.cnu.ac.kr/math/community/notice.do?mode=view&articleNo=602531&article.offset=0&articleLimit=10",
         "dept": "수학과",
@@ -4791,6 +4747,13 @@
         "dept": "수학과",
         "posted": "25.12.31",
         "article_no": 573439
+      },
+      {
+        "title": "[필독] 수학과 교내장학생(성적장학금) 선발 관련 변경사항 안내",
+        "url": "https://math.cnu.ac.kr/math/community/notice.do?mode=view&articleNo=543039&article.offset=0&articleLimit=10",
+        "dept": "수학과",
+        "posted": "25.03.14",
+        "article_no": 543039
       },
       {
         "title": "[필독] 졸업시험 변경사항 안내",
@@ -5074,6 +5037,13 @@
         "article_no": 603632
       },
       {
+        "title": "2026학년도 MEGA CNU GLOBAL 장학 「재학생 성적우수자 TRACK」2차 추가 모집 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602754&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.11.04",
+        "article_no": 602754
+      },
+      {
         "title": "2026학년도 국가근로 동계방학 집중근로 희망근로지 신청 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602752&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -5086,13 +5056,6 @@
         "dept": "의과대학",
         "posted": "26.11.04",
         "article_no": 602699
-      },
-      {
-        "title": "2026학년도 2학기 학자금대출 기본계획 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591035&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.03",
-        "article_no": 591035
       },
       {
         "title": "등록금 반환 신청 메뉴 안내",
@@ -6911,6 +6874,13 @@
         "article_no": 602994
       },
       {
+        "title": "2026학년도 MEGA CNU GLOBAL 장학 「재학생 성적우수자 TRACK」2차 추가 모집 안내",
+        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602754&article.offset=0&articleLimit=10",
+        "dept": "의과대학",
+        "posted": "26.11.04",
+        "article_no": 602754
+      },
+      {
         "title": "2026학년도 국가근로 동계방학 집중근로 희망근로지 신청 안내",
         "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=602752&article.offset=0&articleLimit=10",
         "dept": "의과대학",
@@ -6972,13 +6942,6 @@
         "dept": "수의과대학",
         "posted": "26.07.14",
         "article_no": 591764
-      },
-      {
-        "title": "2026학년도 2학기 학자금대출 기본계획 안내",
-        "url": "https://medicine.cnu.ac.kr/medicine/info/notice.do?mode=view&articleNo=591035&article.offset=0&articleLimit=10",
-        "dept": "의과대학",
-        "posted": "26.07.03",
-        "article_no": 591035
       },
       {
         "title": "등록금 반환 신청 메뉴 개설 안내",
