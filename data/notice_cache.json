@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T06:00:18.865207",
+  "fetched_at": "2026-11-20T12:00:24.011369",
   "data": {
     "응용생물학과": [
       {
@@ -835,6 +835,13 @@
     ],
     "자율운항시스템공학과": [
       {
+        "title": "학부 졸업논문 발표평가 일정 안내(2026학년도 전기)",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603996&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.11.20",
+        "article_no": 603996
+      },
+      {
         "title": "2027학년도 1학기 국가장학금 1차 신청 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603915&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
@@ -896,13 +903,6 @@
         "dept": "자율운항시스템공학과",
         "posted": "26.11.10",
         "article_no": 603237
-      },
-      {
-        "title": "겨울철 한파 대비 국민행동요령",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603102&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.11.09",
-        "article_no": 603102
       },
       {
         "title": "[대학원] 2026학년도 전기 대학원 학위청구논문 심사 관련 결과물 제출 안내",
@@ -6753,25 +6753,25 @@
     ],
     "무역학과": [
       {
-        "title": "[장학] 2027년도 관정재단 국내대학 장학생 선발 공고 안내 및 장학생 추천",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=603650&article.offset=0&articleLimit=10",
+        "title": "[장학] [DB김준기문화재단] 2026년 DB 외국인 국내유학 장학사업 장학생(외국인) 추천",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604003&article.offset=0&articleLimit=10",
         "dept": "무역학과",
-        "posted": "26.11.16",
-        "article_no": 603650
+        "posted": "26.11.20",
+        "article_no": 604003
       },
       {
-        "title": "[장학] 2026학년도 충남대학교 백마봉사단「사회 재환원 장학금」대상자 추천",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=603649&article.offset=0&articleLimit=10",
+        "title": "[안내] 2026학년도 동계방학 학생생활관 입주 신청 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604002&article.offset=0&articleLimit=10",
         "dept": "무역학과",
-        "posted": "26.11.16",
-        "article_no": 603649
+        "posted": "26.11.20",
+        "article_no": 604002
       },
       {
-        "title": "[안내] 생성형 AI로 준비하는 글로벌 수출마케팅 취업 교육",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=603581&article.offset=0&articleLimit=10",
+        "title": "[안내] 2027학년도 1학기 국가장학금 1차 신청 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604001&article.offset=0&articleLimit=10",
         "dept": "무역학과",
-        "posted": "26.11.16",
-        "article_no": 603581
+        "posted": "26.11.20",
+        "article_no": 604001
       },
       {
         "title": "[안내] 2026학년도 무역학과 학술경진대회 안내",
