@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T12:00:24.011369",
+  "fetched_at": "2026-11-20T18:00:18.032753",
   "data": {
     "응용생물학과": [
       {
@@ -905,18 +905,18 @@
         "article_no": 603237
       },
       {
+        "title": "겨울철 한파 대비 국민행동요령",
+        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=603102&article.offset=0&articleLimit=10",
+        "dept": "자율운항시스템공학과",
+        "posted": "26.11.09",
+        "article_no": 603102
+      },
+      {
         "title": "[대학원] 2026학년도 전기 대학원 학위청구논문 심사 관련 결과물 제출 안내",
         "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=602622&article.offset=0&articleLimit=10",
         "dept": "자율운항시스템공학과",
         "posted": "26.11.03",
         "article_no": 602622
-      },
-      {
-        "title": "2026학년도 2학기 지도교수 배정결과 안내 및 졸업논문 일정 안내",
-        "url": "https://avse.cnu.ac.kr/avse1/notice/notice.do?mode=view&articleNo=598026&article.offset=0&articleLimit=10",
-        "dept": "자율운항시스템공학과",
-        "posted": "26.09.10",
-        "article_no": 598026
       }
     ],
     "생물환경화학과 / 화학과": [
@@ -2431,6 +2431,13 @@
         "article_no": 602526
       },
       {
+        "title": "[★★ 2027.2월 졸업 예비사정 결과 온라인 확인 안내: '26.10.29.(목)~10.30.(금)18:00까지",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=602238&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.10.29",
+        "article_no": 602238
+      },
+      {
         "title": "국내 학점교류(OUT_본교→타교) 안내문 조회 페이지 신설 안내",
         "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=601376&article.offset=0&articleLimit=10",
         "dept": "컴퓨터인공지능학부",
@@ -2478,13 +2485,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.09.14",
         "article_no": 598254
-      },
-      {
-        "title": "[사전안내]2026  CNU SW/AI 창의축전  및 SW중심대학 취업박람회 개최 일정 안내",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=598242&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.09.14",
-        "article_no": 598242
       },
       {
         "title": "2026학년도 제2학기 영어능력인정 신청 안내(기간: '26.9.2.(화) ~ 12.18.(금) 18:00까지 엄수, 승인명단 게시 12.22.(화)정오까지)",
