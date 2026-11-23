@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-23T06:00:45.409430",
+  "fetched_at": "2026-11-23T12:00:18.965661",
   "data": {
     "응용생물학과": [
       {
@@ -240,6 +240,13 @@
     ],
     "농업경제학과 / 경제학과": [
       {
+        "title": "[기타] 2026학년도 창의융합대학 뉴비 지식나눔포럼 9회차 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604067&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.23",
+        "article_no": 604067
+      },
+      {
         "title": "[장학] 2026학년도 동기방학 학생성공장학금(학부연구생) 운영 안내 및 장학생 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604034&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -247,18 +254,11 @@
         "article_no": 604034
       },
       {
-        "title": "[기타]한국은행 대전세종충남본부 경제조사팀 통계조사보조원 모",
+        "title": "[기타]한국은행 대전세종충남본부 경제조사팀 통계조사보조원 모집",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604032&article.offset=0&articleLimit=10",
         "dept": "경제학과",
         "posted": "26.11.23",
         "article_no": 604032
-      },
-      {
-        "title": "[기타] 도서관 이용자교육 동영상 다시보기 서비스 제공 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603991&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.20",
-        "article_no": 603991
       },
       {
         "title": "[장학] 2027학년도 1학기 국가장학금 1차 신청 안내(신입생 국가장학금 신청 필수)",
@@ -1603,6 +1603,13 @@
     ],
     "경상대학": [
       {
+        "title": "※ 2026학년도 CEC 기업 분석대회 서류심사 선발 팀 발표 ※",
+        "url": "https://cem.cnu.ac.kr/cem/community/notice.do?mode=view&articleNo=604059&article.offset=0&articleLimit=10",
+        "dept": "경상대학",
+        "posted": "26.11.23",
+        "article_no": 604059
+      },
+      {
         "title": "**2026학년도 태국 부라파대학 교류프로그램 모집 (지원기간 연장 ~11.22. 일요일 23:59 까지)**",
         "url": "https://cem.cnu.ac.kr/cem/community/notice.do?mode=view&articleNo=602678&article.offset=0&articleLimit=10",
         "dept": "경상대학",
@@ -1664,13 +1671,6 @@
         "dept": "경상대학",
         "posted": "26.09.03",
         "article_no": 597145
-      },
-      {
-        "title": "2027 일본 나고야대학 교환학생(봄학기) 선발",
-        "url": "https://cem.cnu.ac.kr/cem/community/notice.do?mode=view&articleNo=597143&article.offset=0&articleLimit=10",
-        "dept": "경상대학",
-        "posted": "26.09.03",
-        "article_no": 597143
       },
       {
         "title": "(강의실 예약시 참고) 2026학년도 2학기 학기중 강의실별시간",
@@ -1775,6 +1775,13 @@
     ],
     "토목공학과": [
       {
+        "title": "[장학]2027학년도 1학기 국가근로장학금 1차 학생 신청기간 안내",
+        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=604081&article.offset=0&articleLimit=10",
+        "dept": "토목공학과",
+        "posted": "26.11.23",
+        "article_no": 604081
+      },
+      {
         "title": "[장학]2027학년도 1학기 국가장학금 1차 신청 안내",
         "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=603899&article.offset=0&articleLimit=10",
         "dept": "토목공학과",
@@ -1801,13 +1808,6 @@
         "dept": "토목공학과",
         "posted": "26.11.03",
         "article_no": 602560
-      },
-      {
-        "title": "2026학년도 동기 계절학기 수강신청 안내",
-        "url": "https://civileng.cnu.ac.kr/civil/undergrad/notice.do?mode=view&articleNo=602525&article.offset=0&articleLimit=10",
-        "dept": "토목공학과",
-        "posted": "26.11.03",
-        "article_no": 602525
       },
       {
         "title": "★이수면제 교과목(화학개론실험,물리학실험2,기초통계입문,프로그래밍언어) 안내",
@@ -2905,6 +2905,13 @@
     ],
     "경제학과": [
       {
+        "title": "[기타] 2026학년도 창의융합대학 뉴비 지식나눔포럼 9회차 안내",
+        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604067&article.offset=0&articleLimit=10",
+        "dept": "경제학과",
+        "posted": "26.11.23",
+        "article_no": 604067
+      },
+      {
         "title": "[장학] 2026학년도 동기방학 학생성공장학금(학부연구생) 운영 안내 및 장학생 추천",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604034&article.offset=0&articleLimit=10",
         "dept": "경제학과",
@@ -2912,18 +2919,11 @@
         "article_no": 604034
       },
       {
-        "title": "[기타]한국은행 대전세종충남본부 경제조사팀 통계조사보조원 모",
+        "title": "[기타]한국은행 대전세종충남본부 경제조사팀 통계조사보조원 모집",
         "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=604032&article.offset=0&articleLimit=10",
         "dept": "경제학과",
         "posted": "26.11.23",
         "article_no": 604032
-      },
-      {
-        "title": "[기타] 도서관 이용자교육 동영상 다시보기 서비스 제공 안내",
-        "url": "https://economics.cnu.ac.kr/economic/notice/notice.do?mode=view&articleNo=603991&article.offset=0&articleLimit=10",
-        "dept": "경제학과",
-        "posted": "26.11.20",
-        "article_no": 603991
       },
       {
         "title": "[장학] 2027학년도 1학기 국가장학금 1차 신청 안내(신입생 국가장학금 신청 필수)",
@@ -5300,6 +5300,20 @@
     ],
     "신소재공학과": [
       {
+        "title": "2026학년도 동계방학 학생성공장학금(학부연구생) 사전선발 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=604087&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.11.23",
+        "article_no": 604087
+      },
+      {
+        "title": "환경 적응형 스마트 이차전지 기술교류회 안내",
+        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=604062&article.offset=0&articleLimit=10",
+        "dept": "신소재공학과",
+        "posted": "26.11.23",
+        "article_no": 604062
+      },
+      {
         "title": "대학 통합 재추진 관련 포스터 안내",
         "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=603945&article.offset=0&articleLimit=10",
         "dept": "신소재공학과",
@@ -5326,20 +5340,6 @@
         "dept": "신소재공학과",
         "posted": "26.11.19",
         "article_no": 603885
-      },
-      {
-        "title": "대학 통합 재추진 관련 구성원 소통부스 운영 안내",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=603760&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.11.17",
-        "article_no": 603760
-      },
-      {
-        "title": "AI거점대학사업설립추진단 인텔(말레이시아) R&D 인턴십 참가학생 모집 안내",
-        "url": "https://mse.cnu.ac.kr/mse/square/notice01.do?mode=view&articleNo=603721&article.offset=0&articleLimit=10",
-        "dept": "신소재공학과",
-        "posted": "26.11.17",
-        "article_no": 603721
       },
       {
         "title": "2026학년도 제2학기 학생 출석인정 관련 안내",
@@ -6753,6 +6753,13 @@
     ],
     "무역학과": [
       {
+        "title": "[안내] 2027학년도 1학기 국가근로장학금 1차 학생 신청기간 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604084&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.11.23",
+        "article_no": 604084
+      },
+      {
         "title": "[장학] [DB김준기문화재단] 2026년 DB 외국인 국내유학 장학사업 장학생(외국인) 추천",
         "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604003&article.offset=0&articleLimit=10",
         "dept": "무역학과",
@@ -6765,13 +6772,6 @@
         "dept": "무역학과",
         "posted": "26.11.20",
         "article_no": 604002
-      },
-      {
-        "title": "[안내] 2027학년도 1학기 국가장학금 1차 신청 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604001&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.11.20",
-        "article_no": 604001
       },
       {
         "title": "[안내] 2026학년도 무역학과 학술경진대회 안내",
