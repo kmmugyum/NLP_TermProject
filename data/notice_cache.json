@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-25T06:00:17.385223",
+  "fetched_at": "2026-11-25T12:00:18.420488",
   "data": {
     "응용생물학과": [
       {
@@ -71,85 +71,6 @@
         "dept": "응용생물학과",
         "posted": "26.09.08",
         "article_no": 597757
-      }
-    ],
-    "아시아비즈니스국제학과": [
-      {
-        "title": "홈페이지 통합 안내 [아시아비즈니스국제학과 폐과]",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=351474&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.11.07",
-        "article_no": 351474
-      },
-      {
-        "title": "2023학년도 동기 계절학기 한국조폐공사 오픈캠퍼스 참여자 모집 안내",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=351420&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.11.07",
-        "article_no": 351420
-      },
-      {
-        "title": "2023년 11월 모의토익",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=351132&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.11.02",
-        "article_no": 351132
-      },
-      {
-        "title": "2023학년도 전기 졸업예비사정 온라인 확인 Online confirmation of Preliminary graduation assessment for the 2023",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=351059&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.11.01",
-        "article_no": 351059
-      },
-      {
-        "title": "2023학년도 동기 계절학기 수강신청 안내",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=350940&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.10.31",
-        "article_no": 350940
-      },
-      {
-        "title": "아시아비즈니스국제학과 폐과에 따른 소속변경 안내",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=349807&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.10.17",
-        "article_no": 349807
-      },
-      {
-        "title": "2023학년도 제2학기 영어능력인정 신청 기간",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=348265&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.09.25",
-        "article_no": 348265
-      },
-      {
-        "title": "2023학년도 2학기 폐강강좌 수강생 수강신청 변경 요청서 작성 안내",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=347631&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.09.18",
-        "article_no": 347631
-      },
-      {
-        "title": "2023학년도 2학기 졸업논문 제출 안내",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=347529&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.09.18",
-        "article_no": 347529
-      },
-      {
-        "title": "2022학년도 후기 졸업식 안내 (Graduation Ceremony)",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=344683&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "23.08.22",
-        "article_no": 344683
-      },
-      {
-        "title": "[공지] 충남대학교 학생휴가규정 Official absence (221114 update)",
-        "url": "https://abis.cnu.ac.kr/asia/notice/notice.do?mode=view&articleNo=120737&article.offset=0&articleLimit=10",
-        "dept": "아시아비즈니스국제학과",
-        "posted": "19.09.25",
-        "article_no": 120737
       }
     ],
     "항공우주공학과": [
@@ -6753,6 +6674,13 @@
     ],
     "무역학과": [
       {
+        "title": "[안내]「2026년 동기 국가근로장학금 취업연계 중점대학」 학생 추가모집 안내",
+        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604272&article.offset=0&articleLimit=10",
+        "dept": "무역학과",
+        "posted": "26.11.25",
+        "article_no": 604272
+      },
+      {
         "title": "[안내] 2027학년도 1학기 국가근로장학금 1차 학생 신청기간 안내",
         "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604084&article.offset=0&articleLimit=10",
         "dept": "무역학과",
@@ -6765,13 +6693,6 @@
         "dept": "무역학과",
         "posted": "26.11.20",
         "article_no": 604003
-      },
-      {
-        "title": "[안내] 2026학년도 동계방학 학생생활관 입주 신청 안내",
-        "url": "https://trade.cnu.ac.kr/trade/community/notice.do?mode=view&articleNo=604002&article.offset=0&articleLimit=10",
-        "dept": "무역학과",
-        "posted": "26.11.20",
-        "article_no": 604002
       },
       {
         "title": "[안내] 2026학년도 무역학과 학술경진대회 안내",
