@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-26T18:00:19.039349",
+  "fetched_at": "2026-11-27T00:00:17.681006",
   "data": {
     "응용생물학과": [
       {
@@ -2119,6 +2119,13 @@
     ],
     "School of International Studie": [
       {
+        "title": "2026학년도 동기 계절학기 수강료 추가 납부 안내",
+        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=604409&article.offset=0&articleLimit=10",
+        "dept": "School of International Studie",
+        "posted": "26.11.27",
+        "article_no": 604409
+      },
+      {
         "title": "[안내] 2026학년도 동기 계절학기 수강료 납부 안내",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=603823&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2182,13 +2189,6 @@
         "article_no": 602099
       },
       {
-        "title": "[국립대학육성사업] 2026학년도 2학기 외국인 유학생 집단상담 프로그램 C 안내",
-        "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=602097&article.offset=0&articleLimit=10",
-        "dept": "School of International Studie",
-        "posted": "26.10.28",
-        "article_no": 602097
-      },
-      {
         "title": "2026학년도 제2학기 영어능력인정 신청 안내(2nd Semester of 2026 English Proficiency Recognition)",
         "url": "https://cnusis.cnu.ac.kr/cnusis/community/notice.do?mode=view&articleNo=596643&article.offset=0&articleLimit=10",
         "dept": "School of International Studie",
@@ -2197,6 +2197,13 @@
       }
     ],
     "컴퓨터인공지능학부": [
+      {
+        "title": "[수강료] 2026학년도 동기 계절학기 수강료 추가 납부 안내('26. 11. 30.(월)09:00 ~ 16:00)",
+        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=604419&article.offset=0&articleLimit=10",
+        "dept": "컴퓨터인공지능학부",
+        "posted": "26.11.27",
+        "article_no": 604419
+      },
       {
         "title": "[수상자 안내]2026 CNU 창의SW/AI축전 개최(시니어, 주니어 부분)",
         "url": "https://computer.cnu.ac.kr/computer/notice/notice.do?mode=view&articleNo=604227&article.offset=0&articleLimit=10",
@@ -2301,13 +2308,6 @@
         "dept": "컴퓨터인공지능학부",
         "posted": "26.11.09",
         "article_no": 603063
-      },
-      {
-        "title": "[★★ 6.7 학기 이수자 졸업 학점 사정 결과 확인 안내( '26.11.10.(화)~11.20.(금) 16:00까지 엄수)",
-        "url": "https://computer.cnu.ac.kr/computer/notice/bachelor.do?mode=view&articleNo=603050&article.offset=0&articleLimit=10",
-        "dept": "컴퓨터인공지능학부",
-        "posted": "26.11.10",
-        "article_no": 603050
       },
       {
         "title": "[접수결과확인]2026 CNU 창의SW/AI축전 DevDay 코딩테스트 하반기(11.15.(일))",
@@ -5651,6 +5651,13 @@
     ],
     "약학대학": [
       {
+        "title": "[약교협] 제11회 대한민국 약사 학술제",
+        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=604417&article.offset=0&articleLimit=10",
+        "dept": "약학대학",
+        "posted": "26.11.27",
+        "article_no": 604417
+      },
+      {
         "title": "2026학년도 겨울 계절학기 특별 파견 학생 모집(영국 울버햄튼대학)",
         "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=604406&article.offset=0&articleLimit=10",
         "dept": "약학대학",
@@ -5677,13 +5684,6 @@
         "dept": "약학대학",
         "posted": "26.11.24",
         "article_no": 604168
-      },
-      {
-        "title": "2027학년도 1학기 국가장학금 1차 신청 안내",
-        "url": "https://pharm.cnu.ac.kr/pharm/community/notice.do?mode=view&articleNo=604027&article.offset=0&articleLimit=10",
-        "dept": "약학대학",
-        "posted": "26.11.23",
-        "article_no": 604027
       },
       {
         "title": "등록금 반환 신청 메뉴 개설",
